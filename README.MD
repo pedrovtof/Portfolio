@@ -1,7 +1,7 @@
 # Introdução
 
 O codigo anexo a esse repositorio consiste no portifolio do Desenvolvedor Pedro Fonseca,
-Tem como objetivo mostrar os principais projetos de Pedro e suas tecnologias.
+Tem como objetivo mostrar os principais projetos e suas tecnologias.
 
 ---
 
@@ -43,6 +43,8 @@ Versionamento =>
 ---
 
 ## Arquitetura
+
+[![Arquitetura](https://github.com/Pedro-Fonseca-dev/Portifolio/blob/main/src/assets/arquitetura.png)](https://github.com/Pedro-Fonseca-dev/Portifolio/blob/main/src/assets/arquitetura.png)
 
 ---
 
