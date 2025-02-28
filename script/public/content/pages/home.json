@@ -1,0 +1,63 @@
+{
+    "languages":{
+        "Portugues":{
+            "listAppBar":[
+                "Sobre mim",
+                "Tecnologias",
+                "Projetos",
+                "Experiencia",
+                "Recomendações",
+                "Contato"
+            ],
+            "themes":[
+                "Escuro",
+                "Claro"
+            ],
+            "languages":[
+                "Portugues",
+                "English",
+                "Espanhol"
+            ]
+        },
+
+        "English":{
+            "listAppBar":[
+                "About Me",
+                "Technologies",
+                "Projects",
+                "Brands",
+                "Recommendations",
+                "Contact Me"
+            ],
+            "themes":[
+                    "Dark",
+                    "Light"
+                ],
+            "languages":[
+                "Portugues",
+                "English",
+                "Espanhol"
+            ]
+        },
+
+        "Espanhol":{
+            "listAppBar": [
+            "Sobre mí",
+            "Tecnologías",
+            "Proyectos",
+            "Experiencia",
+            "Recomendaciones",
+            "Contacto"
+            ],
+            "themes": [
+                "Oscuro",
+                "Claro"
+            ],
+            "languages":[
+                "Portugues",
+                "English",
+                "Espanhol"
+            ]
+        }
+    }
+}
