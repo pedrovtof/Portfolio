@@ -44,7 +44,7 @@ Versionamento =>
 
 ## Arquitetura
 
-[![Arquitetura](https://github.com/Pedro-Fonseca-dev/Portifolio/blob/main/src/assets/arquitetura.png)](https://github.com/Pedro-Fonseca-dev/Portifolio/blob/main/src/assets/arquitetura.png)
+![Arquitetura]("./script/public/images/dir_arch.png ")
 
 ---
 
