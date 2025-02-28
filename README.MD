@@ -8,29 +8,29 @@ Tem como objetivo mostrar os principais projetos e suas tecnologias.
 ## Tecnologias
 
 As principais tecnologias envolvidas na construção:
-    * JavaScript
-    * Html
-    * Css
+- JavaScript
+- Html
+- Css
 
 Principais frameworks:
-    * Node.js
-    * Next.js
+- Node.js
+- Next.js
 
 Principais bibliotecas:
-    * React
-    * Material Desing
-    * React-router
-    * Next
+- React
+- Material Desing
+- React-router
+- Next
 
 Principais auxiliares:
-    * eslint
-    * Visual Studio Code
-    * Npm
-    * Github
+- eslint
+- Visual Studio Code
+- Npm
+- Github
 
 Versionamento =>
 
-`
+```json
 "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
@@ -39,7 +39,7 @@ Versionamento =>
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
 }
-`
+```
 ---
 
 ## Arquitetura
@@ -87,11 +87,7 @@ basta colocar o link no seu navegador e acessar a aplicação
 
 
 
-
-
-/*
-
-
+```bash
 $ npx create-next-app@latest portifolio
 Need to install the following packages:
 create-next-app@15.1.6
@@ -104,5 +100,4 @@ Ok to proceed? (y) y
 √ Would you like to use App Router? (recommended) ... No / Yes
 √ Would you like to use Turbopack for `next dev`? ... No / Yes
 √ Would you like to customize the import alias (`@/*` by default)? ... No / Yes
-
-*/
+```
