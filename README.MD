@@ -44,7 +44,7 @@ Versionamento =>
 
 ## Arquitetura
 
-![Arquitetura]("./script/public/images/dir_arch.png ")
+![Arquitetura](./script/public/images/dir_arch.png)
 
 ---
 
