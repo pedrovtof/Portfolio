@@ -58,10 +58,10 @@ Após isso, baixar o arquivo do projeto, acessar, iniciar o node com
 Isso baixara as dependencias, com tudo instalado rode o comando
 `npm run dev` 
 dentro da pasta do repositorio, irá subir algumas informações, caso apareça como
-
-▲ Next.js 15.1.6
+```bash
+Next.js 15.1.6
    - Local:        http://localhost:3000
-
+```
 Seguida de nenhuma mensagem de erro, significa que o codigo subiu corretamente, 
 basta colocar o link no seu navegador e acessar a aplicação
 
