@@ -229,6 +229,24 @@
 
 
 
+.home-about-me-box-grid-second{
+    margin-top: 4vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-about-me-box-grid-second-box{
+    width: 12%;
+}
+
+.home-about-me-box-grid-second-box-img{
+    width: 80%;
+}
+
+.home-about-me-box-grid-second-box-button {
+    height: 3rem;
+}
+
 /* 
 =============================================================================
     HOME BOX ABOUT ME

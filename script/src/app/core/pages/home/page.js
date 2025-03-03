@@ -89,6 +89,7 @@ const IndexPageHome =()=> {
           "Class_Box_Grid_second":"home-about-me-box-grid-second",
           "Class_Box_Grid_second_box":"home-about-me-box-grid-second-box",
           "Class_Box_Grid_second_box_button":"home-about-me-box-grid-second-box-button",
+          "Class_Box_Grid_second_box_img":"home-about-me-box-grid-second-box-img",
         }}
         GridConfig = {{
           "Grid_size":12,
@@ -100,9 +101,7 @@ const IndexPageHome =()=> {
           "variantBody1":"body1",
           "typographyIdTitle":"typography-aboutMe-title",
           "typographyIdBody":"typography-aboutMe-body"
-
         }}
-
       />
     </>
   );

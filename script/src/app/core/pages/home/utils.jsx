@@ -110,6 +110,8 @@ function BoxHomeIntro(
 =============================================================================
 */
 
+
+
 function BoxHomeAboutMe(
     valuesInput
 ){
@@ -122,6 +124,10 @@ function BoxHomeAboutMe(
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/linkedin.png?raw=true',
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/twitter.png?raw=true'
     ]
+
+    const printCV = ()=>{
+        print('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/discord.png?raw=true')
+    }
 
     return (
         
@@ -191,13 +197,15 @@ function BoxHomeAboutMe(
                                         size={valuesInput.GridConfig.Grind_columns_second}
                                         className={valuesInput.BoxClasses.Class_Box_Grid_second_box}
                                     >
-                                        <img
-                                            key={index}
-                                            src={item}
-                                            alt={item.replace('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/','').replace('.png?raw=true','')}
-                                            className={valuesInput.BoxClasses.Class_Box_Grid_second_box_img}
-                                        />
-                                        
+                                        <a href={item} target="_blank" rel="noreferrer">
+                                            <img
+                                                key={index}
+                                                src={item}
+                                                alt={item.replace('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/','').replace('.png?raw=true','')}
+                                                className={valuesInput.BoxClasses.Class_Box_Grid_second_box_img}
+                                                id={`${valuesInput.BoxClasses.Class_Box_Grid_second_box_img}-${index}`}
+                                            />
+                                        </a>
                                     </Grid>
                                 )
                             })
@@ -216,6 +224,7 @@ function BoxHomeAboutMe(
                                     background: (theme) => theme.palette.button.primary,
                                     color: (theme) => theme.palette.text.secondary
                                 }}
+                                onClick={()=>{printCV()}}
                             >
                                 {
                                     valuesInput.BoxContentText.aboutMe.cv?
