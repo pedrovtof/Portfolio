@@ -114,13 +114,13 @@ function BoxHomeAboutMe(
     valuesInput
 ){
     //printf(valuesInput)
-
+//https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/discord.png?raw=true
     const imageList = [
-        '../../../../../public/images/social/discord.png',
-        '../../../../../public/images/social/facebook.png',
-        '../../../../../public/images/social/instagram.png',
-        '../../../../../public/images/social/linkedin.png',
-        '../../../../../public/images/social/twitter'
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/discord.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/facebook.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/instagram.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/linkedin.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/twitter.png?raw=true'
     ]
 
     return (
@@ -193,11 +193,11 @@ function BoxHomeAboutMe(
                                     >
                                         <img
                                             key={index}
-                                            src={`${item}`}
-                                            alt={item.replace('../../../../../public/images/social/','').replace('.png','')}
+                                            src={item}
+                                            alt={item.replace('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/','').replace('.png?raw=true','')}
                                             className={valuesInput.BoxClasses.Class_Box_Grid_second_box_img}
                                         />
-                                        {printf(item)}
+                                        
                                     </Grid>
                                 )
                             })
