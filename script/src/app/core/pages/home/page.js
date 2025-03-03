@@ -4,7 +4,8 @@ import ButtonAppBar from '../../../module/materialDesing/appbar/appbar'
 import {printf, useLanguageContext} from "../../../global/globalFunctions"
 import pageContentText from '../../../../../public/content/pages/home.json'
 import {
-  BoxHomeIntro
+  BoxHomeIntro,
+  BoxHomeAboutMe
 } from './utils'
 
 const IndexPageHome =()=> {
@@ -53,17 +54,55 @@ const IndexPageHome =()=> {
           }}
       />
       <BoxHomeIntro 
-          BoxContentText = {{
-            "introBox":textPage.introBox,
-          }}
-          BoxClasses = {{
-            "Class_Box_Container":"home-intro-box-container",
-            "Class_Box_Grid":"home-intro-box-grid",
-            "Class_Box":"home-intro-box-box",
-            "Class_Box_Typography":"home-intro-box-typography",
-            "Class_Box_Typography_span":"home-intro-box-typography-span",
-            "Class_Box_img":"home-intro-box-img"
-          }}
+        BoxContentText = {{
+          "introBox":textPage.introBox,
+        }}
+        BoxClasses = {{
+          "Class_Box_Container":"home-intro-box-container",
+          "Class_Box_Grid":"home-intro-box-grid",
+          "Class_Box":"home-intro-box-box",
+          "Class_Box_Typography":"home-intro-box-typography",
+          "Class_Box_Typography_span":"home-intro-box-typography-span",
+          "Class_Box_img":"home-intro-box-img"
+        }}
+        GridConfig = {{
+          "Grid_size":12,
+          "Grid_columns":6
+        }}
+        TypographyConfig = {{
+          "variantH1":"h1",
+          "variantH2":"h2",
+          "typographyIdPrefix":"typography-introBox-prefix-name",
+          "typographyIdName":"typography-introBox-name",
+        }}
+      />
+      <BoxHomeAboutMe 
+        BoxContentText = {{
+          "aboutMe":textPage.aboutMe,
+        }}
+        BoxClasses = {{
+          "Class_Box_Container":"home-about-me-box-container",
+          "Class_Box_Grid":"home-about-me-box-grid",
+          "Class_Box":"home-about-me-box-box",
+          "Class_Box_Typography":"home-about-me-box-typography",
+          "Class_Box_img":"home-about-me-box-img",
+          "Class_Box_Grid_second":"home-about-me-box-grid-second",
+          "Class_Box_Grid_second_box":"home-about-me-box-grid-second-box",
+          "Class_Box_Grid_second_box_button":"home-about-me-box-grid-second-box-button",
+        }}
+        GridConfig = {{
+          "Grid_size":12,
+          "Grid_columns":6,
+          "Grind_columns_second":2
+        }}
+        TypographyConfig = {{
+          "variantH1":"h1",
+          "variantBody1":"body1",
+          "typographyIdTitle":"typography-aboutMe-title",
+          "typographyIdBody":"typography-aboutMe-body"
+
+        }}
+
       />
     </>
   );

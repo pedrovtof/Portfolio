@@ -45,7 +45,11 @@ export default function ThemeProvider({ children }) {
             text: {
                 primary: darkMode ? collorVarJson.ligh_blue : collorVarJson.dark_blue_grey,  
                 secondary: collorVarJson.blue , 
+                thrid: darkMode ? collorVarJson.white: collorVarJson.dark_blue_grey,
             },
+            button:{
+                primary:darkMode ? collorVarJson.white : collorVarJson.black_blue
+            }
         },
     });
     }, [darkMode]);
