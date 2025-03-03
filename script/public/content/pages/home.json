@@ -17,7 +17,19 @@
                 "Portugues",
                 "English",
                 "Espanhol"
-            ]
+            ],
+            "introBox":{
+                "prefixName":"Eu sou",
+                "name":"Pedro Fonseca",
+                "functions":[
+                    "Desenvolvedor",
+                    "Adm Banco de dados"
+                ]
+            },
+            "aboutMe":{
+                "title":"Sobre mim",
+                "content":"Sou um profissional brasileiro da área de tecnologia, com experiência em administração de Banco de Dados e infraestrutura em nuvem. Minha trajetória começou aos 18 anos, atuando na operação interna de tecnologia e na administração de Sistemas de Gerenciamento de Banco de Dados (SGBD) em modelos IaaS e SaaS. Já fui responsável por automações internas, controle de acesso e gerenciamento de mais de 15 instâncias distribuídas em mais de 4 sistemas distintos nas nuvens da Google Cloud (GCP) e Oracle Cloud (OCI).\n\nCom espírito inovador, estudo e pratico desenvolvimento de software para solucionar desafios do dia a dia, expandindo minha atuação para além da administração de bancos de dados. Atualmente, estou aprimorando minhas habilidades em C#, Java, Python e JavaScript, com o objetivo de integrar backend e infraestrutura de forma estratégica. Além disso, tenho planos de ingressar em uma POS e MBA, fortalecendo minha base acadêmica e visão de negócios.\n\nMovido por desafios e pelo aprendizado contínuo, busco oportunidades para aplicar e aprimorar meus conhecimentos, especialmente em projetos internacionais."
+            }
         },
 
         "English":{
@@ -37,7 +49,19 @@
                 "Portugues",
                 "English",
                 "Espanhol"
-            ]
+            ],
+            "introBox":{
+                "prefixName":"I'm",
+                "name":"Pedro Fonseca",
+                "functions":[
+                    "Developer",
+                    "Database Administrator"
+                ]
+            },
+            "aboutMe":{
+                "title":"About Me",
+                "content":"I am a Brazilian technology professional with experience in database administration and cloud infrastructure. My journey began at the age of 18, working in internal technology operations and managing Database Management Systems (DBMS) in IaaS and SaaS models. I have been responsible for internal automation, access control, and managing over 15 instances across more than four different systems in Google Cloud (GCP) and Oracle Cloud (OCI).\n\nWith an innovative mindset, I study and practice software development to solve everyday challenges, expanding my expertise beyond database administration. Currently, I am enhancing my skills in C#, Java, Python, and JavaScript, aiming to strategically integrate backend and infrastructure. Additionally, I plan to pursue a postgraduate degree (POS) and an MBA, strengthening my academic foundation and business vision.\n\nDriven by challenges and continuous learning, I seek opportunities to apply and refine my knowledge, especially in international projects."
+            }
         },
 
         "Espanhol":{
@@ -57,7 +81,19 @@
                 "Portugues",
                 "English",
                 "Espanhol"
-            ]
+            ],
+            "introBox":{
+                "prefixName":"Soy",
+                "name":"Pedro Fonseca",
+                "functions":[
+                    "Developer",
+                    "Database Administrator"
+                ]
+            },
+            "aboutMe":{
+                "title":"Sobre mí",
+                "content":"Soy un profesional brasileño del área de tecnología, con experiencia en administración de bases de datos e infraestructura en la nube. Mi trayectoria comenzó a los 18 años, trabajando en operaciones internas de tecnología y en la administración de Sistemas de Gestión de Bases de Datos (SGBD) en modelos IaaS y SaaS. He sido responsable de automatizaciones internas, control de acceso y gestión de más de 15 instancias distribuidas en más de 4 sistemas distintos en las nubes de Google Cloud (GCP) y Oracle Cloud (OCI).\n\nCon un espíritu innovador, estudio y practico desarrollo de software para resolver desafíos cotidianos, ampliando mi actuación más allá de la administración de bases de datos. Actualmente, estoy mejorando mis habilidades en C#, Java, Python y JavaScript, con el objetivo de integrar backend e infraestructura de manera estratégica. Además, planeo cursar una especialización (POS) y un MBA, fortaleciendo mi base académica y visión de negocios.\n\nImpulsado por los desafíos y el aprendizaje continuo, busco oportunidades para aplicar y mejorar mis conocimientos, especialmente en proyectos internacionales."
+            }
         }
     }
 }

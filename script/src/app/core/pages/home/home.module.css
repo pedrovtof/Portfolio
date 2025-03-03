@@ -1,6 +1,14 @@
+/* 
+=============================================================================
+    HOME APP BAR
+    - Responsive
+=============================================================================
+*/
+
 .home-appbar-div{
     display: flex;
     flex-wrap: nowrap;
+    position: fixed;
 }
 
 .home-header-appbar-typography{
@@ -16,20 +24,31 @@
 
 .home-header-button-appbar-box{
     display: flex;
+    border: "1px solid black";
+    background-color: white;
+    border-radius: 5px;
     justify-content: center;
     align-items: center;
     margin: auto 2vw;
 }
+ 
+/* 
+=============================================================================
+    HOME APP BAR
+    - Small Screen
+=============================================================================
+*/
 
 @media (max-width: 850px) {
 
     .home-header-button-appbar{
-        border: "1px solid black";
-        background-color: white;
-        width: 8vw;
+        width: 20vw;
         height: 8vh;
-        border-radius: 5px;
-        margin: auto 4vw;
+        margin: auto ;
+    }
+
+    .home-appbar-div-appbar-toolbar{
+        justify-content: space-evenly;
     }
 
     .home-header-appbar-typography{
@@ -38,3 +57,100 @@
 }
 
 
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Responsive
+=============================================================================
+*/
+
+.home-intro-box-container{
+    flex-grow: 1;
+    margin-top: 10vw;
+    width: 100vw;
+}
+
+.home-intro-box-grid{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.home-intro-box-box{
+    align-content: center;
+    width: 50%;
+}
+
+.home-intro-box-typography{
+    display: block;
+    text-align: left;
+    text-wrap: nowrap;
+}
+
+#typography-introBox-name{
+    text-indent: 1vw;
+}
+
+#typography-introBox-name,
+#typography-introBox-prefix-name{
+    font-size: 3rem;
+}
+
+#typography-span-index-0::after{
+    content: "&";
+    margin-left: 5px;
+    opacity: 1;
+}
+
+
+.home-intro-box-typography-span{
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+.home-intro-box-img{
+    width:  100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Small Screen
+=============================================================================
+*/
+
+
+@media (max-width: 850px) {
+    .home-intro-box-container{
+        flex-grow: 1;
+        margin-top: 25vw;
+    }
+
+    #home-intro-box-grid{
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+   
+    #typography-introBox-name,
+    #typography-introBox-prefix-name{
+        font-size: 2rem;
+    }
+
+
+    .home-intro-box-typography-span{
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .home-intro-box-img{
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+}
