@@ -21,6 +21,7 @@ Principais bibliotecas:
 - Material Desing
 - React-router
 - Next
+- React-scroll
 
 Principais auxiliares:
 - eslint
@@ -37,7 +38,8 @@ Versionamento =>
     "@mui/material": "^6.4.3",
     "next": "15.1.6",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-scroll": "^1.9.3"
 }
 ```
 ---
