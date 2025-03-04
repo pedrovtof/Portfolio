@@ -19,8 +19,15 @@
     position: fixed;
 }
 
-.home-header-appbar-typography{
+.home-header-appbar-typography-box{
     flex-grow: 1;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.home-header-appbar-typography:hover{
+    text-decoration: underline;
 }
 
 .home-header-button-appbar{
@@ -220,7 +227,8 @@
         justify-content: space-evenly;
     }
 
-    .home-header-appbar-typography{
+    .home-header-appbar-typography,
+    .home-header-appbar-typography-box{
         display: none;
     }
 
