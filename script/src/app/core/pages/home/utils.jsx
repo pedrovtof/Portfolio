@@ -115,10 +115,9 @@ function BoxHomeIntro(
 function BoxHomeAboutMe(
     valuesInput
 ){
-    //printf(valuesInput)
-//https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/discord.png?raw=true
+
     const imageList = [
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/discord.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/github.png?raw=true',
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/facebook.png?raw=true',
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/instagram.png?raw=true',
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/linkedin.png?raw=true',
@@ -189,7 +188,7 @@ function BoxHomeAboutMe(
                         className={valuesInput.BoxClasses.Class_Box_Grid_second}
                     >
                         {
-                            imageList.length > 0?
+                            imageList.length?
                             imageList.map((item, index) => {
                                 return (
                                     <Grid
@@ -197,7 +196,14 @@ function BoxHomeAboutMe(
                                         size={valuesInput.GridConfig.Grind_columns_second}
                                         className={valuesInput.BoxClasses.Class_Box_Grid_second_box}
                                     >
-                                        <a href={item} target="_blank" rel="noreferrer">
+                                        <a href={
+                                            item.includes('linkedin')?'https://www.linkedin.com/in/pedrovotf/':
+                                            item.includes('facebook')?'https://www.facebook.com/pedrovtof/':
+                                            item.includes('instagram')?'https://www.instagram.com/pedrovtof/':
+                                            item.includes('twitter')?'https://x.com/PedroVi13262224':
+                                            item.includes('github')?'https://github.com/pedrovtof':
+                                            null
+                                        } target="_blank" rel="noreferrer">
                                             <img
                                                 key={index}
                                                 src={item}
@@ -244,7 +250,80 @@ function BoxHomeAboutMe(
 }
                
 
+
+/* 
+=============================================================================
+    HOME BOX TECNOLOGIES
+=============================================================================
+*/
+
+function BoxHomeTecnologies(
+        valuesInput
+    ){
+    
+    printf(valuesInput)
+
+    const imageList = [
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/js.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/postgre.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/python.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/react.png?raw=true',
+        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/sql-server.png?raw=true'
+    ] 
+
+    return(
+        <React.Fragment>
+            <Container
+                className={valuesInput.BoxClasses.Class_Box_Container}
+            >
+                <Typography
+                    className={valuesInput.BoxClasses.Class_Box_Grid_title}
+                    variant={valuesInput.TypographyConfig.variant}
+                >
+                    {
+                              valuesInput.BoxContentText.technologies?
+                              valuesInput.BoxContentText.technologies.title
+                              :null
+                    }
+                </Typography>
+                <Grid
+                    className={valuesInput.BoxClasses.Class_Box_Grid}
+                    container
+                    columns={valuesInput.GridConfig.Grid_size}
+                >
+                    {
+                        imageList.map((item,index)=>{
+                            const name_item = item.replace('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/','').replace('?raw=true','')
+                            return(
+                                <Grid
+                                    key={index}
+                                    className={valuesInput.BoxClasses.Class_Box_second_grid}
+                                    size={valuesInput.GridConfig.Grid_columns}
+                                >
+                                    <img 
+                                        src={item} 
+                                        key={index}  
+                                        alt={name_item}
+                                        title={name_item} 
+                                        className={valuesInput.BoxClasses.Class_Box_img} 
+                                    />
+                                </Grid>
+                            )
+                        })
+                    }  
+                    <Grid>
+
+                    </Grid>
+                </Grid>
+            </Container>
+        </React.Fragment>
+    )
+
+}
+
+
 export {
     BoxHomeIntro,
-    BoxHomeAboutMe
+    BoxHomeAboutMe,
+    BoxHomeTecnologies
 };

@@ -5,6 +5,14 @@
 =============================================================================
 */
 
+
+/* 
+=============================================================================
+    HOME APP BAR
+    - Responsive
+=============================================================================
+*/
+
 .home-appbar-div{
     display: flex;
     flex-wrap: nowrap;
@@ -30,30 +38,6 @@
     justify-content: center;
     align-items: center;
     margin: auto 2vw;
-}
- 
-/* 
-=============================================================================
-    HOME APP BAR
-    - Small Screen
-=============================================================================
-*/
-
-@media (max-width: 850px) {
-
-    .home-header-button-appbar{
-        width: 20vw;
-        height: 8vh;
-        margin: auto ;
-    }
-
-    .home-appbar-div-appbar-toolbar{
-        justify-content: space-evenly;
-    }
-
-    .home-header-appbar-typography{
-        display: none;
-    }
 }
 
 
@@ -112,24 +96,141 @@
     border-radius: 15px;
 }
 
+
+
 /* 
 =============================================================================
-    HOME BOX INTRODUCTION
+    HOME BOX ABOUT ME
+    - Responsive
+=============================================================================
+*/
+
+
+.home-about-me-box-container{
+    flex-grow: 1;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    width: 90vw;
+}
+
+.home-about-me-box-grid{
+    height: fit-content;
+}
+
+.home-intro-box-grid{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-about-me-box-typography{
+    text-align: justify;
+    align-content: center;
+    font-size: 1rem;
+    position: relative;
+}
+
+#typography-aboutMe-title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5vh;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.home-about-me-box-img{
+    height: 100%;
+    max-height: 50rem;
+    min-height: 25rem;
+    width: 95%;
+}
+
+
+
+.home-about-me-box-grid-second{
+    margin-top: 4vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-about-me-box-grid-second-box{
+    width: 12%;
+}
+
+.home-about-me-box-grid-second-box-img{
+    width: 80%;
+}
+
+.home-about-me-box-grid-second-box-button {
+    height: 3rem;
+}
+
+.home-about-me-box-grid-second-box-button:hover{
+    background-color: #00000075;
+}
+
+/* 
+=============================================================================
+    HOME BOX TECHNOLOGIES
+    - Responsive
+=============================================================================
+*/
+
+.home-technologies-box-container{
+    width: 100vw;
+    height: fit-content;
+}
+
+.home-technologies-box-grid{
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.home-technologies-box-grid-second{
+    width: 10%;
+}
+
+.home-technologies-box-img{
+    width: 80%;
+}
+
+
+/* 
+=============================================================================
+    HOME
     - Small Screen
 =============================================================================
 */
 
 
 @media (max-width: 850px) {
-    .home-intro-box-container{
-        flex-grow: 1;
-        margin-top: 20vw;
+
+    /* 
+    =============================================================================
+        HOME APP BAR
+        - Small Screen
+    =============================================================================
+    */
+
+    .home-header-button-appbar{
+        width: 20vw;
+        height: 8vh;
+        margin: auto ;
     }
 
-    .home-about-me-box-container{
-        flex-grow: 1;
-        margin-top: 5vw;
+    .home-appbar-div-appbar-toolbar{
+        justify-content: space-evenly;
     }
+
+    .home-header-appbar-typography{
+        display: none;
+    }
+
+
+     /* 
+    =============================================================================
+        HOME BOX INTRODUCTION
+        - Small Screen
+    =============================================================================
+    */
 
     #home-intro-box-grid{
         flex-direction: column-reverse;
@@ -169,95 +270,16 @@
         width: 100%;
         margin-bottom: 2vh;
     }
-}
 
 
-/* 
-=============================================================================
-    HOME BOX ABOUT ME
-    - Responsive
-=============================================================================
-*/
+    /* 
+    =============================================================================
+        HOME BOX ABOUT ME
+        - Small Screen
+    =============================================================================
+    */
 
-/*
-    .home-about-me-box-container{
-
-    }
-    .home-about-me-box-grid{
-
-    }
-    .home-about-me-box-box{
-
-    }
-*/
-
-.home-about-me-box-container{
-    flex-grow: 1;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
-    width: 90vw;
-}
-
-.home-about-me-box-grid{
-    height: 100vh;
-}
-
-.home-intro-box-grid{
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.home-about-me-box-typography{
-    text-align: justify;
-    align-content: center;
-    font-size: 1rem;
-    position: relative;
-}
-
-#typography-aboutMe-title{
-    font-size: 2.5rem;
-    margin-bottom: 1.5vh;
-    margin-top: 1vh;
-    text-align: center;
-}
-
-.home-about-me-box-img{
-    height: 100%;
-    max-height: 35rem;
-    width: 95%;
-}
-
-
-
-.home-about-me-box-grid-second{
-    margin-top: 4vh;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.home-about-me-box-grid-second-box{
-    width: 12%;
-}
-
-.home-about-me-box-grid-second-box-img{
-    width: 80%;
-}
-
-.home-about-me-box-grid-second-box-button {
-    height: 3rem;
-}
-
-/* 
-=============================================================================
-    HOME BOX ABOUT ME
-    - Small Screen
-=============================================================================
-*/
-
-
-
-
-@media (max-width: 850px) {
+    
 
     .home-about-me-box-container{
         flex-grow: 1;
@@ -267,5 +289,17 @@
     .home-about-me-box-img{
         height: 100%;
     }
+
+    .home-intro-box-container{
+        flex-grow: 1;
+        margin-top: 20vw;
+    }
+
+    .home-about-me-box-container{
+        flex-grow: 1;
+        margin-top: 5vw;
+    }
+
+   
 }
 

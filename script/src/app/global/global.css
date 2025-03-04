@@ -4,7 +4,7 @@
 
 img:hover,
 a:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    transform: scale(1.06);
+    transition: 1.7s;
 }
 

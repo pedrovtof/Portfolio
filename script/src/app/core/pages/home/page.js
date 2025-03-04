@@ -5,7 +5,8 @@ import {printf, useLanguageContext} from "../../../global/globalFunctions"
 import pageContentText from '../../../../../public/content/pages/home.json'
 import {
   BoxHomeIntro,
-  BoxHomeAboutMe
+  BoxHomeAboutMe,
+  BoxHomeTecnologies
 } from './utils'
 
 const IndexPageHome =()=> {
@@ -26,7 +27,8 @@ const IndexPageHome =()=> {
       themesPage: pageContentText.languages[currentLanguage].themes,
       languagesPage: pageContentText.languages[currentLanguage].languages,
       introBox: pageContentText.languages[currentLanguage].introBox,
-      aboutMe: pageContentText.languages[currentLanguage].aboutMe
+      aboutMe: pageContentText.languages[currentLanguage].aboutMe,
+      technologies: pageContentText.languages[currentLanguage].technologies
     }
 
     setTextPage(alterTextPage);
@@ -101,6 +103,25 @@ const IndexPageHome =()=> {
           "variantBody1":"body1",
           "typographyIdTitle":"typography-aboutMe-title",
           "typographyIdBody":"typography-aboutMe-body"
+        }}
+      />
+      <BoxHomeTecnologies 
+        BoxContentText = {{
+          "technologies":textPage.technologies,
+        }}
+        BoxClasses = {{
+          "Class_Box_Container":"home-technologies-box-container",
+          "Class_Box_Grid":"home-technologies-box-grid",
+          "Class_Box_second_grid":"home-technologies-box-grid-second",
+          "Class_Box_Grid_title":"home-technologies-box-grid-title",
+          "Class_Box_img":"home-technologies-box-img",
+        }}
+        TypographyConfig = {{
+          "variant":"h3"
+        }}
+        GridConfig = {{
+          "Grid_size":25,
+          "Grid_columns":5,
         }}
       />
     </>
