@@ -40,7 +40,7 @@ const ButtonAppBar = (
                             textPageAppBar.optionsAppBar.map((item, index) => {
                                 return( 
                                     <ScrollLink
-                                        to={item.replace(/\s+/g, '')}
+                                        to={item}
                                         key={index}
                                         smooth={valuesInput.ScrollLinkConfig.ScrollLink_smooth}
                                         duration={valuesInput.ScrollLinkConfig.ScrollLink_duration}

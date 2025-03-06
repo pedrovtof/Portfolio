@@ -88,7 +88,7 @@ const IndexPageHome =()=> {
             "typographyIdName":"typography-introBox-name",
           }}
         />
-      <Element id={textPage.optionsAppBar[0].replace(/\s+/g, '')} >
+      <Element id={textPage.optionsAppBar[0]} >
         <BoxHomeAboutMe 
           BoxContentText = {{
             "aboutMe":textPage.aboutMe,
@@ -117,7 +117,7 @@ const IndexPageHome =()=> {
           }}
         />
       </Element>
-      <Element id={textPage.optionsAppBar[1].replace(/\s+/g, '')} >
+      <Element id={textPage.optionsAppBar[1]} >
         <BoxHomeTecnologies 
           BoxContentText = {{
             "technologies":textPage.technologies,
