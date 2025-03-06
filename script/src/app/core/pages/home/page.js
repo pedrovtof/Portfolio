@@ -61,7 +61,7 @@ const IndexPageHome =()=> {
           ScrollLinkConfig = {{
             "ScrollLink_smooth":true,
             "ScrollLink_duration":500,
-            "ScrollLink_offset":-50,
+            "ScrollLink_offset":-100,
             "ScrollLink_spy":true
           }}
         />
@@ -88,7 +88,7 @@ const IndexPageHome =()=> {
             "typographyIdName":"typography-introBox-name",
           }}
         />
-      <Element key={0} >
+      <Element id={textPage.optionsAppBar[0].replace(/\s+/g, '')} >
         <BoxHomeAboutMe 
           BoxContentText = {{
             "aboutMe":textPage.aboutMe,
@@ -117,7 +117,7 @@ const IndexPageHome =()=> {
           }}
         />
       </Element>
-      <Element key={1} >
+      <Element id={textPage.optionsAppBar[1].replace(/\s+/g, '')} >
         <BoxHomeTecnologies 
           BoxContentText = {{
             "technologies":textPage.technologies,

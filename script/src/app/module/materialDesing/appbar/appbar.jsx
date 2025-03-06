@@ -35,31 +35,31 @@ const ButtonAppBar = (
                 <Toolbar className={valuesInput.BarStyle.Class_toolbar}>
                     <Box
                         className={valuesInput.BarStyle.Class_AppBarTypography_box}
-                        key={null}
                     >
                         {
                             textPageAppBar.optionsAppBar.map((item, index) => {
                                 return( 
                                     <ScrollLink
-                                        to={index}
+                                        to={item.replace(/\s+/g, '')}
+                                        key={index}
                                         smooth={valuesInput.ScrollLinkConfig.ScrollLink_smooth}
                                         duration={valuesInput.ScrollLinkConfig.ScrollLink_duration}
                                         offset={valuesInput.ScrollLinkConfig.ScrollLink_offset}
                                         spy={valuesInput.ScrollLinkConfig.ScrollLink_spy}
-                                        className='testeee'
+                                        
                                     >
                                         <Typography 
                                             key={index}
                                             variant={valuesInput.Typography_variant} 
-                                            component={valuesInput.Typography_component}
-                                            name={item} 
-                                            id={item}
+                                            component={valuesInput.Typography_component} 
                                             className={valuesInput.BarStyle.Class_AppBarTypography}
                                             sx={{ color: (theme) => theme.palette.primary.contrastText }}
                                         > 
                                             {item} 
                                         </Typography>
+                                   
                                     </ScrollLink>
+                                    
                                 )
                             })  
                         }
