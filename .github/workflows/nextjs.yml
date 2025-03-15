@@ -1,0 +1,45 @@
+name: Validate Next.js app
+
+on:
+  push:
+    branches: ["master", "main"]
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install lib
+        run: npm ci
+
+      - name: Run server Next.js
+        run: npm run dev &
+      
+      - name: Wait for server start
+        run: sleep 15
+
+      - name: Verificar se o servidor está rodando
+        run: curl -I http://localhost:3000 | grep "200 OK" || exit 1
+
+
+
+
