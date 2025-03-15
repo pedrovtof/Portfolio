@@ -4,7 +4,9 @@ import {printf} from "../../../global/globalFunctions"
 import {
     Typography,
     Container ,  
-    Button
+    Button,
+    Backdrop,
+    Box
 } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 
@@ -260,9 +262,6 @@ function BoxHomeAboutMe(
 function BoxHomeTecnologies(
         valuesInput
     ){
-    
-    printf(valuesInput)
-
     const imageList = [
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/js.png?raw=true',
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/postgre.png?raw=true',
@@ -311,9 +310,6 @@ function BoxHomeTecnologies(
                             )
                         })
                     }  
-                    <Grid>
-
-                    </Grid>
                 </Grid>
             </Container>
         </React.Fragment>
@@ -322,8 +318,207 @@ function BoxHomeTecnologies(
 }
 
 
+/* 
+=============================================================================
+    HOME BOX PROJECTS
+=============================================================================
+*/
+
+function BoxHomeProjects(
+        valuesInput
+    ){
+
+        const [openBackDrop, setopenBackDrop] = React.useState(false);
+        const [previewProjectState, setPreviewProjectState] = React.useState(-1);
+
+        const handleCloseBackDrop = () => {
+            setopenBackDrop(false);
+        }
+        const handleOpenBackDrop = (project) => {
+            setPreviewProjectState(project);
+            setopenBackDrop(true)
+        }
+
+        const PreviewProject = () => {
+            return(
+                previewProjectState>=0 && valuesInput.BoxContentText.projects.list[previewProjectState]?
+                    <Grid
+                        container
+                        columns={valuesInput.GridConfig.Grid_size}
+                    >
+                        <Grid
+                            size={valuesInput.GridConfig.Grid_columns}
+                        >
+                            <Box>
+                                <Typography
+                                    variant={valuesInput.TypographyConfig.variantH1}
+                                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                                >
+                                    {valuesInput.BoxContentText.projects.list[previewProjectState].name}
+                                </Typography>
+
+                                <Typography
+                                    variant={valuesInput.TypographyConfig.variantBody1}
+                                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                                >   
+                                    {valuesInput.BoxContentText.projects.list[previewProjectState].description}
+                                </Typography>
+
+                            </Box>
+                            <Box>
+                                <Typography
+                                    variant={valuesInput.TypographyConfig.variantH3}
+                                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                                >
+                                    {
+                                        valuesInput.BoxContentText.projects.hoverTitle?
+                                        valuesInput.BoxContentText.projects.hoverTitle
+                                        :null
+                                    }
+                                </Typography>
+
+                                {valuesInput.BoxContentText.projects.list[previewProjectState].technologies.map((item,index)=>{
+                                    return(
+                                        <img
+                                            key={index}
+                                            src={item}
+                                            alt='preview'
+                                        >
+                                        </img>
+                                    )
+                                })}
+                            </Box>
+                            <Box>
+                                <Button>
+                                    <a
+                                        href={valuesInput.BoxContentText.projects.list[previewProjectState].linkCode}
+                                        className={valuesInput.BoxClasses.Class_Box_Button_Hover}
+                                    >
+                                        <Typography
+                                            variant={valuesInput.TypographyConfig.variantBody1}
+                                            className={valuesInput.BoxClasses.Class_Box_Typography}
+                                        >
+                                            {
+                                                valuesInput.BoxContentText.projects.ButtonCodeText?
+                                                valuesInput.BoxContentText.projects.ButtonCodeText
+                                                :null
+                                            }
+                                        </Typography>
+                                    </a>
+                                </Button>
+                                <Button>
+                                    <a
+                                        href={valuesInput.BoxContentText.projects.list[previewProjectState].linkDemo}
+                                        className={valuesInput.BoxClasses.Class_Box_Button_Hover}
+                                    >
+                                        <Typography
+                                            variant={valuesInput.TypographyConfig.variantBody1}
+                                            className={valuesInput.BoxClasses.Class_Box_Typography}
+                                        >
+                                            {
+                                                valuesInput.BoxContentText.projects.ButtonDemoText?
+                                                valuesInput.BoxContentText.projects.ButtonDemoText
+                                                :null
+                                            }
+                                        </Typography>
+                                    </a>
+                                </Button>
+                            </Box>
+                        </Grid>
+                        <Grid
+                            size={valuesInput.GridConfig.Grid_columns}
+                        >
+                            <img
+                                className={valuesInput.BoxClasses.Class_Box_img_hover_preview}
+                                src='https://images.unsplash.com/photo-1481277542470-605612bd2d61'
+                            >
+                            </img>
+                        </Grid>
+                    </Grid>
+                :null
+            )
+        }
+
+
+        return(
+            <React.Fragment>
+                <Container
+                    className={valuesInput.BoxClasses.Class_Box_Container}
+                >
+                    <Typography
+                        className={valuesInput.BoxClasses.Class_Box_Typography}
+                        variant={valuesInput.TypographyConfig.variantH2}
+                    >
+                        {
+                            valuesInput.BoxContentText.projects.title?
+                            valuesInput.BoxContentText.projects.title
+                            :null
+                        }
+                    </Typography>
+                    <Grid
+                        container
+                        columns={valuesInput.GridConfig.Grid_size}
+                        className={valuesInput.BoxClasses.Class_Box_Grid}
+                    >
+                        {
+                            valuesInput.BoxContentText.projects.list?
+                            valuesInput.BoxContentText.projects.list.map((item,index)=>{
+                                return(
+                                        <Grid
+                                            size={valuesInput.GridConfig.Grid_columns}
+                                            key={index}
+                                            className={valuesInput.BoxClasses.Class_Box_Grid_second}
+                                        >
+                                            <img 
+                                                src={valuesInput.BoxContentText.projects.list[index].preview} 
+                                                className={valuesInput.BoxClasses.Class_Box_img_preview}
+                                                key={index}
+                                                alt="preview"
+                                                onClick={()=>{handleOpenBackDrop(index)}}
+                                            />
+                                            <Typography
+                                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                                variant={valuesInput.TypographyConfig.variantH3}
+                                            >
+                                                {
+                                                    valuesInput.BoxContentText.projects.list[index].name
+                                                }
+                                            </Typography>
+                                            <Typography
+                                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                                variant={valuesInput.TypographyConfig.variantBody1}
+                                            >
+                                                {
+                                                    valuesInput.BoxContentText.projects.list[index].description
+                                                }
+                                            </Typography>
+                                        </Grid>
+                                )
+                            })
+                            :null
+                        }
+                    </Grid>
+                    <Backdrop
+                        sx={(theme) => ({ 
+                            color: theme.palette.secondary.contrastText, zIndex: theme.zIndex.drawer + 1 
+                        })}
+                        open={openBackDrop}
+                        onClick={handleCloseBackDrop}
+                    >
+                        <Container
+                            className={valuesInput.BoxClasses.Class_Box_Container_hover}
+                        >
+                            <PreviewProject />
+                        </Container>
+                    </Backdrop>
+                </Container>
+            </React.Fragment>
+        )
+}
+
 export {
     BoxHomeIntro,
     BoxHomeAboutMe,
-    BoxHomeTecnologies
+    BoxHomeTecnologies,
+    BoxHomeProjects
 };

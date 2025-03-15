@@ -5,18 +5,13 @@ import {
     AppBar,
     Box,
     Toolbar,
-    Typography,
-    Breadcrumbs,
-    Link as MuiLink
+    Typography
 } from '@mui/material'
 
 import {Link as ScrollLink} from "react-scroll";
 
-import {printf, useLanguageContext} from "../../../global/globalFunctions"
-import appBarContent  from "../../../../../public/content/pages/home.json"
+import { useLanguageContext} from "../../../global/globalFunctions"
 import MenuDropDown from "../menu/menu"
-
-
 
 const ButtonAppBar = (
     valuesInput,

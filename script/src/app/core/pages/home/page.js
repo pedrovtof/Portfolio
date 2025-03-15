@@ -6,7 +6,8 @@ import pageContentText from '../../../../../public/content/pages/home.json'
 import {
   BoxHomeIntro,
   BoxHomeAboutMe,
-  BoxHomeTecnologies
+  BoxHomeTecnologies,
+  BoxHomeProjects
 } from './utils'
 import { Element} from "react-scroll";
 
@@ -18,7 +19,8 @@ const IndexPageHome =()=> {
     themesPage: [],
     languagesPage: [],
     introBox: [],
-    aboutMe:[]
+    aboutMe:[],
+    projects:[],
   })
 
   React.useEffect(()=>{
@@ -29,7 +31,8 @@ const IndexPageHome =()=> {
       languagesPage: pageContentText.languages[currentLanguage].languages,
       introBox: pageContentText.languages[currentLanguage].introBox,
       aboutMe: pageContentText.languages[currentLanguage].aboutMe,
-      technologies: pageContentText.languages[currentLanguage].technologies
+      technologies: pageContentText.languages[currentLanguage].technologies,
+      projects: pageContentText.languages[currentLanguage].projects
     }
 
     setTextPage(alterTextPage);
@@ -60,7 +63,7 @@ const IndexPageHome =()=> {
             }}
           ScrollLinkConfig = {{
             "ScrollLink_smooth":true,
-            "ScrollLink_duration":500,
+            "ScrollLink_duration":800,
             "ScrollLink_offset":-100,
             "ScrollLink_spy":true
           }}
@@ -137,6 +140,34 @@ const IndexPageHome =()=> {
             "Grid_columns":5,
           }}
         />
+      </Element>
+      <Element id={textPage.optionsAppBar[2]} >
+          <BoxHomeProjects 
+            BoxContentText = {{
+              "projects":textPage.projects,
+            }}
+            BoxClasses = {{
+              "Class_Box_Container":"home-projects-box-container",
+              "Class_Box_Container_hover":"home-projects-box-container-hover",
+              "Class_Box_Grid":"home-projects-box-grid",
+              "Class_Box_Grid_second":"home-projects-box-grid-second",
+              "Class_Box_Grid_hover":"home-projects-box-grid-hover",
+              "Class_Box_img_preview":"home-projects-box-img",
+              "Class_Box_img_hover_preview":"home-projects-box-img-hover",
+              "Class_Box_Typography":"home-projects-box-typography",
+              "Class_Box_Button_Hover":"home-projects-box-button-hover"
+            }}
+            TypographyConfig = {{
+              "variantH1":"h1",
+              "variantH2":"h2",
+              "variantH3":"h3",
+              "variantBody1":"body1",
+            }}
+            GridConfig = {{
+              "Grid_size":12,
+              "Grid_columns":6,
+            }}
+          />
       </Element>
     </>
   );
