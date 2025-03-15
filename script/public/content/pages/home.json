@@ -33,6 +33,30 @@
             },
             "technologies":{
                 "title":"Tecnologias"
+            },
+            "projects":{
+                "title":"Projects",
+                "hoverTitle":"Tecnologias",
+                "ButtonCodeText":"Codigo",
+                "ButtonDemoText":"Demo",
+                "list":[
+                    {
+                        "name":"projeto 1",
+                        "description":"descrição do projeto 1",
+                        "preview":"/?",
+                        "linkCode":"/?",
+                        "linkDemo":"/?",
+                        "technologies":[]
+                    },
+                    {
+                        "name":"projeto 2",
+                        "description":"descrição do projeto 2",
+                        "preview":"/?2",
+                        "linkCode":"/?",
+                        "linkDemo":"/?",
+                        "technologies":[]
+                    }
+                ]
             }
         },
 
@@ -69,6 +93,30 @@
             },
             "technologies":{
                 "title":"Technologies"
+            },
+            "projects":{
+                "title":"Projects",
+                "hoverTitle":"Technologies",
+                "ButtonCodeText":"Code",
+                "ButtonDemoText":"Demo",
+                "list":[
+                    {
+                        "name":"project 1",
+                        "description":"description of project 1",
+                        "preview":"/?",
+                        "linkCode":"/?",
+                        "linkDemo":"/?",
+                        "technologies":[]
+                    },
+                    {
+                        "name":"project 2",
+                        "description":"description of project 2",
+                        "preview":"/?2",
+                        "linkCode":"/?",
+                        "linkDemo":"/?",
+                        "technologies":["oi","2"]
+                    }
+                ]
             }
         },
 
@@ -105,6 +153,30 @@
             },
             "technologies":{
                 "title":"Tecnologías"
+            },
+            "projects":{
+                "title":"Projects",
+                "hoverTitle":"Tecnologías",
+                "ButtonCodeText":"Código",
+                "ButtonDemoText":"Demostración",
+                "list":[
+                    {
+                        "name":"projeto 1",
+                        "description":"descricion do projeto 1",
+                        "preview":"/?",
+                        "linkCode":"/?",
+                        "linkDemo":"/?",
+                        "technologies":[]
+                    },
+                    {
+                        "name":"projeto 2",
+                        "description":"descricion do projeto 2",
+                        "preview":"/?2",
+                        "linkCode":"/?",
+                        "linkDemo":"/?",
+                        "technologies":[]
+                    }
+                ]
             }
         }
     }
