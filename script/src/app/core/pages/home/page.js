@@ -40,6 +40,7 @@ const IndexPageHome =()=> {
       setTextPage(alterTextPage);
     }, [language])
   
+    // teste
 
   return (
     <>
