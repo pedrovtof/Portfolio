@@ -12,7 +12,7 @@ import {
 import { Element} from "react-scroll";
 
 const IndexPageHome =()=> {
-  const { language } = useLanguageContext();
+
 
   const [textPage, setTextPage] = React.useState({
     optionsAppBar: [],
@@ -23,21 +23,23 @@ const IndexPageHome =()=> {
     projects:[],
   })
 
-  React.useEffect(()=>{
-    const currentLanguage = language
-    const alterTextPage = {
-      optionsAppBar: pageContentText.languages[currentLanguage].listAppBar ,
-      themesPage: pageContentText.languages[currentLanguage].themes,
-      languagesPage: pageContentText.languages[currentLanguage].languages,
-      introBox: pageContentText.languages[currentLanguage].introBox,
-      aboutMe: pageContentText.languages[currentLanguage].aboutMe,
-      technologies: pageContentText.languages[currentLanguage].technologies,
-      projects: pageContentText.languages[currentLanguage].projects
-    }
 
-    setTextPage(alterTextPage);
-  }, [language])
-
+  const { language } = useLanguageContext();
+  
+  React.useEffect(()=>{ 
+      const currentLanguage = language || "English"
+      const alterTextPage = {
+        optionsAppBar: pageContentText.languages[currentLanguage].listAppBar ,
+        themesPage: pageContentText.languages[currentLanguage].themes,
+        languagesPage: pageContentText.languages[currentLanguage].languages,
+        introBox: pageContentText.languages[currentLanguage].introBox,
+        aboutMe: pageContentText.languages[currentLanguage].aboutMe,
+        technologies: pageContentText.languages[currentLanguage].technologies,
+        projects: pageContentText.languages[currentLanguage].projects
+      }
+      setTextPage(alterTextPage);
+    }, [language])
+  
 
   return (
     <>
@@ -169,8 +171,10 @@ const IndexPageHome =()=> {
             }}
           />
       </Element>
+      
     </>
   );
+  
 }
 
 export default IndexPageHome;

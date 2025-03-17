@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { createContext, useContext, useState } from "react";
 
 function printf(arg){
@@ -17,6 +17,7 @@ const useLanguageContext = () => {
 };
 
 const LanguageProvider = ({ children }) => {
+  
   const [language, setLanguage] = useState("English"); 
 
   return (
@@ -31,5 +32,3 @@ module.exports = {
     useLanguageContext,
     LanguageProvider
 }
-
-
