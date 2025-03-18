@@ -8,3 +8,7 @@ a:hover{
     transition: 1.7s;
 }
 
+a{
+    text-decoration: none;
+}
+

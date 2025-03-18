@@ -43,7 +43,7 @@
                     {
                         "name":"projeto 1",
                         "description":"descrição do projeto 1",
-                        "preview":"/?",
+                        "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]
@@ -51,7 +51,7 @@
                     {
                         "name":"projeto 2",
                         "description":"descrição do projeto 2",
-                        "preview":"/?2",
+                        "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]
@@ -103,7 +103,7 @@
                     {
                         "name":"project 1",
                         "description":"description of project 1",
-                        "preview":"/?",
+                        "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]
@@ -111,10 +111,10 @@
                     {
                         "name":"project 2",
                         "description":"description of project 2",
-                        "preview":"/?2",
+                        "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
-                        "technologies":["oi","2"]
+                        "technologies":["https://images.unsplash.com/photo-1481277542470-605612bd2d61","https://images.unsplash.com/photo-1481277542470-605612bd2d61"]
                     }
                 ]
             }
@@ -163,7 +163,7 @@
                     {
                         "name":"projeto 1",
                         "description":"descricion do projeto 1",
-                        "preview":"/?",
+                        "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]
@@ -171,7 +171,7 @@
                     {
                         "name":"projeto 2",
                         "description":"descricion do projeto 2",
-                        "preview":"/?2",
+                        "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]

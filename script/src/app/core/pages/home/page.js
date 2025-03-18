@@ -155,20 +155,29 @@ const IndexPageHome =()=> {
               "Class_Box_Grid":"home-projects-box-grid",
               "Class_Box_Grid_second":"home-projects-box-grid-second",
               "Class_Box_Grid_hover":"home-projects-box-grid-hover",
+              "Class_Box_Grid_hover_second":"home-projects-box-grid-hover-second",
+              "Class_Box_Grid_hover_tech":"home-projects-box-grid-hover-tech",
+              "Class_Box_Grid_hover_tech_second":"home-projects-box-grid-hover-tech-second",
               "Class_Box_img_preview":"home-projects-box-img",
               "Class_Box_img_hover_preview":"home-projects-box-img-hover",
+              "Class_Box_img_hover_tech":"home-projects-box-img-hover-tech",
+              "Class_Box_Button_Container_hover":"home-projects-box-button-container-hover",
+              "Class_Box_Button_hover":"home-projects-box-button-hover",
+              "Class_Box_Typography_hover":"home-projects-box-typography-hover",
               "Class_Box_Typography":"home-projects-box-typography",
-              "Class_Box_Button_Hover":"home-projects-box-button-hover"
             }}
             TypographyConfig = {{
               "variantH1":"h1",
               "variantH2":"h2",
               "variantH3":"h3",
               "variantBody1":"body1",
+              "size_hover_box_typography_title":"size_hover_box_typography_title",
+
             }}
             GridConfig = {{
               "Grid_size":12,
               "Grid_columns":6,
+              "Grid_columns_hover":4,
             }}
           />
       </Element>
