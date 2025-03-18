@@ -345,21 +345,26 @@ function BoxHomeProjects(
                     <Grid
                         container
                         columns={valuesInput.GridConfig.Grid_size}
+                        className={valuesInput.BoxClasses.Class_Box_Grid_hover}
                     >
                         <Grid
                             size={valuesInput.GridConfig.Grid_columns}
+                            className={valuesInput.BoxClasses.Class_Box_Grid_hover_second}
                         >
                             <Box>
                                 <Typography
                                     variant={valuesInput.TypographyConfig.variantH1}
-                                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                                    className={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                    id={valuesInput.TypographyConfig.size_hover_box_typography_title}
+                                    sx={{ color: (theme) => theme.palette.text.primary }}
                                 >
                                     {valuesInput.BoxContentText.projects.list[previewProjectState].name}
                                 </Typography>
 
                                 <Typography
                                     variant={valuesInput.TypographyConfig.variantBody1}
-                                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                                    className={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                    sx={{ color: (theme) => theme.palette.text.thrid }}
                                 >   
                                     {valuesInput.BoxContentText.projects.list[previewProjectState].description}
                                 </Typography>
@@ -368,7 +373,9 @@ function BoxHomeProjects(
                             <Box>
                                 <Typography
                                     variant={valuesInput.TypographyConfig.variantH3}
-                                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                                    className={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                    id={valuesInput.TypographyConfig.size_hover_box_typography_title}
+                                    sx={{ color: (theme) => theme.palette.text.secondary }}
                                 >
                                     {
                                         valuesInput.BoxContentText.projects.hoverTitle?
@@ -376,27 +383,49 @@ function BoxHomeProjects(
                                         :null
                                     }
                                 </Typography>
-
-                                {valuesInput.BoxContentText.projects.list[previewProjectState].technologies.map((item,index)=>{
-                                    return(
-                                        <img
-                                            key={index}
-                                            src={item}
-                                            alt='preview'
-                                        >
-                                        </img>
-                                    )
-                                })}
+                            <Grid
+                                container
+                                columns={valuesInput.GridConfig.Grid_size}
+                                className={valuesInput.BoxClasses.Class_Box_Grid_hover_tech}
+                            >
+                                <Grid
+                                    size={valuesInput.GridConfig.Grid_columns_hover}
+                                    className={valuesInput.BoxClasses.Class_Box_Grid_hover_tech_second}
+                                >
+                                    {valuesInput.BoxContentText.projects.list[previewProjectState].technologies.map((item,index)=>{
+                                        printf(item)
+                                        return(
+                                            <img
+                                                key={index}
+                                                src={item}
+                                                alt='preview'
+                                                className={valuesInput.BoxClasses.Class_Box_img_hover_tech}
+                                            >
+                                            </img>
+                                        )
+                                    })}
+                                </Grid>
+                            </Grid>
                             </Box>
-                            <Box>
-                                <Button>
+                            <Box 
+                                className={valuesInput.BoxClasses.Class_Box_Button_Container_hover}
+                            >
+                                <Button
+                                    sx={{ 
+                                        background: (theme) => theme.palette.button.primary,
+                                    }}
+                                    className={valuesInput.BoxClasses.Class_Box_Button_hover}
+                                >
                                     <a
                                         href={valuesInput.BoxContentText.projects.list[previewProjectState].linkCode}
-                                        className={valuesInput.BoxClasses.Class_Box_Button_Hover}
+                                        
                                     >
                                         <Typography
                                             variant={valuesInput.TypographyConfig.variantBody1}
-                                            className={valuesInput.BoxClasses.Class_Box_Typography}
+                                            className={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                            sx={{ 
+                                                color: (theme) => theme.palette.primary.contrastText
+                                            }}
                                         >
                                             {
                                                 valuesInput.BoxContentText.projects.ButtonCodeText?
@@ -406,14 +435,22 @@ function BoxHomeProjects(
                                         </Typography>
                                     </a>
                                 </Button>
-                                <Button>
+                                <Button
+                                    sx={{ 
+                                        background: (theme) => theme.palette.button.primary,
+                                    }}
+                                    className={valuesInput.BoxClasses.Class_Box_Button_hover}
+                                >
                                     <a
                                         href={valuesInput.BoxContentText.projects.list[previewProjectState].linkDemo}
-                                        className={valuesInput.BoxClasses.Class_Box_Button_Hover}
+                                        
                                     >
                                         <Typography
                                             variant={valuesInput.TypographyConfig.variantBody1}
-                                            className={valuesInput.BoxClasses.Class_Box_Typography}
+                                            className={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                            sx={{ 
+                                                color: (theme) => theme.palette.primary.contrastText
+                                            }}
                                         >
                                             {
                                                 valuesInput.BoxContentText.projects.ButtonDemoText?
@@ -427,10 +464,11 @@ function BoxHomeProjects(
                         </Grid>
                         <Grid
                             size={valuesInput.GridConfig.Grid_columns}
+                            className={valuesInput.BoxClasses.Class_Box_Grid_hover_second}
                         >
                             <img
                                 className={valuesInput.BoxClasses.Class_Box_img_hover_preview}
-                                src='https://images.unsplash.com/photo-1481277542470-605612bd2d61'
+                                src={valuesInput.BoxContentText.projects.list[previewProjectState].preview} 
                             >
                             </img>
                         </Grid>
@@ -477,16 +515,18 @@ function BoxHomeProjects(
                                                 onClick={()=>{handleOpenBackDrop(index)}}
                                             />
                                             <Typography
-                                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                                className={valuesInput.BoxClasses.Class_Box_Typography_hover}
                                                 variant={valuesInput.TypographyConfig.variantH3}
+                                                sx={{ color: (theme) => theme.palette.text.secondary }}
                                             >
                                                 {
                                                     valuesInput.BoxContentText.projects.list[index].name
                                                 }
                                             </Typography>
                                             <Typography
-                                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                                className={valuesInput.BoxClasses.Class_Box_Typography_hover}
                                                 variant={valuesInput.TypographyConfig.variantBody1}
+                                                sx={{ color: (theme) => theme.palette.text.thrid }}
                                             >
                                                 {
                                                     valuesInput.BoxContentText.projects.list[index].description
@@ -507,6 +547,9 @@ function BoxHomeProjects(
                     >
                         <Container
                             className={valuesInput.BoxClasses.Class_Box_Container_hover}
+                            sx={(theme)=>({
+                                backgroundColor: theme.palette.background.default,
+                            })}
                         >
                             <PreviewProject />
                         </Container>

@@ -174,8 +174,10 @@
 */
 
 .home-technologies-box-container{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
 }
 
 .home-technologies-box-grid{
@@ -191,7 +193,8 @@
     width: 80%;
 }
 
-/*testa*/
+
+
 
 /* 
 =============================================================================
@@ -201,8 +204,62 @@
 */
 
 
+.home-projects-box-container{
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
 
+.home-projects-box-typography{
+    text-align: center;
+    align-content: center;
+    text-decoration: underline;
+    margin-bottom: 15vh;
+}
 
+.home-projects-box-grid{
+    justify-content: space-around;
+}
+
+.home-projects-box-grid-second{
+    width: 40%;
+    margin: 1vh auto;
+}
+
+.home-projects-box-img{
+    width: 100%;
+    height: 50%;
+}
+
+.home-projects-box-img-hover{
+    width: 100%;
+}
+
+.home-projects-box-img-hover-tech{
+    width: 6vw;
+    margin: auto 0.5rem;
+}
+
+.home-projects-box-button-container-hover{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-projects-box-grid-hover-tech{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.home-projects-box-grid-hover-tech-second{
+    width: 100%;
+}
+
+.home-projects-box-button-hover{
+    width: 40%;
+}
 
 /* 
 =============================================================================
@@ -312,6 +369,52 @@
         margin-top: 5vw;
     }
 
+    /* 
+    =============================================================================
+        HOME BOX PROJECTS
+        - Small Screen
+    =============================================================================
+    */
+    .home-projects-box-typography{
+        margin-bottom: 10vh;
+    }
+
+    .home-projects-box-grid{
+        flex-direction: column;
+    }
+
+    .home-projects-box-img{
+        max-height: 20vh;
+    }
+
+    .home-projects-box-img-hover{
+        margin-bottom: 1vh;
+    }
+
+    .home-projects-box-grid-second{
+        width: 100%;
+        margin: 2vh auto;
+    }
    
+    .home-projects-box-grid-hover{
+        flex-direction: column-reverse;
+    }
+
+    #size_hover_box_typography_title{
+        font-size: xx-large;
+    }
+
+    .home-projects-box-grid-hover-second{
+        width: 100%;
+    }
+
+    .home-projects-box-img-hover-tech{
+        width: 15%;
+        margin: auto 0.5rem;
+    }
+
+    .home-projects-box-button-container-hover {
+        margin-bottom: 2vh;
+    }
 }
 
