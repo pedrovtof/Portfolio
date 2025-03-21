@@ -41,11 +41,14 @@ export default function ThemeProvider({ children }) {
             background: {
                 default: darkMode ? collorVarJson.black_blue : collorVarJson.white,  
                 paper: darkMode ? collorVarJson.white : collorVarJson.white,  
+                alternative: darkMode ? collorVarJson.white : collorVarJson.black_blue,
             },
             text: {
                 primary: darkMode ? collorVarJson.ligh_blue : collorVarJson.dark_blue_grey,  
                 secondary: collorVarJson.blue , 
-                thrid: darkMode ? collorVarJson.white: collorVarJson.dark_blue_grey,
+                third: darkMode ? collorVarJson.white: collorVarJson.dark_blue_grey,
+                fourth: darkMode ? collorVarJson.dark_blue_grey : collorVarJson.ligh_blue,
+                fifth: darkMode ? collorVarJson.dark_blue_grey: collorVarJson.white,
             },
             button:{
                 primary:darkMode ? collorVarJson.white : collorVarJson.black_blue
