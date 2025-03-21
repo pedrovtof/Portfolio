@@ -1,13 +1,15 @@
 "use client"
 import * as React from 'react'
 import ButtonAppBar from '../../../module/materialDesing/appbar/appbar'
+import { useTheme } from "@mui/material/styles";
 import {printf, useLanguageContext} from "../../../global/globalFunctions"
 import pageContentText from '../../../../../public/content/pages/home.json'
 import {
   BoxHomeIntro,
   BoxHomeAboutMe,
   BoxHomeTecnologies,
-  BoxHomeProjects
+  BoxHomeProjects,
+  BoxHomeBrands
 } from './utils'
 import { Element} from "react-scroll";
 
@@ -25,7 +27,9 @@ const IndexPageHome =()=> {
 
 
   const { language } = useLanguageContext();
-  
+
+  const theme = useTheme();
+ 
   React.useEffect(()=>{ 
       const currentLanguage = language || "English"
       const alterTextPage = {
@@ -35,7 +39,8 @@ const IndexPageHome =()=> {
         introBox: pageContentText.languages[currentLanguage].introBox,
         aboutMe: pageContentText.languages[currentLanguage].aboutMe,
         technologies: pageContentText.languages[currentLanguage].technologies,
-        projects: pageContentText.languages[currentLanguage].projects
+        projects: pageContentText.languages[currentLanguage].projects,
+        brands: pageContentText.languages[currentLanguage].brands,
       }
       setTextPage(alterTextPage);
     }, [language])
@@ -144,7 +149,10 @@ const IndexPageHome =()=> {
           }}
         />
       </Element>
-      <Element id={textPage.optionsAppBar[2]} >
+      <Element 
+        id={textPage.optionsAppBar[2]} 
+        style={{ backgroundColor: theme.palette.background.alternative }}
+      >
           <BoxHomeProjects 
             BoxContentText = {{
               "projects":textPage.projects,
@@ -180,6 +188,29 @@ const IndexPageHome =()=> {
               "Grid_columns_hover":4,
             }}
           />
+      </Element>
+      <Element 
+        id={textPage.optionsAppBar[3]} 
+      >
+        <BoxHomeBrands 
+           BoxContentText = {{
+            "brands":textPage.brands,
+          }}
+          BoxClasses = {{
+            "Class_Box_Container":"home-brands-box-container",
+            "Class_Box_Grid":"home-brands-box-grid",
+            "Class_Box_Grid_Second":"home-brands-box-grid-second",
+            "Class_Box_Typography":"home-brands-box-typography",
+            "Class_Box_img":"home-brands-box-img",
+          }}
+          TypographyConfig = {{
+            "variant":"h2",
+          }}
+          GridConfig = {{
+            "Grid_size":12,
+            "Grid_columns":3,
+          }}
+        />
       </Element>
       
     </>

@@ -175,7 +175,7 @@ function BoxHomeAboutMe(
                         <Typography
                             className={valuesInput.BoxClasses.Class_Box_Typography}
                             variant={valuesInput.TypographyConfig.variantBody1}
-                            sx={{ color: (theme) => theme.palette.text.thrid }}
+                            sx={{ color: (theme) => theme.palette.text.third }}
                             id={valuesInput.TypographyConfig.typographyIdBody}
                         >
                             {
@@ -277,6 +277,7 @@ function BoxHomeTecnologies(
             >
                 <Typography
                     className={valuesInput.BoxClasses.Class_Box_Grid_title}
+                    sx={{color: (theme) => theme.palette.text.primary}}
                     variant={valuesInput.TypographyConfig.variant}
                 >
                     {
@@ -364,7 +365,7 @@ function BoxHomeProjects(
                                 <Typography
                                     variant={valuesInput.TypographyConfig.variantBody1}
                                     className={valuesInput.BoxClasses.Class_Box_Typography_hover}
-                                    sx={{ color: (theme) => theme.palette.text.thrid }}
+                                    sx={{ color: (theme) => theme.palette.text.third }}
                                 >   
                                     {valuesInput.BoxContentText.projects.list[previewProjectState].description}
                                 </Typography>
@@ -418,7 +419,7 @@ function BoxHomeProjects(
                                 >
                                     <a
                                         href={valuesInput.BoxContentText.projects.list[previewProjectState].linkCode}
-                                        
+                                        target='_blank'
                                     >
                                         <Typography
                                             variant={valuesInput.TypographyConfig.variantBody1}
@@ -443,7 +444,7 @@ function BoxHomeProjects(
                                 >
                                     <a
                                         href={valuesInput.BoxContentText.projects.list[previewProjectState].linkDemo}
-                                        
+                                        target='_blank'
                                     >
                                         <Typography
                                             variant={valuesInput.TypographyConfig.variantBody1}
@@ -482,10 +483,12 @@ function BoxHomeProjects(
             <React.Fragment>
                 <Container
                     className={valuesInput.BoxClasses.Class_Box_Container}
+                    sx={{ backgroundColor: (theme) => theme.palette.background.alternative }}
                 >
                     <Typography
                         className={valuesInput.BoxClasses.Class_Box_Typography}
                         variant={valuesInput.TypographyConfig.variantH2}
+                        sx={{ color: (theme) => theme.palette.text.fifth }}
                     >
                         {
                             valuesInput.BoxContentText.projects.title?
@@ -526,7 +529,7 @@ function BoxHomeProjects(
                                             <Typography
                                                 className={valuesInput.BoxClasses.Class_Box_Typography_hover}
                                                 variant={valuesInput.TypographyConfig.variantBody1}
-                                                sx={{ color: (theme) => theme.palette.text.thrid }}
+                                                sx={{ color: (theme) => theme.palette.text.fifth }}
                                             >
                                                 {
                                                     valuesInput.BoxContentText.projects.list[index].description
@@ -559,9 +562,70 @@ function BoxHomeProjects(
         )
 }
 
+
+/* 
+=============================================================================
+    HOME BOX BRANDS
+=============================================================================
+*/
+
+function BoxHomeBrands(valuesInput){
+    //printf(valuesInput.BoxContentText.brands.list[0].label)
+    return(
+        <React.Fragment>
+            <Container
+                className={valuesInput.BoxClasses.Class_Box_Container}
+            >
+                <Typography
+                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                    variant={valuesInput.TypographyConfig.variant}
+                    sx={{color: (theme) => theme.palette.text.primary}}
+                >
+                    {
+                        valuesInput.BoxContentText.brands?
+                        valuesInput.BoxContentText.brands.title
+                        :null
+                    }
+                </Typography>
+                <Grid
+                    className={valuesInput.BoxClasses.Class_Box_Grid}
+                    container
+                    columns={valuesInput.GridConfig.Grid_size}
+                    key={'grid-brands'}
+                >
+                {
+                    valuesInput.BoxContentText.brands?
+                        valuesInput.BoxContentText.brands.list.map((item,index)=>{
+                            return(
+                                <React.Fragment>
+                                    <Grid
+                                        size={valuesInput.GridConfig.Grid_columns}
+                                        key={index}
+                                        className={valuesInput.BoxClasses.Class_Box_Grid_Second}
+                                    >
+                                        <img 
+                                            src={item.logo} 
+                                            alt={item.label}
+                                            className={valuesInput.BoxClasses.Class_Box_img}
+                                            title={item.label} 
+                                        />
+                                    </Grid>
+                                </React.Fragment>
+                            )
+                        })
+                    :null
+                }
+                 
+                </Grid>
+            </Container>
+        </React.Fragment>
+    )
+}
+
 export {
     BoxHomeIntro,
     BoxHomeAboutMe,
     BoxHomeTecnologies,
-    BoxHomeProjects
+    BoxHomeProjects,
+    BoxHomeBrands
 };

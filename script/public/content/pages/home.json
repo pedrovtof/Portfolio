@@ -57,6 +57,19 @@
                         "technologies":[]
                     }
                 ]
+            },
+            "brands":{
+                "title":"Experiencias",
+                "list":[
+                    {
+                        "label":"O2B",
+                        "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                    },
+                    {
+                        "label":"Dotz",
+                        "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                    }
+                ]
             }
         },
 
@@ -117,6 +130,19 @@
                         "technologies":["https://images.unsplash.com/photo-1481277542470-605612bd2d61","https://images.unsplash.com/photo-1481277542470-605612bd2d61"]
                     }
                 ]
+            },
+            "brands":{
+                "title":"Work experiences",
+                "list":[
+                    {
+                        "label":"O2B",
+                        "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                    },
+                    {
+                        "label":"Dotz",
+                        "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                    }
+                ]
             }
         },
 
@@ -175,6 +201,19 @@
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]
+                    }
+                ]
+            },
+            "brands":{
+                "title":"Experiencias",
+                "list":[
+                    {
+                        "label":"O2B",
+                        "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                    },
+                    {
+                        "label":"Dotz",
+                        "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
                     }
                 ]
             }
