@@ -591,13 +591,14 @@ function BoxHomeBrands(valuesInput){
                     className={valuesInput.BoxClasses.Class_Box_Grid}
                     container
                     columns={valuesInput.GridConfig.Grid_size}
-                    key={'grid-brands'}
                 >
                 {
                     valuesInput.BoxContentText.brands?
                         valuesInput.BoxContentText.brands.list.map((item,index)=>{
                             return(
-                                <React.Fragment>
+                                <React.Fragment
+                                    key={index}
+                                >
                                     <Grid
                                         size={valuesInput.GridConfig.Grid_columns}
                                         key={index}
@@ -608,6 +609,7 @@ function BoxHomeBrands(valuesInput){
                                             alt={item.label}
                                             className={valuesInput.BoxClasses.Class_Box_img}
                                             title={item.label} 
+                                            key={index}
                                         />
                                     </Grid>
                                 </React.Fragment>

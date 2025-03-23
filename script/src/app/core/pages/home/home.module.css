@@ -262,6 +262,36 @@
     width: 40%;
 }
 
+
+/* 
+=============================================================================
+    HOME BOX BRANDING
+    - Responsive
+=============================================================================
+*/
+
+.home-brands-box-container{
+    width: 100%;
+}
+
+.home-brands-box-typography{
+    text-decoration: underline;
+    margin-bottom: 5vh;
+}
+
+.home-brands-box-grid{
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.home-brands-box-img{
+    width: 80%;
+    border: 1px rgba(0, 0, 0, 0.075) solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
 /* 
 =============================================================================
     HOME
