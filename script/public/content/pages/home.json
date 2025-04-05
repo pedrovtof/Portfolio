@@ -70,6 +70,27 @@
                         "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
                     }
                 ]
+            },
+            "testional":{
+                "title":"Testional",
+                "next":"Próximo",
+                "prev":"Anterior",
+                "list":[
+                    {
+                        "name":"",
+                        "function":"",
+                        "workedIn":"",
+                        "message":"",
+                        "img":""
+                    },
+                    {
+                        "name":"",
+                        "function":"",
+                        "workedIn":"",
+                        "message":"",
+                        "img":""
+                    }
+                ]
             }
         },
 
@@ -143,6 +164,34 @@
                         "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
                     }
                 ]
+            },
+            "testional":{
+                "title":"Testional",
+                "next":"Next",
+                "prev":"Back",
+                "list":[
+                    {
+                        "name":"Teste",
+                        "function":"Teste JR",
+                        "workedIn":"Brand Name",
+                        "message":"I highly recommend [Name] for any position that ls. I'm confident that [he/she/they] will be a valuable asset to any team.",
+                        "img":"/?"
+                    },
+                    {
+                        "name":"Teste 2",
+                        "function":"Teste PL",
+                        "workedIn":"Brand name 2",
+                        "message":"I highly recommend [Name] for any position that requires dedication, teamwork, and problem-solving skills/they] will be a valuable asset to any team.",
+                        "img":"/?"
+                    },
+                    {
+                        "name":"Teste 3",
+                        "function":"Teste SR",
+                        "workedIn":"Brand name 3",
+                        "message":"I hfor any position that requires dedication, teamwork, and problem-solving skills. I'm confident that [he/she/they] will be a valuable asset to any team.",
+                        "img":"/?"
+                    }
+                ]
             }
         },
 
@@ -214,6 +263,27 @@
                     {
                         "label":"Dotz",
                         "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                    }
+                ]
+            },
+            "testional":{
+                "title":"Testional",
+                "next":"Próximo",
+                "prev":"Anterior",
+                "list":[
+                    {
+                        "name":"",
+                        "function":"",
+                        "workedIn":"",
+                        "message":"",
+                        "img":""
+                    },
+                    {
+                        "name":"",
+                        "function":"",
+                        "workedIn":"",
+                        "message":"",
+                        "img":""
                     }
                 ]
             }

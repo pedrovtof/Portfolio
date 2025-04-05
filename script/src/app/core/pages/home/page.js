@@ -9,7 +9,8 @@ import {
   BoxHomeAboutMe,
   BoxHomeTecnologies,
   BoxHomeProjects,
-  BoxHomeBrands
+  BoxHomeBrands,
+  BoxTestional
 } from './utils'
 import { Element} from "react-scroll";
 
@@ -23,6 +24,8 @@ const IndexPageHome =()=> {
     introBox: [],
     aboutMe:[],
     projects:[],
+    brands:[],
+    testional:[]
   })
 
 
@@ -41,6 +44,7 @@ const IndexPageHome =()=> {
         technologies: pageContentText.languages[currentLanguage].technologies,
         projects: pageContentText.languages[currentLanguage].projects,
         brands: pageContentText.languages[currentLanguage].brands,
+        testional: pageContentText.languages[currentLanguage].testional
       }
       setTextPage(alterTextPage);
     }, [language])
@@ -48,8 +52,7 @@ const IndexPageHome =()=> {
   
 
   return (
-    <>
- 
+    <React.Fragment>
         <ButtonAppBar
           Typography_variant="h6"
           Typography_component= "div"
@@ -76,6 +79,7 @@ const IndexPageHome =()=> {
             "ScrollLink_spy":true
           }}
         />
+
         <BoxHomeIntro 
           BoxContentText = {{
             "introBox":textPage.introBox,
@@ -99,6 +103,7 @@ const IndexPageHome =()=> {
             "typographyIdName":"typography-introBox-name",
           }}
         />
+
       <Element id={textPage.optionsAppBar[0]} >
         <BoxHomeAboutMe 
           BoxContentText = {{
@@ -128,6 +133,7 @@ const IndexPageHome =()=> {
           }}
         />
       </Element>
+
       <Element id={textPage.optionsAppBar[1]} >
         <BoxHomeTecnologies 
           BoxContentText = {{
@@ -149,6 +155,7 @@ const IndexPageHome =()=> {
           }}
         />
       </Element>
+
       <Element 
         id={textPage.optionsAppBar[2]} 
         style={{ backgroundColor: theme.palette.background.alternative }}
@@ -189,6 +196,7 @@ const IndexPageHome =()=> {
             }}
           />
       </Element>
+
       <Element 
         id={textPage.optionsAppBar[3]} 
       >
@@ -212,8 +220,43 @@ const IndexPageHome =()=> {
           }}
         />
       </Element>
-      
-    </>
+
+      <Element 
+        id={textPage.optionsAppBar[4]} 
+      >
+        <BoxTestional
+          BoxContentText = {{
+            "testional":textPage.testional,
+          }}
+          BoxClasses = {{
+            "Class_Box_Container":"home-testional-box-container",
+            "Class_Box_Typography":"home-testional-box-typography",
+            "Class_Box_Grid":"home-testional-box-grid",
+            "Class_Box_Grid_second":"home-testional-box-grid-second",
+          }}
+          TypographyConfig = {{
+            "variantH2":"h2",
+            "variantH5":"h5",
+            "variantBody1":"body1",
+          }}
+          PaperConfig = {{
+            "elevation":0,
+          }}
+          GridConfig = {{
+            "Grid_size":12,
+            "Grid_columns":6,
+          }}
+          MobileStepperConfig = {{
+            "variant":"dots",
+            "position":"static",
+          }}
+          ButtonConfig = {{
+            "size":"small"
+          }}
+        />
+      </Element>
+
+    </React.Fragment>
   );
   
 }

@@ -22,6 +22,7 @@ Principais bibliotecas:
 - React-router
 - Next
 - React-scroll
+- React-material-ui-carousel
 
 Principais auxiliares:
 - eslint
@@ -35,7 +36,8 @@ Versionamento =>
 "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/material": "^6.4.3",
+    "@mui/icons-material": "^6.4.5",
+    "@mui/material": "^6.4.5",
     "next": "15.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

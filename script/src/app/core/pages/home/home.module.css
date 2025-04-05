@@ -62,7 +62,7 @@
 .home-intro-box-typography{
     display: block;
     text-align: left;
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 #typography-introBox-name{
@@ -286,7 +286,7 @@
 }
 
 .home-brands-box-img{
-    width: 80%;
+    width: 60%;
     border: 1px rgba(0, 0, 0, 0.075) solid;
     box-sizing: border-box;
     border-radius: 50%;

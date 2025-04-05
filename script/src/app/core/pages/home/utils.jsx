@@ -6,9 +6,18 @@ import {
     Container ,  
     Button,
     Backdrop,
-    Box
+    Box,
+    MobileStepper,
+    Paper
 } from '@mui/material';
 import Grid from '@mui/material/Grid2';
+//import NoSsr from '@mui/material/NoSsr';
+import {
+    KeyboardArrowLeft,
+    KeyboardArrowRight
+}from '@mui/icons-material';
+
+
 
 
 import DownloadingIcon from '@mui/icons-material/Downloading';
@@ -593,7 +602,7 @@ function BoxHomeBrands(valuesInput){
                     columns={valuesInput.GridConfig.Grid_size}
                 >
                 {
-                    valuesInput.BoxContentText.brands?
+                    valuesInput.BoxContentText.brands.list?
                         valuesInput.BoxContentText.brands.list.map((item,index)=>{
                             return(
                                 <React.Fragment
@@ -624,10 +633,146 @@ function BoxHomeBrands(valuesInput){
     )
 }
 
+
+/* 
+=============================================================================
+    HOME BOX TESTIONAL
+=============================================================================
+*/
+
+
+function BoxTestional(valuesInput){
+    
+    const steps = valuesInput.BoxContentText.testional.list||[{
+        "name":" ",
+        "function":" ",
+        "workedIn":" ",
+        "message":" ",
+        "img":"/?"
+    }]
+
+    const [activeStep, setActiveStep] = React.useState(0)
+
+    const maxSteps = steps.length
+  
+    const handleNext = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep + 1)
+    }
+  
+    const handleBack = () => {
+      setActiveStep((prevActiveStep) => prevActiveStep - 1)
+    }
+
+    return(
+        <React.Fragment>
+            <Container
+                className={valuesInput.BoxClasses.Class_Box_Container}
+            >
+                <Typography
+                    variant={valuesInput.TypographyConfig.variantH2}
+                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                >
+                    {
+                        valuesInput.BoxContentText.testional?
+                        valuesInput.BoxContentText.testional.title
+                        :null   
+                    }
+                </Typography>
+
+                <Paper
+                    square
+                    elevation={valuesInput.PaperConfig.elevation}
+                >
+                    <Grid
+                        className={valuesInput.BoxClasses.Class_Box_Grid}
+                        container
+                        columns={valuesInput.GridConfig.Grid_size}
+                    >
+                        <Grid
+                            className={valuesInput.BoxClasses.Class_Box_Grid_second}
+                            size={valuesInput.GridConfig.Grid_columns}
+                        >
+                            <img 
+                                src={steps[activeStep].img} 
+                                alt={steps[activeStep].img}
+                            />  
+                        </Grid>
+
+                        <Grid
+                            className={valuesInput.BoxClasses.Class_Box_Grid_second}
+                            size={valuesInput.GridConfig.Grid_columns}
+                        >
+                            <Typography
+                                variant= {valuesInput.TypographyConfig.variantH5}
+                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                            >
+                                {steps[activeStep].name}
+                            </Typography>
+
+                            <Typography
+                                variant= {valuesInput.TypographyConfig.variantH5}
+                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                            >
+                                {steps[activeStep].function}
+                            </Typography>
+
+                            <Typography
+                                variant= {valuesInput.TypographyConfig.variantH5}
+                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                            >
+                               {steps[activeStep].workedIn}
+                            </Typography>
+
+                            <Typography
+                                variant= {valuesInput.TypographyConfig.variantBody1}
+                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                            >
+                                {steps[activeStep].message}
+                            </Typography>
+
+                        </Grid>
+                   </Grid>
+                </Paper>
+
+                <MobileStepper
+                    variant={valuesInput.MobileStepperConfig.variant}
+                    steps={maxSteps}
+                    position={valuesInput.MobileStepperConfig.position}
+                    activeStep={activeStep}
+                    nextButton={
+                    <Button
+                        size={valuesInput.ButtonConfig.size}
+                        onClick={handleNext}
+                        disabled={activeStep === maxSteps - 1}
+                    >
+                        {valuesInput.BoxContentText.testional.next}
+                        <KeyboardArrowRight />
+                    </Button>
+                    }
+                    backButton={
+                    <Button 
+                        size={valuesInput.ButtonConfig.size}
+                        onClick={handleBack} 
+                        disabled={activeStep === 0}
+                    >
+                        <KeyboardArrowLeft />
+                        {valuesInput.BoxContentText.testional.prev}
+                    </Button>
+                    }
+                />
+            </Container>
+        </React.Fragment>
+    )
+}
+
+
+
+
 export {
     BoxHomeIntro,
     BoxHomeAboutMe,
     BoxHomeTecnologies,
     BoxHomeProjects,
-    BoxHomeBrands
+    BoxHomeBrands,
+    BoxTestional
 };
