@@ -682,6 +682,7 @@ function BoxTestional(valuesInput){
                 <Paper
                     square
                     elevation={valuesInput.PaperConfig.elevation}
+                    className={valuesInput.BoxClasses.Class_Box_Paper}
                 >
                     <Grid
                         className={valuesInput.BoxClasses.Class_Box_Grid}
@@ -689,43 +690,54 @@ function BoxTestional(valuesInput){
                         columns={valuesInput.GridConfig.Grid_size}
                     >
                         <Grid
-                            className={valuesInput.BoxClasses.Class_Box_Grid_second}
+                            className={`
+                                ${valuesInput.BoxClasses.Class_Box_Grid_second} 
+                                ${valuesInput.BoxClasses.Class_Box_Grid_second_img}
+                            `}
                             size={valuesInput.GridConfig.Grid_columns}
                         >
                             <img 
                                 src={steps[activeStep].img} 
                                 alt={steps[activeStep].img}
+                                className={valuesInput.BoxClasses.Class_Box_img}
                             />  
                         </Grid>
 
                         <Grid
-                            className={valuesInput.BoxClasses.Class_Box_Grid_second}
+                            className={`
+                                ${valuesInput.BoxClasses.Class_Box_Grid_second} 
+                                ${valuesInput.BoxClasses.Class_Box_Grid_second_txt}
+                            `}
                             size={valuesInput.GridConfig.Grid_columns}
                         >
                             <Typography
                                 variant= {valuesInput.TypographyConfig.variantH5}
-                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                className={valuesInput.BoxClasses.Class_Box_MobileStepper_Typography}
+                                sx={{color: (theme) => theme.palette.text.secondary}}
                             >
                                 {steps[activeStep].name}
                             </Typography>
 
                             <Typography
                                 variant= {valuesInput.TypographyConfig.variantH5}
-                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                className={valuesInput.BoxClasses.Class_Box_MobileStepper_Typography}
+                                sx={{color: (theme) => theme.palette.text.secondary}}
                             >
                                 {steps[activeStep].function}
                             </Typography>
 
                             <Typography
                                 variant= {valuesInput.TypographyConfig.variantH5}
-                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                className={valuesInput.BoxClasses.Class_Box_MobileStepper_Typography}
+                                sx={{color: (theme) => theme.palette.text.secondary}}
                             >
                                {steps[activeStep].workedIn}
                             </Typography>
 
                             <Typography
                                 variant= {valuesInput.TypographyConfig.variantBody1}
-                                className={valuesInput.BoxClasses.Class_Box_Typography}
+                                className={valuesInput.BoxClasses.Class_Box_MobileStepper_Typography}
+                                sx={{color: (theme) => theme.palette.secondary.contrastText}}
                             >
                                 {steps[activeStep].message}
                             </Typography>
@@ -739,26 +751,53 @@ function BoxTestional(valuesInput){
                     steps={maxSteps}
                     position={valuesInput.MobileStepperConfig.position}
                     activeStep={activeStep}
+                    className={valuesInput.BoxClasses.Class_Box_MobileStepper}
                     nextButton={
-                    <Button
-                        size={valuesInput.ButtonConfig.size}
-                        onClick={handleNext}
-                        disabled={activeStep === maxSteps - 1}
-                    >
-                        {valuesInput.BoxContentText.testional.next}
-                        <KeyboardArrowRight />
-                    </Button>
+                        <Button
+                            size={valuesInput.ButtonConfig.size}
+                            onClick={handleNext}
+                            disabled={activeStep === maxSteps - 1}
+                            className={valuesInput.BoxClasses.Class_Box_Button}
+                            sx={{
+                                color: (theme) => theme.palette.text.third,
+                                '&.Mui-disabled': {
+                                    color: (theme) => theme.palette.background.default,
+                                },
+                            }}
+                        >
+                            {
+                                valuesInput.BoxContentText.testional.next
+                            }
+                            <KeyboardArrowRight />
+                        </Button>
                     }
                     backButton={
-                    <Button 
-                        size={valuesInput.ButtonConfig.size}
-                        onClick={handleBack} 
-                        disabled={activeStep === 0}
-                    >
-                        <KeyboardArrowLeft />
-                        {valuesInput.BoxContentText.testional.prev}
-                    </Button>
+                        <Button 
+                            size={valuesInput.ButtonConfig.size}
+                            onClick={handleBack} 
+                            disabled={activeStep === 0}
+                            className={valuesInput.BoxClasses.Class_Box_Button}
+                            sx={{
+                                color: (theme) => theme.palette.text.third,
+                                '&.Mui-disabled': {
+                                    color: (theme) => theme.palette.background.default,
+                                },
+                            }}
+                        >
+                            <KeyboardArrowLeft />
+                            {
+                                valuesInput.BoxContentText.testional.prev
+                            }
+                        </Button>
                     }
+                    sx={{
+                        '& .MuiMobileStepper-dot': {
+                            backgroundColor: (theme) => theme.palette.background.alternative, // cor das bolinhas inativas
+                        },
+                        '& .MuiMobileStepper-dotActive': {
+                            backgroundColor: (theme) => theme.palette.primary.contrastText, // cor da bolinha ativa
+                        },
+                      }}
                 />
             </Container>
         </React.Fragment>

@@ -222,7 +222,7 @@ const IndexPageHome =()=> {
       </Element>
 
       <Element 
-        id={textPage.optionsAppBar[4]} 
+        id={textPage.optionsAppBar[4]}
       >
         <BoxTestional
           BoxContentText = {{
@@ -231,8 +231,15 @@ const IndexPageHome =()=> {
           BoxClasses = {{
             "Class_Box_Container":"home-testional-box-container",
             "Class_Box_Typography":"home-testional-box-typography",
+            "Class_Box_MobileStepper_Typography":"home-testional-box-mobileStepper-typography",
             "Class_Box_Grid":"home-testional-box-grid",
             "Class_Box_Grid_second":"home-testional-box-grid-second",
+            "Class_Box_Grid_second_img":"home-testional-box-grid-second-img",
+            "Class_Box_Grid_second_txt":"home-testional-box-grid-second-text",
+            "Class_Box_Paper":"home-testional-box-paper",
+            "Class_Box_img":"home-testional-box-img",
+            "Class_Box_Button":"home-testional-box-button",
+            "Class_Box_MobileStepper":"home-testional-box-button-mobileStepper",
           }}
           TypographyConfig = {{
             "variantH2":"h2",
