@@ -297,29 +297,34 @@
 
 /* 
 =============================================================================
-    HOME BOX TESTIONAL
+    HOME BOX TESTIMONIAL
     - Responsive
 =============================================================================
 */
 
-.home-testional-box-container{
+.home-testimonial-box-container{
     margin-top: 15vh;
     margin-bottom: 5vh;
 }
 
-.home-testional-box-typography{
+.home-testimonial-box-typography{
     text-align: left;
     align-content: center;
     text-decoration: underline;
     margin: 8vh auto;
 }
 
-.home-testional-box-paper{
+.home-testimonial-box-paper{
     box-sizing: border-box;
     border-radius: 15px;
 }
 
-.home-testional-box-img{
+.home-testimonial-box-grid-second-text {
+    padding: 1rem;
+}
+
+
+.home-testimonial-box-img{
     width: 50%;
     height: 80%;
     margin: 1rem auto;
@@ -327,11 +332,11 @@
     border-radius: 15px;
 }
 
-.home-testional-box-grid-second-img{
+.home-testimonial-box-grid-second-img{
     text-align: center;
 }
 
-.home-testional-box-grid-second-text{
+.home-testimonial-box-grid-second-text{
     text-align: left;
     margin: auto;
 }
@@ -507,29 +512,29 @@
 
      /* 
     =============================================================================
-        HOME BOX TESTIONAL
+        HOME BOX TESTIMONIAL
         - Small Screen
     =============================================================================
     */
 
-    .home-testional-box-grid{
+    .home-testimonial-box-grid{
         display: flex;
         flex-direction: column;
     }
 
-    .home-testional-box-grid-second-img{
+    .home-testimonial-box-grid-second-img{
         align-self: center;
     }
 
-    .home-testional-box-img{
+    .home-testimonial-box-img{
         width: 100%;
     }
 
-    .home-testional-box-grid-second-text{
+    .home-testimonial-box-grid-second-text{
         width: auto;
     }
 
-    .home-testional-box-mobileStepper-typography{
+    .home-testimonial-box-mobileStepper-typography{
         text-align: left;
     }
 }
