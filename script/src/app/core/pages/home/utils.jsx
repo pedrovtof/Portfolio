@@ -693,7 +693,7 @@ function BoxTestional(valuesInput){
                             className={`
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second} 
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_img}
-                            `}
+                            `.trim()}
                             size={valuesInput.GridConfig.Grid_columns}
                         >
                             <img 
@@ -707,7 +707,7 @@ function BoxTestional(valuesInput){
                             className={`
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second} 
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_txt}
-                            `}
+                            `.trim()}
                             size={valuesInput.GridConfig.Grid_columns}
                         >
                             <Typography
