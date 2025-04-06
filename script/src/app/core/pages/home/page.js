@@ -10,7 +10,7 @@ import {
   BoxHomeTecnologies,
   BoxHomeProjects,
   BoxHomeBrands,
-  BoxTestional
+  BoxTestimonial
 } from './utils'
 import { Element} from "react-scroll";
 
@@ -25,7 +25,7 @@ const IndexPageHome =()=> {
     aboutMe:[],
     projects:[],
     brands:[],
-    testional:[]
+    testimonial:[]
   })
 
 
@@ -44,7 +44,7 @@ const IndexPageHome =()=> {
         technologies: pageContentText.languages[currentLanguage].technologies,
         projects: pageContentText.languages[currentLanguage].projects,
         brands: pageContentText.languages[currentLanguage].brands,
-        testional: pageContentText.languages[currentLanguage].testional
+        testimonial: pageContentText.languages[currentLanguage].testimonial
       }
       setTextPage(alterTextPage);
     }, [language])
@@ -222,17 +222,24 @@ const IndexPageHome =()=> {
       </Element>
 
       <Element 
-        id={textPage.optionsAppBar[4]} 
+        id={textPage.optionsAppBar[4]}
       >
-        <BoxTestional
+        <BoxTestimonial
           BoxContentText = {{
-            "testional":textPage.testional,
+            "testimonial":textPage.testimonial,
           }}
           BoxClasses = {{
-            "Class_Box_Container":"home-testional-box-container",
-            "Class_Box_Typography":"home-testional-box-typography",
-            "Class_Box_Grid":"home-testional-box-grid",
-            "Class_Box_Grid_second":"home-testional-box-grid-second",
+            "Class_Box_Container":"home-testimonial-box-container",
+            "Class_Box_Typography":"home-testimonial-box-typography",
+            "Class_Box_MobileStepper_Typography":"home-testimonial-box-mobileStepper-typography",
+            "Class_Box_Grid":"home-testimonial-box-grid",
+            "Class_Box_Grid_second":"home-testimonial-box-grid-second",
+            "Class_Box_Grid_second_img":"home-testimonial-box-grid-second-img",
+            "Class_Box_Grid_second_txt":"home-testimonial-box-grid-second-text",
+            "Class_Box_Paper":"home-testimonial-box-paper",
+            "Class_Box_img":"home-testimonial-box-img",
+            "Class_Box_Button":"home-testimonial-box-button",
+            "Class_Box_MobileStepper":"home-testimonial-box-button-mobileStepper",
           }}
           TypographyConfig = {{
             "variantH2":"h2",

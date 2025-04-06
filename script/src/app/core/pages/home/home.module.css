@@ -272,11 +272,13 @@
 
 .home-brands-box-container{
     width: 100%;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
 }
 
 .home-brands-box-typography{
     text-decoration: underline;
-    margin-bottom: 5vh;
+    margin-bottom: 8vh;
 }
 
 .home-brands-box-grid{
@@ -290,6 +292,53 @@
     border: 1px rgba(0, 0, 0, 0.075) solid;
     box-sizing: border-box;
     border-radius: 50%;
+}
+
+
+/* 
+=============================================================================
+    HOME BOX TESTIMONIAL
+    - Responsive
+=============================================================================
+*/
+
+.home-testimonial-box-container{
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+}
+
+.home-testimonial-box-typography{
+    text-align: left;
+    align-content: center;
+    text-decoration: underline;
+    margin: 8vh auto;
+}
+
+.home-testimonial-box-paper{
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.home-testimonial-box-grid-second-text {
+    padding: 1rem;
+}
+
+
+.home-testimonial-box-img{
+    width: 50%;
+    height: 80%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.home-testimonial-box-grid-second-img{
+    text-align: center;
+}
+
+.home-testimonial-box-grid-second-text{
+    text-align: left;
+    margin: auto;
 }
 
 /* 
@@ -406,6 +455,7 @@
         - Small Screen
     =============================================================================
     */
+
     .home-projects-box-typography{
         margin-bottom: 10vh;
     }
@@ -446,6 +496,46 @@
 
     .home-projects-box-button-container-hover {
         margin-bottom: 2vh;
+    }
+
+    /* 
+    =============================================================================
+        HOME BOX BRANDING
+        - Small Screen
+    =============================================================================
+    */
+
+    .home-brands-box-img {
+        width: 100%;
+    }
+
+
+     /* 
+    =============================================================================
+        HOME BOX TESTIMONIAL
+        - Small Screen
+    =============================================================================
+    */
+
+    .home-testimonial-box-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-testimonial-box-grid-second-img{
+        align-self: center;
+    }
+
+    .home-testimonial-box-img{
+        width: 100%;
+    }
+
+    .home-testimonial-box-grid-second-text{
+        width: auto;
+    }
+
+    .home-testimonial-box-mobileStepper-typography{
+        text-align: left;
     }
 }
 

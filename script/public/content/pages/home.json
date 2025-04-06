@@ -34,7 +34,7 @@
             "technologies":{
                 "title":"Tecnologias"
             },
-            "projects":{
+            "projects":{ 
                 "title":"Projects",
                 "hoverTitle":"Tecnologias",
                 "ButtonCodeText":"Codigo",
@@ -71,8 +71,8 @@
                     }
                 ]
             },
-            "testional":{
-                "title":"Testional",
+            "testimonial":{
+                "title":"Testimonials",
                 "next":"Próximo",
                 "prev":"Anterior",
                 "list":[
@@ -165,17 +165,17 @@
                     }
                 ]
             },
-            "testional":{
-                "title":"Testional",
+            "testimonial":{
+                "title":"Testimonials",
                 "next":"Next",
                 "prev":"Back",
                 "list":[
                     {
                         "name":"Teste",
                         "function":"Teste JR",
-                        "workedIn":"Brand Name",
+                        "workedIn":"Brand name",
                         "message":"I highly recommend [Name] for any position that ls. I'm confident that [he/she/they] will be a valuable asset to any team.",
-                        "img":"/?"
+                        "img":"https://images.unsplash.com/photo-1481277542470-605612bd2d61"
                     },
                     {
                         "name":"Teste 2",
@@ -266,8 +266,8 @@
                     }
                 ]
             },
-            "testional":{
-                "title":"Testional",
+            "testimonial":{
+                "title":"Testimonials",
                 "next":"Próximo",
                 "prev":"Anterior",
                 "list":[
