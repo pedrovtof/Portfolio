@@ -71,8 +71,8 @@
                     }
                 ]
             },
-            "testional":{
-                "title":"Testional",
+            "testimonial":{
+                "title":"Testimonials",
                 "next":"Próximo",
                 "prev":"Anterior",
                 "list":[
@@ -165,8 +165,8 @@
                     }
                 ]
             },
-            "testional":{
-                "title":"Testional",
+            "testimonial":{
+                "title":"Testimonials",
                 "next":"Next",
                 "prev":"Back",
                 "list":[
@@ -266,8 +266,8 @@
                     }
                 ]
             },
-            "testional":{
-                "title":"Testional",
+            "testimonial":{
+                "title":"Testimonials",
                 "next":"Próximo",
                 "prev":"Anterior",
                 "list":[

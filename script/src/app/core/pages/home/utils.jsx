@@ -636,14 +636,14 @@ function BoxHomeBrands(valuesInput){
 
 /* 
 =============================================================================
-    HOME BOX TESTIONAL
+    HOME BOX TESTIMONIAL
 =============================================================================
 */
 
 
-function BoxTestional(valuesInput){
+function BoxTestimonial(valuesInput){
     
-    const steps = valuesInput.BoxContentText.testional.list||[{
+    const steps = valuesInput.BoxContentText.testimonial.list||[{
         "name":" ",
         "function":" ",
         "workedIn":" ",
@@ -673,8 +673,8 @@ function BoxTestional(valuesInput){
                     className={valuesInput.BoxClasses.Class_Box_Typography}
                 >
                     {
-                        valuesInput.BoxContentText.testional?
-                        valuesInput.BoxContentText.testional.title
+                        valuesInput.BoxContentText.testimonial?
+                        valuesInput.BoxContentText.testimonial.title
                         :null   
                     }
                 </Typography>
@@ -766,7 +766,7 @@ function BoxTestional(valuesInput){
                             }}
                         >
                             {
-                                valuesInput.BoxContentText.testional.next
+                                valuesInput.BoxContentText.testimonial.next
                             }
                             <KeyboardArrowRight />
                         </Button>
@@ -786,7 +786,7 @@ function BoxTestional(valuesInput){
                         >
                             <KeyboardArrowLeft />
                             {
-                                valuesInput.BoxContentText.testional.prev
+                                valuesInput.BoxContentText.testimonial.prev
                             }
                         </Button>
                     }
@@ -813,5 +813,5 @@ export {
     BoxHomeTecnologies,
     BoxHomeProjects,
     BoxHomeBrands,
-    BoxTestional
+    BoxTestimonial
 };
