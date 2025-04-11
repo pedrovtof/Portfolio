@@ -10,7 +10,8 @@ import {
   BoxHomeTecnologies,
   BoxHomeProjects,
   BoxHomeBrands,
-  BoxTestimonial
+  BoxTestimonial,
+  BoxHomeContact
 } from './utils'
 import { Element} from "react-scroll";
 
@@ -25,7 +26,8 @@ const IndexPageHome =()=> {
     aboutMe:[],
     projects:[],
     brands:[],
-    testimonial:[]
+    testimonial:[],
+    contact:[]
   })
 
 
@@ -44,65 +46,64 @@ const IndexPageHome =()=> {
         technologies: pageContentText.languages[currentLanguage].technologies,
         projects: pageContentText.languages[currentLanguage].projects,
         brands: pageContentText.languages[currentLanguage].brands,
-        testimonial: pageContentText.languages[currentLanguage].testimonial
+        testimonial: pageContentText.languages[currentLanguage].testimonial,
+        contact: pageContentText.languages[currentLanguage].contact
       }
       setTextPage(alterTextPage);
     }, [language])
   
-  
-
   return (
     <React.Fragment>
-        <ButtonAppBar
-          Typography_variant="h6"
-          Typography_component= "div"
-          BarStyle = {{
-              "Class_appBarDiv":"home-appbar-div",
-              "Class_toolbar":"home-appbar-div-appbar-toolbar",
-              "Class_AppBarTypography":"home-header-appbar-typography",
-              "Class_appBar_breadcrumbs":"home-header-appbar-breadcrumbs",
-              "Class_AppBarTypography_box":"home-header-appbar-typography-box",
-            }}
-          ButtonAppBar = {{
-            "Class_ButtonAppBar":"home-header-button-appbar",
-            "Class_ButtonAppBar_box":"home-header-button-appbar-box",
+      <ButtonAppBar
+        Typography_variant="h6"
+        Typography_component= "div"
+        BarStyle = {{
+            "Class_appBarDiv":"home-appbar-div",
+            "Class_toolbar":"home-appbar-div-appbar-toolbar",
+            "Class_AppBarTypography":"home-header-appbar-typography",
+            "Class_appBar_breadcrumbs":"home-header-appbar-breadcrumbs",
+            "Class_AppBarTypography_box":"home-header-appbar-typography-box",
           }}
-          ContentText = {{
-              "optionsAppBar":textPage.optionsAppBar,
-              "themesPage":textPage.themesPage,
-              "languagesPage":textPage.languagesPage
-            }}
-          ScrollLinkConfig = {{
-            "ScrollLink_smooth":true,
-            "ScrollLink_duration":800,
-            "ScrollLink_offset":-100,
-            "ScrollLink_spy":true
+        ButtonAppBar = {{
+          "Class_ButtonAppBar":"home-header-button-appbar",
+          "Class_ButtonAppBar_box":"home-header-button-appbar-box",
+        }}
+        ContentText = {{
+            "optionsAppBar":textPage.optionsAppBar,
+            "themesPage":textPage.themesPage,
+            "languagesPage":textPage.languagesPage
           }}
-        />
+        ScrollLinkConfig = {{
+          "ScrollLink_smooth":true,
+          "ScrollLink_duration":800,
+          "ScrollLink_offset":-100,
+          "ScrollLink_spy":true
+        }}
+      />
 
-        <BoxHomeIntro 
-          BoxContentText = {{
-            "introBox":textPage.introBox,
-          }}
-          BoxClasses = {{
-            "Class_Box_Container":"home-intro-box-container",
-            "Class_Box_Grid":"home-intro-box-grid",
-            "Class_Box":"home-intro-box-box",
-            "Class_Box_Typography":"home-intro-box-typography",
-            "Class_Box_Typography_span":"home-intro-box-typography-span",
-            "Class_Box_img":"home-intro-box-img"
-          }}
-          GridConfig = {{
-            "Grid_size":12,
-            "Grid_columns":6
-          }}
-          TypographyConfig = {{
-            "variantH1":"h1",
-            "variantH2":"h2",
-            "typographyIdPrefix":"typography-introBox-prefix-name",
-            "typographyIdName":"typography-introBox-name",
-          }}
-        />
+      <BoxHomeIntro 
+        BoxContentText = {{
+          "introBox":textPage.introBox,
+        }}
+        BoxClasses = {{
+          "Class_Box_Container":"home-intro-box-container",
+          "Class_Box_Grid":"home-intro-box-grid",
+          "Class_Box":"home-intro-box-box",
+          "Class_Box_Typography":"home-intro-box-typography",
+          "Class_Box_Typography_span":"home-intro-box-typography-span",
+          "Class_Box_img":"home-intro-box-img"
+        }}
+        GridConfig = {{
+          "Grid_size":12,
+          "Grid_columns":6
+        }}
+        TypographyConfig = {{
+          "variantH1":"h1",
+          "variantH2":"h2",
+          "typographyIdPrefix":"typography-introBox-prefix-name",
+          "typographyIdName":"typography-introBox-name",
+        }}
+      />
 
       <Element id={textPage.optionsAppBar[0]} >
         <BoxHomeAboutMe 
@@ -156,8 +157,7 @@ const IndexPageHome =()=> {
         />
       </Element>
 
-      <Element 
-        id={textPage.optionsAppBar[2]} 
+      <Element id={textPage.optionsAppBar[2]} 
         style={{ backgroundColor: theme.palette.background.alternative }}
       >
           <BoxHomeProjects 
@@ -197,11 +197,10 @@ const IndexPageHome =()=> {
           />
       </Element>
 
-      <Element 
-        id={textPage.optionsAppBar[3]} 
+      <Element id={textPage.optionsAppBar[3]} 
       >
         <BoxHomeBrands 
-           BoxContentText = {{
+            BoxContentText = {{
             "brands":textPage.brands,
           }}
           BoxClasses = {{
@@ -221,8 +220,7 @@ const IndexPageHome =()=> {
         />
       </Element>
 
-      <Element 
-        id={textPage.optionsAppBar[4]}
+      <Element id={textPage.optionsAppBar[4]}
       >
         <BoxTestimonial
           BoxContentText = {{
@@ -260,6 +258,16 @@ const IndexPageHome =()=> {
           ButtonConfig = {{
             "size":"small"
           }}
+        />
+      </Element>
+
+      <Element id={textPage.optionsAppBar[5]}
+      >
+        <BoxHomeContact 
+          BoxContentText = {{
+              "contact":textPage.contact,
+            }}
+          
         />
       </Element>
 

@@ -8,7 +8,12 @@ import {
     Backdrop,
     Box,
     MobileStepper,
-    Paper
+    Paper,
+    TextareaAutosize,
+    TextField,
+    Alert,
+    AlertTitle,
+    Stack 
 } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 //import NoSsr from '@mui/material/NoSsr';
@@ -693,7 +698,7 @@ function BoxTestimonial(valuesInput){
                             className={`
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second} 
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_img}
-                            `.trim()}
+                            `}
                             size={valuesInput.GridConfig.Grid_columns}
                         >
                             <img 
@@ -806,6 +811,125 @@ function BoxTestimonial(valuesInput){
 
 
 
+/* 
+=============================================================================
+    HOME BOX CONTACT
+=============================================================================
+*/
+
+
+function BoxHomeContact(valuesInput){
+
+    const [loading, setLoading] = React.useState(false)
+
+    const [form, setForm] = React.useState({
+        subject: '',
+        email: '',
+        message: '',
+    })
+
+    const handleLoading=(e)=>{
+        
+        setLoading(true)
+        setTimeout(()=>{
+            setLoading(false)
+        }, 2000)
+    }
+
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        handleLoading()
+    }
+
+
+
+    printf(valuesInput.BoxContentText.contact.form)
+
+
+    return(
+        <React.Fragment>
+            <Container>
+         
+                <Typography
+                    variant='h2'
+                >
+                    {
+                        valuesInput.BoxContentText.contact.title
+                    }
+                </Typography>
+
+                <Typography
+                    variant='h5'
+                >
+                    {
+                        valuesInput.BoxContentText.contact.subtitle
+                    }
+                </Typography>
+
+                <Box
+                    variant="contained"
+                    component="form"
+                    onSubmit={handleSubmit}
+                >
+                    {
+                        valuesInput.BoxContentText.contact.form?
+                        <React.Fragment>
+                            <TextField
+                                color='secundary'
+                                id="outlined"
+                                label="subject"
+                                name="subject"
+                                placeholder={valuesInput.BoxContentText.contact.form.subject || ''}
+                                defaultValue={valuesInput.BoxContentText.contact.form.subject || ''}
+                                focused ="true"
+                                helperText={''}
+                            />
+
+                            <TextField
+                                color='secundary'
+                                id="outlined"
+                                label="email"
+                                name="email"
+                                placeholder="lorem@email.com"
+                                focused ="true"
+                                helperText={''}
+                            />
+
+                            <TextareaAutosize
+                                defaultValue={valuesInput.BoxContentText.contact.form.message || ''}
+                                placeholder={valuesInput.BoxContentText.contact.form.message || ''}
+                                focused = "true"
+                            />
+
+                            <Button
+                                variant="contained"
+                                type='submit'
+                                loading={loading}
+                                sx={{
+                                    backgroundColor: (theme) => theme.palette.button.primary,
+                                }}
+
+                            >
+                                teste
+                            </Button>
+                        </React.Fragment>
+                        :null
+                    }
+                </Box>
+
+            </Container>
+            <Stack
+                sx={{display:'none'}}
+            >
+                <Alert severity="success">
+                    <AlertTitle>Success</AlertTitle>
+                    This is a success Alert with an encouraging title.
+                </Alert>
+            </Stack>
+        </React.Fragment>
+    )
+}
+
 
 export {
     BoxHomeIntro,
@@ -813,5 +937,6 @@ export {
     BoxHomeTecnologies,
     BoxHomeProjects,
     BoxHomeBrands,
-    BoxTestimonial
+    BoxTestimonial,
+    BoxHomeContact
 };
