@@ -91,6 +91,22 @@
                         "img":""
                     }
                 ]
+            },
+            "contact":{
+                "title":"Contato",
+                "subtitle":"Sinta-se a vontade para entrar em contato comigo",
+                "form":{
+                    "email":"Email",
+                    "subject":"Assunto: Portifólio proposta - <...mensagem...>",
+                    "message":"Escreva sua mensagem...",
+                    "send":"Enviar",
+                    "alert":{
+                        "success":"Mensagem enviada com sucesso!",
+                        "error":"Erro ao enviar mensagem, tente novamente!",
+                        "warning":"Preencha todos os campos!",
+                        "info":""
+                    }
+                }
             }
         },
 
@@ -192,6 +208,22 @@
                         "img":"/?"
                     }
                 ]
+            },
+            "contact":{
+                "title":"Contact",
+                "subtitle":"Please fill out the form below to get in touch with me.",
+                "form":{
+                    "email":"Email",
+                    "subject":"Subject: Portfolio inquiry - <...message...>",
+                    "message":"Type your message here...",
+                    "send":"Submit",
+                    "alert":{
+                        "success":"Thank you for your message. I will get back to you as soon as possible.",
+                        "error":"There was an error sending your message. Please try again later.",
+                        "warning":"Please fill out all fields before submitting.",
+                        "info":""
+                    }
+                }
             }
         },
 
@@ -286,6 +318,22 @@
                         "img":""
                     }
                 ]
+            },
+            "contact": {
+                "title": "Contacto",
+                "subtitle": "Completa el siguiente formulario para ponerte en contacto conmigo.",
+                "form": {
+                    "email": "Correo electrónico",
+                    "subject": "Asunto: Consulta sobre el portafolio - <...mensaje...>",
+                    "message": "Escribe tu mensaje aquí...",
+                    "send":"Enviar",
+                    "alert":{
+                        "success":"Mensaje enviado con éxito",
+                        "error":"Error al enviar el mensaje",
+                        "warning":"Por favor, completa todos los campos antes de enviar el formulario.",
+                        "info":""
+                    }
+                }
             }
         }
     }
