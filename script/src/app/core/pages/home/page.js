@@ -267,7 +267,43 @@ const IndexPageHome =()=> {
           BoxContentText = {{
               "contact":textPage.contact,
             }}
-          
+          BoxClasses = {{
+            "Class_Box_Container":"home-contact-box-container",
+            "Class_Box_Typography":"home-contact-box-typography",
+            "Class_Box_Form":"home-contact-box-form",
+            "Class_Box_Grid":"home-contact-box-grid",
+            "Class_Box_Grid_Second":"home-contact-box-grid-second",
+            "Class_TextField":"home-contact-box-textField",
+            "Class_TextArea":"home-contact-box-textArea",
+            "Class_Box_img":"home-contact-box-img",
+            "Class_Box_Button":"home-contact-box-button",
+            "Class_Box_Stack_Alert":"home-contact-box-stack-alert",
+          }}
+          TypographyConfig = {{
+            "variantH5":"h5",
+            "variantH2":"h2",
+          }}
+          BoxConfig = {{
+            "variant":"contained",
+            "component":"form",
+          }}
+          TextFieldConfig = {{
+            "variant":"outlined",
+            "label":"subject",
+            "id":"outlined",
+            "focused":"true",
+            "sx_Width":"90%",
+            "type_email":"email",
+            "type_text":"text",
+          }}
+          ButtonConfig = {{
+            "type":"submit",
+            "variant":"contained",
+          }}
+          GridConfig = {{
+            "Grid_size":12,
+            "Grid_columns":6,
+          }}
         />
       </Element>
 
