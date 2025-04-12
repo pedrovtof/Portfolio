@@ -4,8 +4,8 @@
 
 img:hover,
 a:hover{
-    transform: scale(1.06);
-    transition: 1.7s;
+    transform: scale(1.04);
+    transition: 3.1s;
 }
 
 a{

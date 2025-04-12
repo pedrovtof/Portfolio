@@ -8,7 +8,12 @@ import {
     Backdrop,
     Box,
     MobileStepper,
-    Paper
+    Paper,
+    TextareaAutosize,
+    TextField,
+    Alert,
+    AlertTitle,
+    Stack 
 } from '@mui/material';
 import Grid from '@mui/material/Grid2';
 //import NoSsr from '@mui/material/NoSsr';
@@ -693,7 +698,7 @@ function BoxTestimonial(valuesInput){
                             className={`
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second} 
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_img}
-                            `.trim()}
+                            `}
                             size={valuesInput.GridConfig.Grid_columns}
                         >
                             <img 
@@ -806,6 +811,189 @@ function BoxTestimonial(valuesInput){
 
 
 
+/* 
+=============================================================================
+    HOME BOX CONTACT
+=============================================================================
+*/
+
+
+function BoxHomeContact(valuesInput){
+
+    const [loading, setLoading] = React.useState(false)
+
+    const [form, setForm] = React.useState({
+        subject: '',
+        email: '',
+        message: '',
+    })
+
+    const handleLoading=(e)=>{
+        
+        setLoading(true)
+        setTimeout(()=>{
+            setLoading(false)
+        }, 2000)
+    }
+
+    const handleSubmit=(e)=>{
+        e.preventDefault()
+        handleLoading()
+    }
+
+    printf(valuesInput.BoxContentText.contact.form)
+   
+
+
+    return(
+        <React.Fragment>
+            <Container
+                className={valuesInput.BoxClasses.Class_Box_Container}
+            >
+         
+                <Typography
+                    variant={valuesInput.TypographyConfig.variantH2}
+                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                >
+                    {
+                        valuesInput.BoxContentText.contact.title
+                    }
+                </Typography>
+
+                <Typography
+                    variant={valuesInput.TypographyConfig.variantH5}
+                    className={valuesInput.BoxClasses.Class_Box_Typography}
+                    sx={{color: (theme) => theme.palette.text.secondary}}
+                >
+                    {
+                        valuesInput.BoxContentText.contact.subtitle
+                    }
+                </Typography>
+
+                <Grid
+                    className={valuesInput.BoxClasses.Class_Box_Grid}
+                    container
+                    columns={valuesInput.GridConfig.Grid_size}
+                >
+                    <Grid
+                        className={valuesInput.BoxClasses.Class_Box_Grid_Second}
+                        size={valuesInput.GridConfig.Grid_columns}
+                    >
+                        <Box
+                            variant={valuesInput.BoxConfig.variant}
+                            component={valuesInput.BoxConfig.component}
+                            onSubmit={handleSubmit}
+                            className={valuesInput.BoxClasses.Class_Box_Form}
+                        >
+                            {
+                                valuesInput.BoxContentText.contact.form?
+                                <React.Fragment>
+                                    <TextField
+                                        id={valuesInput.TextFieldConfig.variant}
+                                        label="subject"
+                                        name="subject"
+                                        type={valuesInput.TextFieldConfig.type_text}
+                                        placeholder={valuesInput.BoxContentText.contact.form.subject || ''}
+                                        focused ={valuesInput.TextFieldConfig.focused}
+                                        helperText={''}
+                                        className={valuesInput.BoxClasses.Class_Box_TextField}  
+                                        sx={{
+                                            '& label.Mui-focused': {
+                                              color: (theme) => theme.palette.text.secondary,
+                                            },
+                                            '& .MuiOutlinedInput-root': {
+                                              '&.Mui-focused fieldset': {
+                                                borderColor: (theme) => theme.palette.text.secondary,
+                                              },
+                                              color: (theme) => theme.palette.text.third,
+                                            },
+                                          }}                         
+                                    />
+
+                                    <TextField
+                                        id={valuesInput.TextFieldConfig.variant}
+                                        label="email"
+                                        name="email"
+                                        type={valuesInput.TextFieldConfig.type_email}
+                                        placeholder="lorem@email.com"
+                                        focused ={valuesInput.TextFieldConfig.focused}
+                                        helperText={''}
+                                        className={valuesInput.BoxClasses.Class_Box_TextField}
+                                        sx={{
+                                            '& label.Mui-focused': {
+                                              color: (theme) => theme.palette.text.secondary,
+                                            },
+                                            '& .MuiOutlinedInput-root': {
+                                              '&.Mui-focused fieldset': {
+                                                borderColor: (theme) => theme.palette.text.secondary,
+                                              },
+                                              color: (theme) => theme.palette.text.third,
+                                            },
+                                          }}
+                                    />
+
+                                    <TextareaAutosize
+                                        placeholder={valuesInput.BoxContentText.contact.form.message || ''}
+                                        focused = {valuesInput.TextFieldConfig.focused}
+                                        className={valuesInput.BoxClasses.Class_TextArea}
+                                    />
+
+                                    <Button
+                                        variant={valuesInput.ButtonConfig.variant}
+                                        type={valuesInput.ButtonConfig.type}
+                                        loading={loading}
+                                        sx={{ 
+                                            background: (theme) => theme.palette.button.primary,
+                                        }}
+                                        className={valuesInput.BoxClasses.Class_Box_Button}
+                                    >
+                                        {
+                                            valuesInput.BoxContentText.contact.form?
+                                            valuesInput.BoxContentText.contact.form.send
+                                            :null
+                                        }
+                                    </Button>
+                                </React.Fragment>
+                                :null
+                            }
+                        </Box>
+                    </Grid>
+
+                    <Grid
+                        className={valuesInput.BoxClasses.Class_Box_Grid_Second}
+                        size={valuesInput.GridConfig.Grid_columns}
+                    >
+                        {
+                            valuesInput.BoxContentText.contact.image?
+                            <img
+                                src={valuesInput.BoxContentText.contact.image}
+                                className={valuesInput.BoxClasses.Class_Box_img} 
+                            />
+                            :null
+                        }
+                    </Grid>
+                </Grid>
+
+            </Container>
+            <Stack
+                sx={{display:'none'}}
+            >
+                <Alert 
+                    severity="error"
+                    className={valuesInput.BoxClasses.Class_Box_Stack_Alert}
+                >
+                    <AlertTitle>Success</AlertTitle>
+                    {
+                        valuesInput.BoxContentText.contact.alert?
+                        valuesInput.BoxContentText.contact.alert.success:
+                        null
+                    }
+                </Alert>
+            </Stack>
+        </React.Fragment>
+    )
+}
+
 
 export {
     BoxHomeIntro,
@@ -813,5 +1001,6 @@ export {
     BoxHomeTecnologies,
     BoxHomeProjects,
     BoxHomeBrands,
-    BoxTestimonial
+    BoxTestimonial,
+    BoxHomeContact
 };
