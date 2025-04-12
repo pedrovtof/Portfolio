@@ -633,6 +633,27 @@ _____ ___  ___  ___   _      _       _____  _____ ______  _____  _____  _   _
     =============================================================================
     */
 
+    .home-contact-box-grid{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .home-contact-box-grid-second{
+        width: 100%;
+        text-align: center;
+        margin: 2vh 0;
+    }
+
+    .home-contact-box-img{
+        width: 80%;
+        max-height: 10rem;
+        min-height: 5rem;
+    }
+
+    .home-contact-box-form {
+        gap: 2vh;
+    }
 }
 
 

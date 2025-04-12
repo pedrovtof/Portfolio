@@ -976,7 +976,7 @@ function BoxHomeContact(valuesInput){
 
             </Container>
             <Stack
-                sx={{display:'block'}}
+                sx={{display:'none'}}
             >
                 <Alert 
                     severity="error"
