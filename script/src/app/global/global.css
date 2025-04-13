@@ -2,11 +2,7 @@
 @import './variables.css';
 
 
-img:hover,
-a:hover{
-    transform: scale(1.04);
-    transition: 3.1s;
-}
+
 
 a{
     text-decoration: none;

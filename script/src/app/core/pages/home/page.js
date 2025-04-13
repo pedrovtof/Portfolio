@@ -278,6 +278,7 @@ const IndexPageHome =()=> {
             "Class_Box_img":"home-contact-box-img",
             "Class_Box_Button":"home-contact-box-button",
             "Class_Box_Stack_Alert":"home-contact-box-stack-alert",
+            "Class_Box_Stack":"home-contact-box-form-stack"
           }}
           TypographyConfig = {{
             "variantH5":"h5",
@@ -293,7 +294,6 @@ const IndexPageHome =()=> {
             "id":"outlined",
             "focused":"true",
             "sx_Width":"90%",
-            "type_email":"email",
             "type_text":"text",
           }}
           ButtonConfig = {{

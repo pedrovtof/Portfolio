@@ -67,7 +67,8 @@ ______  _____ ______  ___   _   _  _    _____
 .home-intro-box-container{
     flex-grow: 1;
     margin-top: 10vw;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -126,7 +127,8 @@ ______  _____ ______  ___   _   _  _    _____
     flex-grow: 1;
     margin-top: 15vh;
     margin-bottom: 5vh;
-    width: 90vw;
+    width: 100%;
+    height: 100%;
 }
 
 .home-about-me-box-grid{
@@ -195,6 +197,7 @@ ______  _____ ______  ___   _   _  _    _____
     height: fit-content;
     margin-top: 15vh;
     margin-bottom: 5vh;
+    height: 100%;
 }
 
 .home-technologies-box-grid{
@@ -223,7 +226,6 @@ ______  _____ ______  ___   _   _  _    _____
 
 .home-projects-box-container{
     margin-top: 15vh;
-    margin-bottom: 5vh;
 }
 
 .home-projects-box-typography{
@@ -250,6 +252,7 @@ ______  _____ ______  ___   _   _  _    _____
 
 .home-projects-box-img-hover{
     width: 100%;
+    height: 100%;
 }
 
 .home-projects-box-img-hover-tech{
@@ -289,8 +292,8 @@ ______  _____ ______  ___   _   _  _    _____
 
 .home-brands-box-container{
     width: 100%;
+    height: 50vh;
     margin-top: 15vh;
-    margin-bottom: 5vh;
 }
 
 .home-brands-box-typography{
@@ -320,8 +323,7 @@ ______  _____ ______  ___   _   _  _    _____
 */
 
 .home-testimonial-box-container{
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    height: 100%;
 }
 
 .home-testimonial-box-typography{
@@ -369,7 +371,8 @@ ______  _____ ______  ___   _   _  _    _____
 
 .home-contact-box-container{
     margin-top: 15vh;
-    margin-bottom: 5vh;
+    height: 80vh;
+    width: 100%;
 }
 
 .home-contact-box-img{
@@ -409,6 +412,11 @@ ______  _____ ______  ___   _   _  _    _____
     height: 15%;
 }
 
+.home-contact-box-form-stack{
+    margin: 2vh 3vw;
+    position: relative;
+    bottom: 1vh;
+}
 
 /*
 
