@@ -365,9 +365,11 @@ function BoxHomeProjects(
                             size={valuesInput.GridConfig.Grid_columns}
                             className={valuesInput.BoxClasses.Class_Box_Grid_hover_second}
                         >
-                            <Box>
+                            <Box
+                                className={valuesInput.BoxClasses.Class_Box_Grid_hover_second_typography_box}
+                            >
                                 <Typography
-                                    variant={valuesInput.TypographyConfig.variantH1}
+                                    variant={valuesInput.TypographyConfig.variantH2}
                                     className={valuesInput.BoxClasses.Class_Box_Typography_hover}
                                     id={valuesInput.TypographyConfig.size_hover_box_typography_title}
                                     sx={{ color: (theme) => theme.palette.text.primary }}
@@ -545,7 +547,7 @@ function BoxHomeProjects(
                                                 sx={{ color: (theme) => theme.palette.text.fifth }}
                                             >
                                                 {
-                                                    valuesInput.BoxContentText.projects.list[index].description
+                                                    valuesInput.BoxContentText.projects.list[index].description_preview
                                                 }
                                             </Typography>
                                         </Grid>
@@ -667,6 +669,10 @@ function BoxTestimonial(valuesInput){
       setActiveStep((prevActiveStep) => prevActiveStep - 1)
     }
 
+    printf(`
+        ${valuesInput.BoxClasses.Class_Box_Grid_second} 
+        ${valuesInput.BoxClasses.Class_Box_Grid_second_txt}
+    `.trim())
     return(
         <React.Fragment>
             <Container
@@ -687,6 +693,9 @@ function BoxTestimonial(valuesInput){
                     square
                     elevation={valuesInput.PaperConfig.elevation}
                     className={valuesInput.BoxClasses.Class_Box_Paper}
+                    sx={{
+                        backgroundColor: theme => theme.palette.background.alternative,
+                    }}
                 >
                     <Grid
                         className={valuesInput.BoxClasses.Class_Box_Grid}
@@ -741,7 +750,7 @@ function BoxTestimonial(valuesInput){
                             <Typography
                                 variant= {valuesInput.TypographyConfig.variantBody1}
                                 className={valuesInput.BoxClasses.Class_Box_MobileStepper_Typography}
-                                sx={{color: (theme) => theme.palette.secondary.contrastText}}
+                                sx={{color: (theme) => theme.palette.text.fifth}}
                             >
                                 {steps[activeStep].message}
                             </Typography>
@@ -1067,6 +1076,7 @@ function BoxHomeContact(valuesInput){
                                         onClick={(e)=>{handleSubmit(e)}}
                                         sx={{ 
                                             background: (theme) => theme.palette.button.primary,
+                                            color: (theme) => theme.palette.text.secondary
                                         }}
                                         className={valuesInput.BoxClasses.Class_Box_Button}
                                     >

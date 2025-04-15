@@ -43,6 +43,7 @@
                     {
                         "name":"projeto 1",
                         "description":"descrição do projeto 1",
+                        "description_preview":"",
                         "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
@@ -51,6 +52,7 @@
                     {
                         "name":"projeto 2",
                         "description":"descrição do projeto 2",
+                        "description_preview":"",
                         "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
@@ -154,13 +156,15 @@
                         "name":"project 1",
                         "description":"description of project 1",
                         "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                        "description_preview":"",
                         "linkCode":"/?",
                         "linkDemo":"/?",
                         "technologies":[]
                     },
                     {
                         "name":"project 2",
-                        "description":"description of project 2",
+                        "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electrthe release of Letraset sheets containing Lorem IpsuageMaker including versions of Lorem Ipsum",
+                        "description_preview":"Lorem Ipsum is simply dummy text containing Lorem IpsuageMaker including versions of Lorem Ipsum.",
                         "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
@@ -270,6 +274,7 @@
                     {
                         "name":"projeto 1",
                         "description":"descricion do projeto 1",
+                        "description_preview":"",
                         "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",
@@ -278,6 +283,7 @@
                     {
                         "name":"projeto 2",
                         "description":"descricion do projeto 2",
+                        "description_preview":"",
                         "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
                         "linkCode":"/?",
                         "linkDemo":"/?",

@@ -62,10 +62,11 @@ const IndexPageHome =()=> {
             "Class_toolbar":"home-appbar-div-appbar-toolbar",
             "Class_AppBarTypography":"home-header-appbar-typography",
             "Class_appBar_breadcrumbs":"home-header-appbar-breadcrumbs",
-            "Class_AppBarTypography_box":"home-header-appbar-typography-box",
+            "Class_AppBarTypography_box":"home-header-appbar-typography-box"
           }}
         ButtonAppBar = {{
           "Class_ButtonAppBar":"home-header-button-appbar",
+          "Class_ButtonAppBarIcon":"home-header-button-appbar-icon",
           "Class_ButtonAppBar_box":"home-header-button-appbar-box",
         }}
         ContentText = {{
@@ -171,6 +172,7 @@ const IndexPageHome =()=> {
               "Class_Box_Grid_second":"home-projects-box-grid-second",
               "Class_Box_Grid_hover":"home-projects-box-grid-hover",
               "Class_Box_Grid_hover_second":"home-projects-box-grid-hover-second",
+              "Class_Box_Grid_hover_second_typography_box"  :"home-projects-box-grid-hover-second-typography-box",
               "Class_Box_Grid_hover_tech":"home-projects-box-grid-hover-tech",
               "Class_Box_Grid_hover_tech_second":"home-projects-box-grid-hover-tech-second",
               "Class_Box_img_preview":"home-projects-box-img",

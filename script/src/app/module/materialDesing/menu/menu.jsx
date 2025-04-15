@@ -20,12 +20,16 @@ import LanguageIcon from '@mui/icons-material/Language'
 
 
 function menuFormat(data) {
-    
+
     if(data.typeMenu==="theme"){
-        return <Brightness4/>
+        return <Brightness4
+                    className={data.componentStyleButton.Class_ButtonAppBarIcon}
+                />
     }
     if(data.typeMenu==="language"){
-        return <LanguageIcon/>
+        return <LanguageIcon
+                    className={data.componentStyleButton.Class_ButtonAppBarIcon}
+                />
     }
     else{return null}
 }
