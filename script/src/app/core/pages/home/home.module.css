@@ -282,6 +282,11 @@ ______  _____ ______  ___   _   _  _    _____
     width: 40%;
 }
 
+.home-projects-box-button-hover:hover{
+    background-color: #00000075;
+}
+
+
 
 /* 
 =============================================================================
@@ -389,6 +394,7 @@ ______  _____ ______  ___   _   _  _    _____
     flex-wrap: wrap;
     justify-content: space-evenly;
     justify-items: center;
+    flex-direction: column;
     height: 100%;
 }
 
@@ -408,8 +414,12 @@ ______  _____ ______  ___   _   _  _    _____
 }
 
 .home-contact-box-button{
-    width: 30%;
+    width: 90%;
     height: 15%;
+}
+
+.home-contact-box-button:hover{
+    background-color: #00000075;
 }
 
 .home-contact-box-form-stack{
@@ -659,8 +669,11 @@ _____ ___  ___  ___   _      _       _____  _____ ______  _____  _____  _   _
         min-height: 5rem;
     }
 
+
     .home-contact-box-form {
         gap: 2vh;
+        height: 100%;
+        flex-direction: inherit;
     }
 }
 
@@ -685,5 +698,225 @@ ______  _____  _____   _____  _____ ______  _____  _____  _   _
 */
 
 
+/* 
+=============================================================================
+    HOME
+    - Big Screen
+=============================================================================
+*/
 
 
+
+
+@media (min-width: 1900px) {
+
+
+    /* 
+    =============================================================================
+        HOME APP BAR
+        - Big Screen
+    =============================================================================
+    */
+
+
+
+    .home-header-appbar-typography{
+        font-size:  1.8rem;
+    }
+
+    .home-header-button-appbar-icon{
+        width: 80%;
+        height: 80%;
+    }
+
+
+
+    /* 
+    =============================================================================
+        HOME BOX INTRODUCTION
+        - Big Screen
+    =============================================================================
+    */
+
+
+    .home-intro-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    #typography-introBox-name{
+        font-size: 3rem;
+    }
+
+    .home-intro-box-typography-span,
+    #typography-introBox-prefix-name{
+        font-size: 2rem;
+    }
+
+
+    /* 
+    =============================================================================
+        HOME BOX ABOUT ME
+        - Small Screen
+    =============================================================================
+    */
+
+
+
+    .home-about-me-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    
+
+    .home-about-me-box-typography{
+        font-size: 1.4rem;
+    }
+
+    .home-about-me-box-grid-second-box-img{
+        width: 60%;
+    }
+
+
+    /* 
+    =============================================================================
+        HOME BOX PROJECTS
+        - Small Screen
+    =============================================================================
+    */
+
+    .home-technologies-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    .home-technologies-box-img{
+        width: 55%;
+    }
+
+
+
+    /* 
+    =============================================================================
+        HOME BOX PROJECTS
+        - Small Screen
+    =============================================================================
+    */
+
+
+    .home-projects-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    .home-projects-box-grid-second>h3{
+        font-size: 2rem;
+    }
+
+    .home-projects-box-grid-second>p
+    {
+        font-size: 1.4rem;
+    }
+
+    .home-projects-box-grid-hover-second>p{
+        padding: 1vh 0vh;
+    }
+
+    .home-projects-box-grid-hover-second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    .home-projects-box-container-hover{
+        min-width: 40vw;
+        max-width: 80vw;
+        height: fit-content;
+    }
+
+    .home-projects-box-img-hover-tech {
+        width: 15%;
+    }
+
+    /* 
+    =============================================================================
+        HOME BOX BRANDING
+        - Small Screen
+    =============================================================================
+    */
+    
+
+    .home-brands-box-container{
+        height: 100%;
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    .home-brands-box-img {
+        width: 40%;
+    }
+
+
+    
+
+     /* 
+    =============================================================================
+        HOME BOX TESTIMONIAL
+        - Small Screen
+    =============================================================================
+    */
+
+    .home-testimonial-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+
+    .home-testimonial-box-grid-second-text>h5{
+        font-size: 1.6rem;
+    }
+
+    .home-testimonial-box-grid-second-text>p{
+        font-size: 1.3rem;
+    }
+
+    .home-testimonial-box-button{
+        font-size: 1.4rem;
+    }
+
+    .home-testimonial-box-button>svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+
+
+    /* 
+    =============================================================================
+        HOME BOX CONTACT
+        - Responsive
+    =============================================================================
+    */
+
+
+    .home-contact-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+    
+    .home-contact-box-typography{
+        margin-bottom: 3vh;
+    }
+
+    .home-contact-box-button{
+        width: 90%;
+    }
+
+    .home-contact-box-form{
+        flex-direction: column;
+    }
+    
+}
