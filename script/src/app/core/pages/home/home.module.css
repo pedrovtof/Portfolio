@@ -304,6 +304,7 @@ ______  _____ ______  ___   _   _  _    _____
 .home-brands-box-typography{
     text-decoration: underline;
     margin-bottom: 8vh;
+    font-size: 2.75rem;
 }
 
 .home-brands-box-grid{
@@ -336,6 +337,7 @@ ______  _____ ______  ___   _   _  _    _____
     align-content: center;
     text-decoration: underline;
     margin: 8vh auto;
+    font-size: 2.75rem;
 }
 
 .home-testimonial-box-paper{
@@ -905,6 +907,14 @@ ______  _____  _____   _____  _____ ______  _____  _____  _   _
     .home-contact-box-container{
         min-width: 40vw;
         max-width: 80vw;
+    }
+
+    .home-contact-box-container>h2{
+        font-size: 2.75rem;
+    }
+
+    .home-contact-box-container>h5{
+        font-size: 2.0rem;
     }
     
     .home-contact-box-typography{
