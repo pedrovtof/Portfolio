@@ -20,7 +20,7 @@ export const BoxHomeAboutMe = (valuesInput) =>{
     ]
 
     const printCV = ()=>{
-        print('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/discord.png?raw=true')
+        print('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/cv/pedro_fonseca_cv_pt?raw=true')
     }
 
 
