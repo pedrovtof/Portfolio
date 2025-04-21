@@ -27,7 +27,7 @@ jobs:
         working-directory: script
       
       - name: Wait for server start
-        run: sleep 30
+        run: sleep 60
 
       - name: Verificar se o servidor está rodando
         run: curl -I http://localhost:3000 | grep "200 OK" || exit 1
