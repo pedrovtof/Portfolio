@@ -19,10 +19,6 @@ export const BoxHomeAboutMe = (valuesInput) =>{
         'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/twitter.png?raw=true'
     ]
 
-    const printCV = ()=>{
-        print('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/cv/pedro_fonseca_cv_pt?raw=true')
-    }
-
 
     return(
         <React.Fragment>
@@ -113,37 +109,11 @@ export const BoxHomeAboutMe = (valuesInput) =>{
                                                 />
 
                                             </a>
-
                                         </Grid>
 
                                     )
                                 })
                             }  
-
-                            <Grid
-                                size        ={valuesInput.GridConfig.Grind_columns_second}
-                                className   ={valuesInput.BoxClasses.Class_Box_Grid_second_box}
-                            >
-                                <NoSsr>
-
-                                    <Button 
-                                        variant     ="contained" 
-                                        endIcon     ={<DownloadingIcon />}
-                                        className   ={valuesInput.BoxClasses.Class_Box_Grid_second_box_button}
-                                        sx          ={{ 
-                                            background  : (theme) => theme.palette.button.primary,
-                                            color       : (theme) => theme.palette.text.secondary
-                                        }}
-                                        onClick     ={()=>{printCV()}}
-                                    >
-                                        {
-                                            valuesInput.BoxContentText.aboutMe.cv 
-                                        }
-                                    </Button>
-
-                                </NoSsr>
-
-                            </Grid>
 
                         </Grid>
 
