@@ -23,6 +23,7 @@
 }
 
 .home-brands-box-grid{
+    margin-top: 2vh;
     width: 100%;
     justify-content: space-evenly;
     flex-wrap: wrap;

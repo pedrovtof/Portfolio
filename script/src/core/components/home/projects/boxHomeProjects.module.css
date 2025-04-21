@@ -17,8 +17,8 @@
     text-align: center;
     align-content: center;
     text-decoration: underline;
-    margin-bottom: 15vh;
     padding-top: 5vh;
+    padding-bottom: 2vh;
 }
 
 .home-projects-box-grid{
@@ -175,7 +175,7 @@
     }
 
     .home-projects-box-img-hover-tech {
-        width: 15%;
+        width: 25%;
     }
 
 }

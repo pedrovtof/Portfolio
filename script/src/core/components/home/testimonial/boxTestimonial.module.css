@@ -11,6 +11,7 @@
 
 .home-testimonial-box-container{
     height: 100%;
+    margin-top: 15vh;
 }
 
 .home-testimonial-box-typography{
@@ -22,6 +23,7 @@
 }
 
 .home-testimonial-box-paper{
+    margin-top: 2vh;
     box-sizing: border-box;
     border-radius: 15px;
 }
