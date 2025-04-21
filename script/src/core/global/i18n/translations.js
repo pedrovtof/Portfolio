@@ -1,0 +1,345 @@
+export const translations  = {
+    "pt-BR":{
+        "listAppBar":[
+            "Sobre mim",
+            "Tecnologias",
+            "Projetos",
+            "Experiencia",
+            "Recomendações",
+            "Contato"
+        ],
+        "themes":[
+            "Escuro",
+            "Claro"
+        ],
+        "languages":[
+            "Portugues",
+            "English",
+            "Espanhol"
+        ],
+        "introBox":{
+            "prefixName":"Eu sou",
+            "name":"Pedro Fonseca",
+            "functions":[
+                "Desenvolvedor",
+                "Adm Banco de dados"
+            ]
+        },
+        "aboutMe":{
+            "title":"Sobre mim",
+            "content":"Sou um profissional brasileiro da área de tecnologia, com experiência em administração de Banco de Dados e infraestrutura em nuvem. Minha trajetória começou aos 18 anos, atuando na operação interna de tecnologia e na administração de SGBD (banco de dados) em modelos IaaS e SaaS. Já fui responsável por automações internas e gerenciamento de mais de 15 instâncias distribuídas em mais de 4 SGBD em CLOUD da Google Cloud (GCP) e Oracle Cloud (OCI).\n\nAtualmente, estou aprimorando minhas habilidades em C#, Java, Python e JavaScript, com o objetivo de integrar backend e infraestrutura de forma estratégica. Além disso, tenho planos de ingressar em uma POS e MBA, fortalecendo minha base acadêmica e visão de negócios.\n\nMovido por desafios e pelo aprendizado contínuo, busco oportunidades para aplicar e aprimorar meus conhecimentos.",
+            "cv": "Currículo"
+        },
+        "technologies":{
+            "title":"Tecnologias"
+        },
+        "projects":{ 
+            "title":"Projects",
+            "hoverTitle":"Tecnologias",
+            "ButtonCodeText":"Codigo",
+            "ButtonDemoText":"Demo",
+            "list":[
+                {
+                    "name":"projeto 1",
+                    "description":"descrição do projeto 1",
+                    "description_preview":"",
+                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "linkCode":"/?",
+                    "linkDemo":"/?",
+                    "technologies":[]
+                },
+                {
+                    "name":"projeto 2",
+                    "description":"descrição do projeto 2",
+                    "description_preview":"",
+                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "linkCode":"/?",
+                    "linkDemo":"/?",
+                    "technologies":[]
+                }
+            ]
+        },
+        "brands":{
+            "title":"Experiencias",
+            "list":[
+                {
+                    "label":"O2B",
+                    "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                },
+                {
+                    "label":"Dotz",
+                    "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                }
+            ]
+        },
+        "testimonial":{
+            "title":"Testimonials",
+            "next":"Próximo",
+            "prev":"Anterior",
+            "list":[
+                {
+                    "name":"",
+                    "function":"",
+                    "workedIn":"",
+                    "message":"",
+                    "img":""
+                },
+                {
+                    "name":"",
+                    "function":"",
+                    "workedIn":"",
+                    "message":"",
+                    "img":""
+                }
+            ]
+        },
+        "contact":{
+            "title":"Contato",
+            "subtitle":"Sinta-se a vontade para entrar em contato comigo",
+            "form":{
+                "email":"Email",
+                "subject":"Assunto: Portifólio proposta - <...>",
+                "message":"Escreva sua mensagem...",
+                "send":"Enviar"
+            },
+            "alert":{
+                    "success":"Sucesso! Observação: Caso não abra um pop-up para enviar o e-mail, sinta-se à vontade para copiar os campos e enviar para pedrovotf@gmail.com.",
+                    "error":"Erro ao enviar mensagem, tente novamente!",
+                    "warning":"Preencha todos os campos!"
+            },
+            "image":"https://images.unsplash.com/photo-1481277542470-605612bd2d61"
+        }
+    },
+
+    "en":{
+        "listAppBar":[
+            "About Me",
+            "Technologies",
+            "Projects",
+            "Brands",
+            "Recommendations",
+            "Contact Me"
+        ],
+        "themes":[
+                "Dark",
+                "Light"
+            ],
+        "languages":[
+            "Portugues",
+            "English",
+            "Espanhol"
+        ],
+        "introBox":{
+            "prefixName":"I'm",
+            "name":"Pedro Fonseca",
+            "functions":[
+                "Developer",
+                "Database Administrator"
+            ]
+        },
+        "aboutMe":{
+            "title":"About Me",
+            "content":"I am a Brazilian technology professional with experience in Database Administration and cloud infrastructure. My journey began at the age of 18, working in internal technology operations and managing DBMS (database systems) in IaaS and SaaS models. I have been responsible for internal automations and the management of more than 15 instances distributed across more than 4 DBMS in the cloud, using Google Cloud (GCP) and Oracle Cloud (OCI).\n\nCurrently, I am improving my skills in C#, Java, Python, and JavaScript, aiming to strategically integrate backend development and infrastructure. Additionally, I plan to pursue a postgraduate degree and an MBA to strengthen my academic foundation and business vision.\n\nDriven by challenges and continuous learning, I seek opportunities to apply and enhance my knowledge.",
+            "cv": "Curriculum"
+        },
+        "technologies":{
+            "title":"Technologies"
+        },
+        "projects":{
+            "title":"Projects",
+            "hoverTitle":"Technologies",
+            "ButtonCodeText":"Code",
+            "ButtonDemoText":"Demo",
+            "list":[
+                {
+                    "name":"project 1",
+                    "description":"description of project 1",
+                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "description_preview":"",
+                    "linkCode":"/?",
+                    "linkDemo":"/?",
+                    "technologies":[]
+                },
+                {
+                    "name":"project 2",
+                    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electrthe release of Letraset sheets containing Lorem IpsuageMaker including versions of Lorem Ipsum",
+                    "description_preview":"Lorem Ipsum is simply dummy text containing Lorem IpsuageMaker including versions of Lorem Ipsum.",
+                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "linkCode":"/?",
+                    "linkDemo":"/?",
+                    "technologies":["https://images.unsplash.com/photo-1481277542470-605612bd2d61","https://images.unsplash.com/photo-1481277542470-605612bd2d61"]
+                }
+            ]
+        },
+        "brands":{
+            "title":"Work experiences",
+            "list":[
+                {
+                    "label":"O2B",
+                    "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                },
+                {
+                    "label":"Dotz",
+                    "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                }
+            ]
+        },
+        "testimonial":{
+            "title":"Testimonials",
+            "next":"Next",
+            "prev":"Back",
+            "list":[
+                {
+                    "name":"Teste",
+                    "function":"Teste JR",
+                    "workedIn":"Brand name",
+                    "message":"I highly recommend [Name] for any position that ls. I'm confident that [he/she/they] will be a valuable asset to any team.",
+                    "img":"https://images.unsplash.com/photo-1481277542470-605612bd2d61"
+                },
+                {
+                    "name":"Teste 2",
+                    "function":"Teste PL",
+                    "workedIn":"Brand name 2",
+                    "message":"I highly recommend [Name] for any position that requires dedication, teamwork, and problem-solving skills/they] will be a valuable asset to any team.",
+                    "img":"/?"
+                },
+                {
+                    "name":"Teste 3",
+                    "function":"Teste SR",
+                    "workedIn":"Brand name 3",
+                    "message":"I hfor any position that requires dedication, teamwork, and problem-solving skills. I'm confident that [he/she/they] will be a valuable asset to any team.",
+                    "img":"/?"
+                }
+            ]
+        },
+        "contact":{
+            "title":"Contact",
+            "subtitle":"Please fill out the form below to get in touch with me.",
+            "form":{
+                "email":"Email",
+                "subject":"Subject: Portfolio inquiry - <...>",
+                "message":"Type your message here...",
+                "send":"Submit"
+            },
+            "alert":{
+                    "success":"Success! Note: If a pop-up doesn't open to send the email, feel free to copy the fields and send them to pedrovotf@gmail.com.",
+                    "error":"There was an error sending your message. Please try again later.",
+                    "warning":"Please fill out all fields before submitting."
+            },
+            "image":"https://images.unsplash.com/photo-1481277542470-605612bd2d61"
+        }
+    },
+
+    "es":{
+        "listAppBar": [
+        "Sobre mí",
+        "Tecnologías",
+        "Proyectos",
+        "Experiencia",
+        "Recomendaciones",
+        "Contacto"
+        ],
+        "themes": [
+            "Oscuro",
+            "Claro"
+        ],
+        "languages":[
+            "Portugues",
+            "English",
+            "Espanhol"
+        ],
+        "introBox":{
+            "prefixName":"Soy",
+            "name":"Pedro Fonseca",
+            "functions":[
+                "Developer",
+                "Database Administrator"
+            ]
+        },
+        "aboutMe":{
+            "title":"Sobre mí",
+            "content":"Soy un profesional brasileño del área de tecnología, con experiencia en Administración de Bases de Datos e infraestructura en la nube. Mi trayectoria comenzó a los 18 años, trabajando en operaciones internas de tecnología y en la administración de SGBD (sistemas de bases de datos) en modelos IaaS y SaaS. He sido responsable de automatizaciones internas y de la gestión de más de 15 instancias distribuidas en más de 4 SGBD en la nube de Google Cloud (GCP) y Oracle Cloud (OCI).\n\nActualmente, estoy mejorando mis habilidades en C#, Java, Python y JavaScript, con el objetivo de integrar estratégicamente el backend y la infraestructura. Además, tengo planes de cursar un posgrado y un MBA para fortalecer mi base académica y mi visión de negocios.\n\nImpulsado por los desafíos y el aprendizaje continuo, busco oportunidades para aplicar y mejorar mis conocimientos",
+            "cv": "Currículo"
+        },
+        "technologies":{
+            "title":"Tecnologías"
+        },
+        "projects":{
+            "title":"Projects",
+            "hoverTitle":"Tecnologías",
+            "ButtonCodeText":"Código",
+            "ButtonDemoText":"Demostración",
+            "list":[
+                {
+                    "name":"projeto 1",
+                    "description":"descricion do projeto 1",
+                    "description_preview":"",
+                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "linkCode":"/?",
+                    "linkDemo":"/?",
+                    "technologies":[]
+                },
+                {
+                    "name":"projeto 2",
+                    "description":"descricion do projeto 2",
+                    "description_preview":"",
+                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "linkCode":"/?",
+                    "linkDemo":"/?",
+                    "technologies":[]
+                }
+            ]
+        },
+        "brands":{
+            "title":"Experiencias",
+            "list":[
+                {
+                    "label":"O2B",
+                    "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                },
+                {
+                    "label":"Dotz",
+                    "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                }
+            ]
+        },
+        "testimonial":{
+            "title":"Testimonials",
+            "next":"Próximo",
+            "prev":"Anterior",
+            "list":[
+                {
+                    "name":"",
+                    "function":"",
+                    "workedIn":"",
+                    "message":"",
+                    "img":""
+                },
+                {
+                    "name":"",
+                    "function":"",
+                    "workedIn":"",
+                    "message":"",
+                    "img":""
+                }
+            ]
+        },
+        "contact": {
+            "title": "Contacto",
+            "subtitle": "Completa el siguiente formulario para ponerte en contacto conmigo.",
+            "form": {
+                "email": "Correo electrónico",
+                "subject": "Asunto: Consulta sobre el portafolio - <...>",
+                "message": "Escribe tu mensaje aquí...",
+                "send":"Enviar"
+            },
+            "alert":{
+                    "success":"¡Éxito! Nota: Si no se abre un pop-up para enviar el correo electrónico, siéntase libre de copiar los campos y enviarlos a pedrovotf@gmail.com.",
+                    "error":"Error al enviar el mensaje",
+                    "warning":"Por favor, completa todos los campos antes de enviar el formulario."
+            },
+            "image":"https://images.unsplash.com/photo-1481277542470-605612bd2d61"
+        }
+    }
+}
+

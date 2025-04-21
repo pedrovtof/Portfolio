@@ -1,0 +1,181 @@
+
+
+/* 
+=============================================================================
+    HOME BOX PROJECTS
+    - Responsive
+=============================================================================
+*/
+
+
+
+.home-projects-box-container{
+    margin-top: 15vh;
+}
+
+.home-projects-box-typography{
+    text-align: center;
+    align-content: center;
+    text-decoration: underline;
+    margin-bottom: 15vh;
+    padding-top: 5vh;
+}
+
+.home-projects-box-grid{
+    justify-content: space-around;
+}
+
+.home-projects-box-grid-second{
+    width: 40%;
+    margin: 1vh auto;
+}
+
+.home-projects-box-img{
+    width: 90%;
+    height: 50%;
+    position: relative;
+}
+
+.home-projects-box-img-hover{
+    width: 100%;
+    height: 100%;
+}
+
+.home-projects-box-img-hover-tech{
+    width: 6vw;
+    margin: auto 0.5rem;
+}
+
+.home-projects-box-button-container-hover{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.home-projects-box-grid-hover-tech{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.home-projects-box-grid-hover-tech-second{
+    width: 100%;
+}
+
+.home-projects-box-button-hover{
+    width: 40%;
+}
+
+.home-projects-box-button-hover:hover{
+    background-color: #00000075;
+}
+
+
+
+
+/* 
+=============================================================================
+    HOME BOX PROJECTS
+    - Small Screen
+=============================================================================
+*/
+
+
+
+@media (max-width: 850px) {
+
+    .home-projects-box-typography{
+        margin-bottom: 10vh;
+    }
+
+    .home-projects-box-grid{
+        flex-direction: column;
+    }
+
+    .home-projects-box-img{
+        max-height: 20vh;
+    }
+
+    .home-projects-box-img-hover{
+        margin-bottom: 1vh;
+    }
+
+    .home-projects-box-grid-second{
+        width: 100%;
+        margin: 2vh auto;
+    }
+   
+    .home-projects-box-grid-hover{
+        flex-direction: column-reverse;
+    }
+
+    #size_hover_box_typography_title{
+        font-size: xx-large;
+    }
+
+    .home-projects-box-grid-hover-second{
+        width: 100%;
+    }
+
+    .home-projects-box-img-hover-tech{
+        width: 15%;
+        margin: auto 0.5rem;
+    }
+
+    .home-projects-box-button-container-hover {
+        margin-bottom: 2vh;
+    }
+
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX PROJECTS
+    - Big Screen
+=============================================================================
+*/
+
+
+@media (min-width: 1900px) {
+
+
+    .home-projects-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    .home-projects-box-grid-second>h3{
+        font-size: 2rem;
+    }
+
+    .home-projects-box-grid-second>p
+    {
+        font-size: 1.4rem;
+    }
+
+    .home-projects-box-grid-hover-second>p{
+        padding: 1vh 0vh;
+    }
+
+    .home-projects-box-grid-hover-second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+
+    .home-projects-box-container-hover{
+        min-width: 40vw;
+        max-width: 80vw;
+        height: fit-content;
+    }
+
+    .home-projects-box-img-hover-tech {
+        width: 15%;
+    }
+
+}

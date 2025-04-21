@@ -1,0 +1,136 @@
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Responsive
+=============================================================================
+*/
+
+
+.home-intro-box-container{
+    flex-grow: 1;
+    margin-top: 10vw;
+    width: 100%;
+    height: 100%;
+}
+
+
+.home-intro-box-box{
+    align-content: center;
+    width: 50%;
+}
+
+.home-intro-box-typography{
+    display: block;
+    text-align: left;
+    white-space: nowrap;
+}
+
+#typography-introBox-name{
+    text-indent: 1vw;
+}
+
+#typography-introBox-name,
+#typography-introBox-prefix-name{
+    font-size: 3rem;
+}
+
+#typography-span-index-0::after{
+    content: "&";
+    margin-left: 5px;
+    opacity: 1;
+}
+
+
+.home-intro-box-typography-span{
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+.home-intro-box-img,
+.home-about-me-box-img{
+    width:  100%;
+    display: block;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Small Screen
+=============================================================================
+*/
+
+
+
+@media (max-width: 850px) {
+
+    #home-intro-box-grid{
+        flex-direction: column-reverse;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-intro-box-box,
+    .home-about-me-box-box{
+        align-content: center;
+        width: 100%;
+        margin: 2vh auto;
+    }
+   
+    #typography-introBox-name,
+    #typography-introBox-prefix-name{
+        font-size: 2rem;
+    }
+
+    #typography-introBox-name{
+        text-indent: 2vw;
+    }
+
+    .home-intro-box-typography{
+        display: block;
+        text-align:start;
+    }
+
+    .home-intro-box-typography-span{
+        display: block;
+        font-size: 1.2rem;
+    }
+
+    .home-intro-box-img,
+    .home-about-me-box-img{
+        width: 100%;
+        margin-bottom: 2vh;
+    }
+}
+
+
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Big Screen
+=============================================================================
+*/
+
+
+@media (min-width: 1900px) {
+
+    .home-intro-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    #typography-introBox-name{
+        font-size: 3rem;
+    }
+
+    .home-intro-box-typography-span,
+    #typography-introBox-prefix-name{
+        font-size: 2rem;
+    }
+    
+}

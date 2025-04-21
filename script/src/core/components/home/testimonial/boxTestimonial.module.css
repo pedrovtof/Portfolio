@@ -1,0 +1,132 @@
+
+
+/* 
+=============================================================================
+    HOME BOX TESTIMONIAL
+    - Responsive
+=============================================================================
+*/
+
+
+
+.home-testimonial-box-container{
+    height: 100%;
+}
+
+.home-testimonial-box-typography{
+    text-align: left;
+    align-content: center;
+    text-decoration: underline;
+    margin: 8vh auto;
+    font-size: 2.75rem;
+}
+
+.home-testimonial-box-paper{
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.home-testimonial-box-grid-second-text {
+    padding: 1rem;
+}
+
+
+.home-testimonial-box-img{
+    width: 50%;
+    height: 80%;
+    margin: 1rem auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.home-testimonial-box-grid-second-img{
+    text-align: center;
+}
+
+.home-testimonial-box-grid-second-text{
+    text-align: left;
+    margin: auto;
+}
+
+
+
+
+/* 
+=============================================================================
+    HOME BOX TESTIMONIAL
+    - Small Screen
+=============================================================================
+*/
+
+
+
+
+@media (max-width: 850px) {
+    
+
+    .home-testimonial-box-grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-testimonial-box-grid-second-img{
+        align-self: center;
+    }
+
+    .home-testimonial-box-img{
+        width: 100%;
+    }
+
+    .home-testimonial-box-grid-second-text{
+        width: auto;
+    }
+
+    .home-testimonial-box-mobileStepper-typography{
+        text-align: left;
+    }
+
+
+
+}
+
+
+
+
+/* 
+=============================================================================
+    HOME BOX TESTIMONIAL
+    - Big Screen
+=============================================================================
+*/
+    
+
+
+@media (min-width: 1900px) {
+    
+
+    .home-testimonial-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+
+    .home-testimonial-box-grid-second-text>h5{
+        font-size: 1.6rem;
+    }
+
+    .home-testimonial-box-grid-second-text>p{
+        font-size: 1.3rem;
+    }
+
+    .home-testimonial-box-button{
+        font-size: 1.4rem;
+    }
+
+    .home-testimonial-box-button>svg{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+
+    
+}

@@ -6,21 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next",
+    "rebuild": "rm -rf .next && npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.5",
-    "@mui/material": "^6.4.5",
-    "next": "^15.2.4",
+    "@mui/icons-material": "^6.4.11",
+    "@mui/material": "^6.4.11",
+    "next": "15.3.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.1.0",
     "react-scroll": "^1.9.3"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "eslint": "^9",
-    "eslint-config-next": "15.1.6"
   }
 }

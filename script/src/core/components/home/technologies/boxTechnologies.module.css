@@ -1,0 +1,69 @@
+
+
+/* 
+=============================================================================
+    HOME BOX TECHNOLOGIES
+    - Responsive
+=============================================================================
+*/
+
+
+.home-technologies-box-container{
+    width: 100%;
+    height: fit-content;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    height: 100%;
+}
+
+.home-technologies-box-grid{
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.home-technologies-box-grid-second{
+    width: 10%;
+}
+
+.home-technologies-box-img{
+    width: 40%;
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX TECHNOLOGIES
+    - Small Screen
+=============================================================================
+*/
+
+
+/*
+@media (max-width: 850px) {
+
+}
+*/
+
+
+
+/* 
+=============================================================================
+    HOME BOX TECHNOLOGIES
+    - Big Screen
+=============================================================================
+*/
+
+
+@media (min-width: 1900px) {
+
+    .home-technologies-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    .home-technologies-box-img{
+        width: 45%;
+    }
+
+}

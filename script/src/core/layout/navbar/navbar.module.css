@@ -1,0 +1,93 @@
+
+/* 
+=============================================================================
+    HOME APP BAR
+    - Responsive
+=============================================================================
+*/
+
+.home-appbar-div{
+    display: flex;
+    flex-wrap: nowrap;
+    position: fixed;
+}
+
+.home-header-appbar-typography-box{
+    flex-grow: 1;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.home-header-appbar-typography:hover{
+    text-decoration: underline;
+}
+
+.home-header-button-appbar{
+    border: "1px solid black";
+    width: 3vw;
+    height: 6vh;
+    border-radius: 5px;
+}
+
+.home-header-button-appbar-box{
+    display: flex;
+    border: "1px solid black";
+    background-color: white;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    margin: auto 2vw;
+}
+
+
+
+/* 
+=============================================================================
+    HOME
+    - Small Screen
+=============================================================================
+*/
+
+
+
+@media (max-width: 850px) {
+
+    .home-header-button-appbar{
+        width: 20vw;
+        height: 8vh;
+        margin: auto ;
+    }
+
+    .home-appbar-div-appbar-toolbar{
+        justify-content: space-evenly;
+    }
+
+    .home-header-appbar-typography,
+    .home-header-appbar-typography-box{
+        display: none;
+    }
+
+}
+
+
+/* 
+=============================================================================
+    HOME APP BAR
+    - Big Screen
+=============================================================================
+*/
+
+
+@media (min-width: 1900px) {
+
+    .home-header-appbar-typography{
+        font-size:  1.8rem;
+    }
+
+    .home-header-button-appbar-icon{
+        width: 80%;
+        height: 80%;
+    }
+
+}

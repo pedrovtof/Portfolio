@@ -1,0 +1,134 @@
+/* 
+=============================================================================
+    HOME BOX ABOUT ME
+    - Responsive
+=============================================================================
+*/
+
+
+
+.home-about-me-box-container{
+    flex-grow: 1;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+    width: 100%;
+    height: 100%;
+}
+
+.home-about-me-box-grid{
+    height: fit-content;
+}
+
+.home-intro-box-grid{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home-about-me-box-typography{
+    text-align: justify;
+    align-content: center;
+    font-size: 1rem;
+    position: relative;
+}
+
+#typography-aboutMe-title{
+    font-size: 2.5rem;
+    margin-bottom: 1.5vh;
+    margin-top: 1vh;
+    text-align: center;
+}
+
+.home-about-me-box-img{
+    height: 100%;
+    max-height: 50rem;
+    min-height: 25rem;
+    width: 95%;
+}
+
+.home-about-me-box-grid-second{
+    margin-top: 4vh;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home-about-me-box-grid-second-box{
+    width: 12%;
+}
+
+.home-about-me-box-grid-second-box-img{
+    width: 80%;
+}
+
+.home-about-me-box-grid-second-box-button {
+    height: 3rem;
+}
+
+.home-about-me-box-grid-second-box-button:hover{
+    background-color: #00000075;
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX ABOUT ME
+    - Small Screen
+=============================================================================
+*/
+
+
+
+@media (max-width: 850px) {
+
+    .home-about-me-box-container{
+        flex-grow: 1;
+        margin-top: 2vh;
+    }
+
+    .home-about-me-box-img{
+        height: 100%;
+    }
+
+    .home-intro-box-container{
+        flex-grow: 1;
+        margin-top: 20vw;
+    }
+
+    .home-about-me-box-container{
+        flex-grow: 1;
+        margin-top: 5vw;
+    }
+
+}
+
+
+
+
+/* 
+=============================================================================
+    HOME BOX ABOUT ME
+    - Big Screen
+=============================================================================
+*/
+
+
+    
+
+@media (min-width: 1900px) {
+
+    .home-about-me-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    
+
+    .home-about-me-box-typography{
+        font-size: 1.4rem;
+    }
+
+    .home-about-me-box-grid-second-box-img{
+        width: 60%;
+    }
+    
+}

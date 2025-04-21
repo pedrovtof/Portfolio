@@ -1,0 +1,148 @@
+
+
+/* 
+=============================================================================
+    HOME BOX CONTACT
+    - Responsive
+=============================================================================
+*/
+
+
+
+.home-contact-box-container{
+    margin-top: 15vh;
+    height: 80vh;
+    width: 100%;
+}
+
+.home-contact-box-img{
+    height: 100%;
+    max-height: 50rem;
+    min-height: 25rem;
+    width: 90%;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+.home-contact-box-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.MuiTextField-root{
+    width: 90%;
+}
+
+.home-contact-box-textArea{
+    width: 90%;
+    padding: 2vh 0.2vw;
+}
+
+
+.home-contact-box-typography{
+    margin-bottom: 8vh;
+    margin-top: 5vh;
+}
+
+.home-contact-box-button{
+    width: 90%;
+    height: 15%;
+}
+
+.home-contact-box-button:hover{
+    background-color: #00000075;
+}
+
+.home-contact-box-form-stack{
+    margin: 2vh 3vw;
+    position: relative;
+    bottom: 1vh;
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX CONTACT
+    - Small Screen
+=============================================================================
+*/
+
+
+
+@media (max-width: 850px) {
+
+    .home-contact-box-grid{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .home-contact-box-grid-second{
+        width: 100%;
+        text-align: center;
+        margin: 2vh 0;
+    }
+
+    .home-contact-box-img{
+        width: 80%;
+        max-height: 10rem;
+        min-height: 5rem;
+    }
+
+
+    .home-contact-box-form {
+        gap: 2vh;
+        height: 100%;
+        flex-direction: inherit;
+    }
+
+}
+
+
+
+
+/* 
+=============================================================================
+    HOME BOX CONTACT
+    - Big Screen
+=============================================================================
+*/
+
+    
+
+
+@media (min-width: 1900px) {
+    
+
+    .home-contact-box-container{
+        min-width: 40vw;
+        max-width: 80vw;
+    }
+
+    .home-contact-box-container>h2{
+        font-size: 2.75rem;
+    }
+
+    .home-contact-box-container>h5{
+        font-size: 2.0rem;
+    }
+    
+    .home-contact-box-typography{
+        margin-bottom: 3vh;
+    }
+
+    .home-contact-box-button{
+        width: 90%;
+    }
+
+    .home-contact-box-form{
+        flex-direction: column;
+    }
+
+    
+}
