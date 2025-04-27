@@ -58,6 +58,7 @@ jobs:
         run: npm run build
         working-directory: script
 
+
   validate-production:
     runs-on: ubuntu-latest
     needs: validate-build
@@ -78,6 +79,14 @@ jobs:
 
       - name: Install wait-on
         run: npm install -g wait-on
+
+      - name: Cache Next.js build
+        uses: actions/cache@v3
+        with:
+          path: script/.next
+          key: next-build-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            next-build-${{ runner.os }}-
         
       - name: Run server Next.js
         run: |
