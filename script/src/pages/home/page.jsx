@@ -32,10 +32,6 @@ const PortifolioPage =()=> {
                 "Class_Box_Typography_span" :"home-intro-box-typography-span",
                 "Class_Box_img"             :"home-intro-box-img"
                 }}
-                GridConfig          = {{
-                "Grid_size"     :12,
-                "Grid_columns"  :6
-                }}
                 TypographyConfig    = {{
                 "variantH1"         :"h1",
                 "variantH2"         :"h2",
@@ -187,10 +183,6 @@ const PortifolioPage =()=> {
                 PaperConfig         = {{
                     "elevation":0,
                 }}
-                GridConfig          = {{
-                    "Grid_size"     :12,
-                    "Grid_columns"  :6,
-                }}
                 MobileStepperConfig = {{
                     "variant"   :"dots",
                     "position"  :"static",
@@ -238,10 +230,6 @@ const PortifolioPage =()=> {
                 ButtonConfig        = {{
                     "type"      :"submit",
                     "variant"   :"contained",
-                }}
-                GridConfig          = {{
-                    "Grid_size"     :12,
-                    "Grid_columns"  :6,
                 }}
             />
         </Element>
