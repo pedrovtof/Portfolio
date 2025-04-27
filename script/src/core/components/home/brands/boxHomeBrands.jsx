@@ -18,7 +18,7 @@ export const BoxHomeBrands = (valuesInput) =>{
                 <Typography
                     className   ={valuesInput.BoxClasses.Class_Box_Typography}
                     variant     ={valuesInput.TypographyConfig.variant}
-                    sx          ={{ color: (theme) => theme.palette.text.fifth }}
+                    sx          ={{ color: (theme) => theme.palette.text.secondary }}
                 >
                     {
                         valuesInput.BoxContentText.brands.title
