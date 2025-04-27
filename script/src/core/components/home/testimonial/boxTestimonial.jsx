@@ -2,8 +2,8 @@ import React        from 'react'
 import {
     Typography,
     Container,
-    NoSsr, 
     Button,
+    Box,
     MobileStepper,
     Paper
 }                   from '@mui/material'
@@ -11,7 +11,6 @@ import {
     KeyboardArrowLeft,
     KeyboardArrowRight
 }                   from '@mui/icons-material'
-import Grid         from '@mui/material/Grid2'
 
 export const BoxTestimonial =(valuesInput) =>{
     
@@ -56,13 +55,11 @@ export const BoxTestimonial =(valuesInput) =>{
                     sx          ={{ backgroundColor: theme => theme.palette.background.alternative }}
                 >
 
-                    <Grid
+                    <Box
                         className   ={valuesInput.BoxClasses.Class_Box_Grid}
-                        container
-                        columns     ={valuesInput.GridConfig.Grid_size}
                     >
 
-                        <Grid
+                        <Box
                             className   ={`
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second} 
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_img}
@@ -76,9 +73,9 @@ export const BoxTestimonial =(valuesInput) =>{
                                 className   ={valuesInput.BoxClasses.Class_Box_img}
                             />
 
-                        </Grid>
+                        </Box>
 
-                        <Grid
+                        <Box
                             className   ={`
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second} 
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_txt}
@@ -118,9 +115,9 @@ export const BoxTestimonial =(valuesInput) =>{
                                 {steps[activeStep].message}
                             </Typography>
 
-                        </Grid>
+                        </Box>
 
-                    </Grid>
+                    </Box>
 
                 </Paper>
 
