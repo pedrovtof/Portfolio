@@ -28,7 +28,7 @@ jobs:
       - name: Run dev Next.js
         run: |
           npm run dev &
-          wait-on --httpTimeout 30000 http://localhost:3000
+          wait-on --httpTimeout 30000 http://localhost:3000 || exit 1
         working-directory: script
 
 
@@ -82,7 +82,7 @@ jobs:
       - name: Run server Next.js
         run: |
           npm start &
-          wait-on --httpTimeout 30000 http://localhost:3000
+          wait-on --httpTimeout 30000 http://localhost:3000 || exit 1
         working-directory: script
 
       - name: Validate server
