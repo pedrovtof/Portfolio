@@ -1,9 +1,8 @@
 name: Validate Next.js app
 
 on:
-  push:
+  pull_request:
     branches: ["master", "main"]
-
 
 jobs:
   validate-dev:
