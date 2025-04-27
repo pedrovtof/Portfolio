@@ -11,7 +11,6 @@ import {
     AlertTitle,
     Stack 
 }                   from '@mui/material'
-import Grid         from '@mui/material/Grid2'
 
 
 export const BoxHomeContact = (valuesInput) =>{
@@ -210,15 +209,12 @@ export const BoxHomeContact = (valuesInput) =>{
 
                 </Stack>
 
-                <Grid
+                <Box
                     className   ={valuesInput.BoxClasses.Class_Box_Grid}
-                    container
-                    columns     ={valuesInput.GridConfig.Grid_size}
                 >
 
-                    <Grid
+                    <Box
                         className   ={valuesInput.BoxClasses.Class_Box_Grid_Second}
-                        size        ={valuesInput.GridConfig.Grid_columns}
                     >
 
                         <Box
@@ -301,11 +297,10 @@ export const BoxHomeContact = (valuesInput) =>{
                                 
                         </Box>
 
-                    </Grid>
+                    </Box>
 
-                    <Grid
+                    <Box
                         className   ={valuesInput.BoxClasses.Class_Box_Grid_Second}
-                        size        ={valuesInput.GridConfig.Grid_columns}
                     >
 
                         {
@@ -315,9 +310,9 @@ export const BoxHomeContact = (valuesInput) =>{
                             />
                         }
 
-                    </Grid>
+                    </Box>
 
-                </Grid>
+                </Box>
 
             </Container>
         </React.Fragment>
