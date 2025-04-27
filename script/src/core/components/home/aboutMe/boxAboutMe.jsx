@@ -2,11 +2,9 @@ import React                from "react"
 import {
     Typography,
     Container ,  
-    Button,
-    NoSsr
+    Box
 }                           from '@mui/material'
 import Grid                 from '@mui/material/Grid2'
-import DownloadingIcon      from '@mui/icons-material/Downloading';
 
 
 export const BoxHomeAboutMe = (valuesInput) =>{
@@ -26,14 +24,11 @@ export const BoxHomeAboutMe = (valuesInput) =>{
                 className={valuesInput.BoxClasses.Class_Box_Container}
             >
 
-                <Grid
-                    container
-                    columns     ={valuesInput.GridConfig.Grid_size}
+                <Box
                     className   ={valuesInput.BoxClasses.Class_Box_Grid}
                 >
 
-                    <Grid
-                        size        ={valuesInput.GridConfig.Grid_columns}
+                    <Box
                         className   ={valuesInput.BoxClasses.Class_Box}
                     >
                         <img 
@@ -41,9 +36,9 @@ export const BoxHomeAboutMe = (valuesInput) =>{
                             alt         =""
                             className   ={valuesInput.BoxClasses.Class_Box_img}
                         />
-                    </Grid>
+                    </Box>
 
-                    <Grid 
+                    <Box 
                         size        ={valuesInput.GridConfig.Grid_columns}
                         className   ={valuesInput.BoxClasses.Class_Box}
                     >   
@@ -117,9 +112,9 @@ export const BoxHomeAboutMe = (valuesInput) =>{
 
                         </Grid>
 
-                    </Grid>
+                    </Box>
 
-                </Grid>
+                </Box>
 
             </Container>
         </React.Fragment>

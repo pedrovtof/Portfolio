@@ -1,5 +1,4 @@
 
-
 /* 
 =============================================================================
     HOME BOX PROJECTS
@@ -7,10 +6,12 @@
 =============================================================================
 */
 
-
+a{
+    text-decoration: none;
+}
 
 .home-projects-box-container{
-    margin-top: 15vh;
+    height: 100% ;
 }
 
 .home-projects-box-typography{
@@ -18,22 +19,19 @@
     align-content: center;
     text-decoration: underline;
     padding-top: 5vh;
-    padding-bottom: 2vh;
+    padding-bottom: 5vh;
 }
+
 
 .home-projects-box-grid{
     justify-content: space-around;
 }
 
-.home-projects-box-grid-second{
-    width: 40%;
-    margin: 1vh auto;
-}
-
 .home-projects-box-img{
-    width: 90%;
+    width: 80%;
     height: 50%;
     position: relative;
+    border-radius: 15px;
 }
 
 .home-projects-box-img-hover{
@@ -41,39 +39,58 @@
     height: 100%;
 }
 
-.home-projects-box-img-hover-tech{
-    width: 6vw;
-    margin: auto 0.5rem;
+.home-projects-box-grid-second{
+    height: fit-content;
+}
+
+.home-projects-box-grid-second>p{
+    text-align: justify;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+.home-projects-box-grid-second>h3{
+    text-align: justify;
+}
+
+.home-projects-box-grid-second{
+    text-align: center;
+}
+
+.home-projects-box-grid-hover{   
+    display: flex;
 }
 
 .home-projects-box-button-container-hover{
-    margin-top: 2vh;
     display: flex;
-    justify-content: space-evenly;
-}
-
-.home-projects-box-grid-hover-tech{
     justify-content: space-around;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+    flex-wrap: nowrap;
+    margin-bottom: 1vh;
 }
 
 .home-projects-box-grid-hover-tech-second{
-    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1vh;
 }
 
-.home-projects-box-button-hover{
+.home-projects-box-button-container-hover>button{
     width: 40%;
 }
 
-.home-projects-box-button-hover:hover{
-    background-color: #00000075;
+.home-projects-box-img-hover-tech{
+    width: 20%;
+    height: 100%;
 }
 
+.home-projects-box-grid-hover-second-typography-box>h2
+{
+    font-size: 2.7rem;
+}
 
-
+#size_hover_box_typography_title{
+    font-size: 2.5rem;
+}
 
 /* 
 =============================================================================
@@ -82,53 +99,54 @@
 =============================================================================
 */
 
-
-
 @media (max-width: 850px) {
 
-    .home-projects-box-typography{
-        margin-bottom: 10vh;
-    }
-
-    .home-projects-box-grid{
-        flex-direction: column;
-    }
-
     .home-projects-box-img{
-        max-height: 20vh;
-    }
-
-    .home-projects-box-img-hover{
-        margin-bottom: 1vh;
-    }
-
-    .home-projects-box-grid-second{
-        width: 100%;
-        margin: 2vh auto;
-    }
-   
-    .home-projects-box-grid-hover{
-        flex-direction: column-reverse;
-    }
-
-    #size_hover_box_typography_title{
-        font-size: xx-large;
+        width: 70%;
+        max-width: 420px;
+        max-height: 80%;
     }
 
     .home-projects-box-grid-hover-second{
         width: 100%;
     }
 
-    .home-projects-box-img-hover-tech{
-        width: 15%;
-        margin: auto 0.5rem;
+    .home-projects-box-grid-hover{   
+        flex-direction: column-reverse;
+    }
+   
+
+    .home-projects-box-img-hover{
+       max-height: 350px;
     }
 
-    .home-projects-box-button-container-hover {
-        margin-bottom: 2vh;
+    .home-projects-box-img-hover-tech{
+        max-height: 150px;
+        max-width: 80px;
     }
 
 }
+
+
+
+/* 
+=============================================================================
+    HOME BOX PROJECTS
+    - Medium Screen
+=============================================================================
+*/
+
+
+
+@media (min-width: 851px) and (max-width: 1899px) {
+    
+    .home-projects-box-img-hover-tech{
+        max-height: 150px;
+        max-width: 120px;
+    }
+    
+}
+
 
 
 
@@ -140,42 +158,31 @@
 */
 
 
-@media (min-width: 1900px) {
-
-
-    .home-projects-box-container{
-        min-width: 40vw;
-        max-width: 80vw;
+@media (min-width: 1900px) and (max-width: 2399px){
+    .home-projects-box-img-hover-tech{
+        max-height: 200px;
+        max-width: 170px;
     }
-
-    .home-projects-box-grid-second>h3{
-        font-size: 2rem;
-    }
-
-    .home-projects-box-grid-second>p
-    {
-        font-size: 1.4rem;
-    }
-
-    .home-projects-box-grid-hover-second>p{
-        padding: 1vh 0vh;
-    }
-
-    .home-projects-box-grid-hover-second{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+    
+}
 
 
-    .home-projects-box-container-hover{
-        min-width: 40vw;
-        max-width: 80vw;
-        height: fit-content;
-    }
 
-    .home-projects-box-img-hover-tech {
-        width: 25%;
+/* 
+=============================================================================
+    HOME BOX PROJECTS
+    - Biggest Screen 
+=============================================================================
+*/
+
+
+
+@media (min-width: 2400px){
+
+    .home-projects-box-img-hover-tech{
+        max-height: 300px;
+        max-width: 280px;
     }
 
 }
+

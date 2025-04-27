@@ -29,15 +29,12 @@ export const BoxHomeProjects = (valuesInput) =>{
             <React.Fragment>
                 {
                     previewProjectState>=0 && valuesInput.BoxContentText.projects.list[previewProjectState]?
-                        <Grid
-                            container
-                            columns     ={valuesInput.GridConfig.Grid_size}
-                            className   ={valuesInput.BoxClasses.Class_Box_Grid_hover}
+                        <Box
+                            className={valuesInput.BoxClasses.Class_Box_Grid_hover}
                         >
 
-                            <Grid
-                                size        ={valuesInput.GridConfig.Grid_columns}
-                                className   ={valuesInput.BoxClasses.Class_Box_Grid_hover_second}
+                            <Box  
+                                className={valuesInput.BoxClasses.Class_Box_Grid_hover_second}
                             >
 
                                 <Box
@@ -80,15 +77,12 @@ export const BoxHomeProjects = (valuesInput) =>{
                                         }
                                     </Typography>
 
-                                    <Grid
-                                        container
-                                        columns     ={valuesInput.GridConfig.Grid_size}
-                                        className   ={valuesInput.BoxClasses.Class_Box_Grid_hover_tech}
+                                    <Box
+                                        className={valuesInput.BoxClasses.Class_Box_Grid_hover_tech}
                                     >
 
-                                        <Grid
-                                            size        ={valuesInput.GridConfig.Grid_columns_hover}
-                                            className   ={valuesInput.BoxClasses.Class_Box_Grid_hover_tech_second}
+                                        <Box
+                                            className={valuesInput.BoxClasses.Class_Box_Grid_hover_tech_second}
                                         >
                                            <NoSsr>
                                                 {
@@ -107,9 +101,9 @@ export const BoxHomeProjects = (valuesInput) =>{
                                                     })
                                                 }
                                             </NoSsr>
-                                        </Grid>
+                                        </Box>
 
-                                    </Grid>
+                                    </Box>
                                 
                                 </Box>
 
@@ -168,9 +162,8 @@ export const BoxHomeProjects = (valuesInput) =>{
 
                                 </Box>
 
-                            </Grid>
-                            <Grid
-                                size        ={valuesInput.GridConfig.Grid_columns}
+                            </Box>
+                            <Box
                                 className   ={valuesInput.BoxClasses.Class_Box_Grid_hover_second}
                             >
                                 <img
@@ -179,9 +172,9 @@ export const BoxHomeProjects = (valuesInput) =>{
                                 >
                                 </img>
 
-                            </Grid>
+                            </Box>
 
-                        </Grid>
+                        </Box>
                     :null
                 }
             </React.Fragment>
@@ -216,6 +209,12 @@ export const BoxHomeProjects = (valuesInput) =>{
                             valuesInput.BoxContentText.projects.list.map((item,index)=>{
                                 return(
                                         <Grid
+                                            sx          ={{
+                                                    '@media (max-width:850px)': {
+                                                        flexBasis: '100%',
+                                                        maxWidth: '100%',
+                                                    }
+                                                }} 
                                             size        ={valuesInput.GridConfig.Grid_columns}
                                             key         ={index}
                                             className   ={valuesInput.BoxClasses.Class_Box_Grid_second}

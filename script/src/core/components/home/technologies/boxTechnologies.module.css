@@ -1,5 +1,3 @@
-
-
 /* 
 =============================================================================
     HOME BOX TECHNOLOGIES
@@ -7,12 +5,10 @@
 =============================================================================
 */
 
-
 .home-technologies-box-container{
     width: 100%;
     height: fit-content;
-    margin-top: 15vh;
-    margin-bottom: 5vh;
+    margin-top: 5vh;
     height: 100%;
 }
 
@@ -21,15 +17,10 @@
     margin-top: 5vh;
 }
 
+
 .home-technologies-box-grid-second{
-    width: 10%;
+    text-align: center;
 }
-
-.home-technologies-box-img{
-    width: 40%;
-}
-
-
 
 /* 
 =============================================================================
@@ -38,12 +29,51 @@
 =============================================================================
 */
 
-
-/*
 @media (max-width: 850px) {
 
+    .home-technologies-box-container{
+        margin-bottom: 10vh;
+    }
+    
+    .home-technologies-box-img{
+        width: 70%;
+        max-width: 70px;
+    }
+
+    .home-technologies-box-grid-title{
+        font-size: 3rem;
+    }
+
 }
+
+
+
+/* 
+=============================================================================
+    HOME BOX TECHNOLOGIES
+    - Medium Screen
+=============================================================================
 */
+
+
+
+@media (min-width: 851px) and (max-width: 1899px) {
+    
+    .home-technologies-box-container{
+        margin-bottom: 40vh;
+    }
+
+    
+    .home-technologies-box-img{
+        width: 40%;
+    }
+
+    .home-technologies-box-grid-title{
+        font-size: 3rem;
+    }
+    
+}
+
 
 
 
@@ -55,15 +85,44 @@
 */
 
 
-@media (min-width: 1900px) {
+@media (min-width: 1900px) and (max-width: 2399px){
 
     .home-technologies-box-container{
-        min-width: 40vw;
-        max-width: 80vw;
+        margin-bottom: 35vh;
+    }
+    
+    .home-technologies-box-img{
+        width: 40%;
     }
 
-    .home-technologies-box-img{
-        width: 45%;
+    .home-technologies-box-grid-title{
+        font-size: 3rem;
     }
+    
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX TECHNOLOGIES
+    - Biggest Screen 
+=============================================================================
+*/
+
+
+
+@media (min-width: 2400px){
+
+    .home-technologies-box-container{
+        margin-bottom: 32vh;
+    }
+
+    
+    .home-technologies-box-img{
+        width: 35%;
+    }
+    
 
 }
+

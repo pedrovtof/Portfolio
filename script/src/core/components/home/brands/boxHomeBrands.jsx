@@ -18,7 +18,7 @@ export const BoxHomeBrands = (valuesInput) =>{
                 <Typography
                     className   ={valuesInput.BoxClasses.Class_Box_Typography}
                     variant     ={valuesInput.TypographyConfig.variant}
-                    sx          ={{color: (theme) => theme.palette.text.primary}}
+                    sx          ={{ color: (theme) => theme.palette.text.fifth }}
                 >
                     {
                         valuesInput.BoxContentText.brands.title
@@ -29,6 +29,9 @@ export const BoxHomeBrands = (valuesInput) =>{
                     className   ={valuesInput.BoxClasses.Class_Box_Grid}
                     container
                     columns     ={valuesInput.GridConfig.Grid_size}
+                    sx          ={{
+                        justifyContent:"space-evenly",
+                    }}
                 >
                     <NoSsr>
                         {

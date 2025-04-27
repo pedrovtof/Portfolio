@@ -137,7 +137,9 @@ const PortifolioPage =()=> {
           />
         </Element>
 
-        <Element id={t.listAppBar[3]} >
+        <Element id={t.listAppBar[3]} 
+            style={{ backgroundColor: theme.palette.background.alternative }}
+        >
             <BoxHomeBrands 
                 BoxContentText      = {{
                     "brands":t.brands,

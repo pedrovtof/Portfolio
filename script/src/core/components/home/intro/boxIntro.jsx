@@ -2,9 +2,9 @@ import React        from 'react'
 import {
     Typography,
     Container,
+    Box,
     NoSsr
 }                   from '@mui/material'
-import Grid         from '@mui/material/Grid2'
 
 export const BoxHomeIntro = (valuesInput) => {
 
@@ -13,14 +13,11 @@ export const BoxHomeIntro = (valuesInput) => {
             <Container 
                 className={valuesInput.BoxClasses.Class_Box_Container}
             >
-                <Grid 
-                    container 
-                    columns ={valuesInput.GridConfig.Grid_size}
-                    id      ={valuesInput.BoxClasses.Class_Box_Grid}
+                <Box 
+                    className={valuesInput.BoxClasses.Class_Box_Grid}
                 >
-                    <Grid 
-                        size        ={valuesInput.GridConfig.Grid_columns} 
-                        className   ={ valuesInput.BoxClasses.Class_Box}
+                    <Box 
+                        className={ valuesInput.BoxClasses.Class_Box}
                     >
                         
                         <Typography 
@@ -36,9 +33,9 @@ export const BoxHomeIntro = (valuesInput) => {
                            
                       
                         <Typography 
-                            id={valuesInput.TypographyConfig.typographyIdName}
-                            className={valuesInput.BoxClasses.Class_Box_Typography}
-                            variant={valuesInput.TypographyConfig.variantH1}
+                            id          ={valuesInput.TypographyConfig.typographyIdName}
+                            className   ={valuesInput.BoxClasses.Class_Box_Typography}
+                            variant     ={valuesInput.TypographyConfig.variantH1}
                         >
                             {
                                 valuesInput.BoxContentText.introBox.name
@@ -69,18 +66,17 @@ export const BoxHomeIntro = (valuesInput) => {
                                     })
                                 }
                             </NoSsr>
-                    </Grid>
-                    <Grid 
-                        size        ={valuesInput.GridConfig.Grid_columns}
-                        className   ={ valuesInput.BoxClasses.Class_Box}
+                    </Box>
+                    <Box
+                        className={ valuesInput.BoxClasses.Class_Box}
                     >
                         <img 
                             src         ="https://images.unsplash.com/photo-1481277542470-605612bd2d61" 
                             alt         ="" 
                             className   ={ valuesInput.BoxClasses.Class_Box_img}
                         />
-                    </Grid>
-                </Grid>
+                    </Box>
+                </Box>
             </Container>
         </React.Fragment>
     )

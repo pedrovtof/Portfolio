@@ -10,7 +10,6 @@
     flex-grow: 1;
     margin-top: 10vw;
     width: 100%;
-    height: 100%;
 }
 
 
@@ -64,15 +63,18 @@
 =============================================================================
 */
 
-
-
 @media (max-width: 850px) {
 
-    #home-intro-box-grid{
+    .home-intro-box-container{
+        flex-grow: 1;
+        margin-top: 25vw;
+        width: 100%;
+        height: 100%;
+    }
+
+    .home-intro-box-grid{
+        display: flex;
         flex-direction: column-reverse;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
     }
 
     .home-intro-box-box,
@@ -81,19 +83,25 @@
         width: 100%;
         margin: 2vh auto;
     }
+
+    .home-intro-box-grid:first-child{
+        justify-items: center;
+    }
    
     #typography-introBox-name,
     #typography-introBox-prefix-name{
         font-size: 2rem;
+        text-align: left;
     }
 
     #typography-introBox-name{
         text-indent: 2vw;
+        text-align: left;
     }
 
     .home-intro-box-typography{
         display: block;
-        text-align:start;
+        text-align:left;
     }
 
     .home-intro-box-typography-span{
@@ -109,6 +117,33 @@
 }
 
 
+
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Medium Screen
+=============================================================================
+*/
+
+
+
+@media (min-width: 851px) and (max-width: 1899px) {
+    
+    .home-intro-box-container{
+        min-height: 60vw;
+        max-height: 80vw;
+    }
+
+    .home-intro-box-grid{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
+
+
 /* 
 =============================================================================
     HOME BOX INTRODUCTION
@@ -117,11 +152,11 @@
 */
 
 
-@media (min-width: 1900px) {
+@media (min-width: 1900px) and (max-width: 2399px){
 
     .home-intro-box-container{
-        min-width: 40vw;
-        max-width: 80vw;
+        min-height: 40vw;
+        max-height: 60vw;
     }
 
     #typography-introBox-name{
@@ -131,6 +166,45 @@
     .home-intro-box-typography-span,
     #typography-introBox-prefix-name{
         font-size: 2rem;
+    }
+
+    .home-intro-box-grid{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+
+
+/* 
+=============================================================================
+    HOME BOX INTRODUCTION
+    - Biggest Screen 
+=============================================================================
+*/
+
+
+
+@media (min-width: 2400px){
+
+    .home-intro-box-container{
+        min-height: 40vw;
+        max-height: 50vw;
+    }
+
+    #typography-introBox-name{
+        font-size: 3rem;
+    }
+
+    .home-intro-box-typography-span,
+    #typography-introBox-prefix-name{
+        font-size: 2rem;
+    }
+
+    .home-intro-box-grid{
+        display: flex;
+        flex-direction: row;
     }
     
 }
