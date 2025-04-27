@@ -2,14 +2,14 @@ import React                    from "react"
 import { Element}               from "react-scroll"
 import { useRouter }            from 'next/router'
 import { useTheme }             from "@mui/material/styles"
-import { translations }         from '../../core/global/i18n/translations'
-import { BoxHomeIntro }         from '../../core/components/home/intro/boxIntro'
-import { BoxHomeAboutMe }       from '../../core/components/home/aboutMe/boxAboutMe'
-import { BoxHomeTechnologies }  from '../../core/components/home/technologies/boxTechnologies'
-import { BoxHomeProjects }      from '../../core/components/home/projects/boxHomeProjects'
-import { BoxHomeBrands }        from '../../core/components/home/brands/BoxHomeBrands'
-import { BoxTestimonial }       from '../../core/components/home/testimonial/boxTestimonial'
-import { BoxHomeContact }       from '../../core/components/home/contactMe/boxHomeContact'
+import { translations }         from '../../core/global/i18n/translations.js'
+import { BoxHomeIntro }         from '../../core/components/home/intro/boxIntro.jsx'
+import { BoxHomeAboutMe }       from '../../core/components/home/aboutMe/boxAboutMe.jsx'
+import { BoxHomeTechnologies }  from '../../core/components/home/technologies/boxTechnologies.jsx'
+import { BoxHomeProjects }      from '../../core/components/home/projects/boxHomeProjects.jsx'
+import { BoxHomeBrands }        from '../../core/components/home/brands/BoxHomeBrands.jsx'
+import { BoxTestimonial }       from '../../core/components/home/testimonial/boxTestimonial.jsx'
+import { BoxHomeContact }       from '../../core/components/home/contactMe/boxHomeContact.jsx'
 
 
 const PortifolioPage =()=> {

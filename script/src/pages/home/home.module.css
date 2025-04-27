@@ -1,7 +1,7 @@
-@import '../../core//components/home/intro/boxIntro.module.css';
-@import '../../core//components/home/aboutMe/boxAboutMe.module.css';
-@import '../../core//components/home/technologies/boxTechnologies.module.css';
-@import '../../core//components/home/projects/boxHomeProjects.module.css';
-@import '../../core//components/home/brands/boxHomeBrands.module.css';
-@import '../../core//components/home/testimonial/boxTestimonial.module.css';
-@import '../../core//components/home/contactMe/boxHomeContact.module.css';
+@import '../../core/components/home/intro/boxIntro.module.css';
+@import '../../core/components/home/aboutMe/boxAboutMe.module.css';
+@import '../../core/components/home/technologies/boxTechnologies.module.css';
+@import '../../core/components/home/projects/boxHomeProjects.module.css';
+@import '../../core/components/home/brands/boxHomeBrands.module.css';
+@import '../../core/components/home/testimonial/boxTestimonial.module.css';
+@import '../../core/components/home/contactMe/boxHomeContact.module.css';
