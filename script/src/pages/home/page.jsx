@@ -7,7 +7,7 @@ import { BoxHomeIntro }         from '../../core/components/home/intro/boxIntro.
 import { BoxHomeAboutMe }       from '../../core/components/home/aboutMe/boxAboutMe.jsx'
 import { BoxHomeTechnologies }  from '../../core/components/home/technologies/boxTechnologies.jsx'
 import { BoxHomeProjects }      from '../../core/components/home/projects/boxHomeProjects.jsx'
-import { BoxHomeBrands }        from '../../core/components/home/brands/BoxHomeBrands.jsx'
+import { BoxHomeBrands }        from '../../core/components/home/brands/boxHomeBrands.jsx'
 import { BoxTestimonial }       from '../../core/components/home/testimonial/boxTestimonial.jsx'
 import { BoxHomeContact }       from '../../core/components/home/contactMe/boxHomeContact.jsx'
 
