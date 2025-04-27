@@ -6,40 +6,93 @@
 =============================================================================
 */
 
-.home-testimonial-box-img{
-    width: 5%;
+.home-testimonial-box-container{
+    margin-top: 15vh;
 }
 
+.home-testimonial-box-typography{
+    font-size: 3rem;
+}
+
+.home-testimonial-box-paper{
+    padding: 1rem;
+    border-radius: 5px;
+    margin-top: 2vh;
+}
+
+.home-testimonial-box-img{
+    width: 100%;
+}
+
+.home-testimonial-box-grid {
+    display: flex;
+}
 
 /* 
 =============================================================================
     HOME BOX TESTIMONIAL
     - Small Screen
 =============================================================================
-
+*/
 
 @media (max-width: 850px) {
 
+    .home-testimonial-box-grid {
+        flex-direction: column;
+    }
+    
+    .home-testimonial-box-grid-second-img{
+        text-align: center;
+    }
+
+    .home-testimonial-box-img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 
 }
 
-*/
+
 
 /* 
 =============================================================================
     HOME BOX TESTIMONIAL
     - Medium Screen
 =============================================================================
-
+*/
 
 
 
 @media (min-width: 851px) and (max-width: 1899px) {
     
+    .home-testimonial-box-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .home-testimonial-box-grid-second-img{
+        text-align: center;
+    }
 
+    .home-testimonial-box-grid-second-text{
+        width: 70%;
+    }
+
+    .home-testimonial-box-grid-second-img{
+        width: 30%;
+    }
+
+    .home-testimonial-box-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+   
     
 }
-*/
+
 
 
 
@@ -48,14 +101,36 @@
     HOME BOX TESTIMONIAL
     - Big Screen
 =============================================================================
+*/
 
 
 
 @media (min-width: 1900px) and (max-width: 2399px){
 
+    .home-testimonial-box-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .home-testimonial-box-grid-second-img{
+        text-align: center;
+    }
+
+    .home-testimonial-box-grid-second-text{
+        width: 70%;
+    }
+
+    .home-testimonial-box-grid-second-img{
+        width: 30%;
+    }
+
+    .home-testimonial-box-img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
     
 }
-*/
 
 
 /* 
@@ -64,12 +139,33 @@
     - Biggest Screen 
 =============================================================================
 
+*/
 
 
 
 @media (min-width: 2400px){
 
+    .home-testimonial-box-grid {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .home-testimonial-box-grid-second-img{
+        text-align: center;
+    }
+
+    .home-testimonial-box-grid-second-text{
+        width: 70%;
+    }
+
+    .home-testimonial-box-grid-second-img{
+        width: 30%;
+    }
+
+    .home-testimonial-box-img{
+        width: 220px;
+        height: 220px;
+        border-radius: 50%;
+    }
 
 }
-
-*/
