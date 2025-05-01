@@ -34,15 +34,17 @@ const MenuDropDown = (valuesInput) => {
 
     const changeTheme = (e)=>{
 
-        if ((e === "Light" && darkMode) || (e === "Dark" && !darkMode)) {
-            toggleTheme()
+        const themeMapStyles = {
+            "Light": "light",
+            "Dark": "dark",
+            "Claro": "light",
+            "Escuro": "dark",
+            "Oscuro": "dark"
         }
 
-        if ((e === "Claro" && darkMode) || (e === "Escuro" && !darkMode)) {
-            toggleTheme()
-        }
+        const typeOfTheme = themeMapStyles[e]
 
-        if ((e === "Oscuro" && !darkMode)) {
+        if (typeOfTheme !== undefined && ((darkMode == false && typeOfTheme =='dark' ) || ((darkMode == true && typeOfTheme=='light' )))) {
             toggleTheme()
         }
 
@@ -51,16 +53,16 @@ const MenuDropDown = (valuesInput) => {
   
     const changeLanguage = (e) => {
 
-        if (e === "Portugues"){
-           router.push(router.pathname, router.asPath, { locale: 'pt-BR' })
+        const translateMap = {
+            "Portugues": "pt-BR",
+            "Espanhol": "es",
+            "English": "en"
         }
 
-        if (e === "Espanhol"){
-            router.push(router.pathname, router.asPath, { locale: 'es' })
-        }
-        
-        if (e === "English"){
-            router.push(router.pathname, router.asPath, { locale: 'en' })
+        const typeOfTranslate = translateMap[e]
+
+        if (typeOfTranslate !== undefined){
+            router.push(router.pathname, router.asPath, { locale: typeOfTranslate })
         }
 
         handleClose()

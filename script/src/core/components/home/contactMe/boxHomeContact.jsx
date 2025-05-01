@@ -193,7 +193,7 @@ export const BoxHomeContact = (valuesInput) =>{
                                 </AlertTitle>
 
                                 {
-                                        _alert.category     === 'success'   ?
+                                        _alert.category === 'success'       ?
                                         valuesInput.BoxContentText.contact.alert.success    :
 
                                         _alert.category === 'error'         ?
