@@ -36,10 +36,6 @@ export const BoxHomeContact = (valuesInput) =>{
 
 
     const handleAlert = (event_id) => {
-        // 1 success
-        // 2 error
-        // 3 warning
-        // 4 info
 
         let severity = ''
         let category = ''
@@ -142,6 +138,7 @@ export const BoxHomeContact = (valuesInput) =>{
 
     }
 
+
     const handleSubmit=(e)=>{
         e.preventDefault()
 
@@ -235,7 +232,7 @@ export const BoxHomeContact = (valuesInput) =>{
 
                                 <TextField
                                     id          ={valuesInput.TextFieldConfig.variant}
-                                    label       ="subject"
+                                    label       ={valuesInput.BoxContentText.contact.form.subject_label}
                                     name        ="subject"
                                     type        ={valuesInput.TextFieldConfig.type_text}
                                     placeholder ={valuesInput.BoxContentText.contact.form.subject || ''}
@@ -256,7 +253,7 @@ export const BoxHomeContact = (valuesInput) =>{
 
                                 <TextField
                                     id          ={valuesInput.TextFieldConfig.variant}
-                                    label       ="name"
+                                    label       ={valuesInput.BoxContentText.contact.form.name_label}
                                     name        ="name"
                                     type        ={valuesInput.TextFieldConfig.type_text}
                                     placeholder ="Joe Black"

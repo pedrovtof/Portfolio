@@ -69,20 +69,21 @@ export const translations  = {
             "prev":"Anterior",
             "list":[
                 {
-                    "name":"",
-                    "function":"",
-                    "workedIn":"",
-                    "message":"",
-                    "img":"/?"
-                }
+                    "name": "Ops! ainda não existe",
+                    "function": "ainda não existe :(",
+                    "workedIn": "ainda não existe :(",
+                    "message": "ainda não existe :(",
+                    "img": "/?"
+                  }                  
             ]
         },
         "contact":{
             "title":"Contato",
             "subtitle":"Sinta-se a vontade para entrar em contato comigo",
             "form":{
-                "email":"Email",
                 "subject":"Assunto: Portifólio proposta - <...>",
+                "subject_label":"Assunto",
+                "name_label":"Nome",
                 "message":"Escreva sua mensagem...",
                 "send":"Enviar"
             },
@@ -165,20 +166,21 @@ export const translations  = {
             "prev":"Back",
             "list":[
                 {
-                    "name":"",
-                    "function":"",
-                    "workedIn":"",
-                    "message":"",
-                    "img":"/?"
-                }
+                    "name": "¡Ups! todavía no existe",
+                    "function": "todavía no existe :(",
+                    "workedIn": "todavía no existe :(",
+                    "message": "todavía no existe :(",
+                    "img": "/?"
+                  }                                  
             ]
         },
         "contact":{
             "title":"Contact",
             "subtitle":"Please fill out the form below to get in touch with me.",
             "form":{
-                "email":"Email",
                 "subject":"Subject: Portfolio inquiry - <...>",
+                "subject_label":"Subject",
+                "name_label":"Name",
                 "message":"Type your message here...",
                 "send":"Submit"
             },
@@ -261,20 +263,21 @@ export const translations  = {
             "prev":"Anterior",
             "list":[
                 {
-                    "name":"",
-                    "function":"",
-                    "workedIn":"",
-                    "message":"",
-                    "img":"/?"
-                }
+                    "name": "¡Ups! todavía no existe",
+                    "function": "todavía no existe :(",
+                    "workedIn": "todavía no existe :(",
+                    "message": "todavía no existe :(",
+                    "img": "/?"
+                  }
             ]
         },
         "contact": {
             "title": "Contacto",
             "subtitle": "Completa el siguiente formulario para ponerte en contacto conmigo.",
             "form": {
-                "email": "Correo electrónico",
                 "subject": "Asunto: Consulta sobre el portafolio - <...>",
+                "subject_label":"Asunto",
+                "name_label":"Nombre",
                 "message": "Escribe tu mensaje aquí...",
                 "send":"Enviar"
             },
