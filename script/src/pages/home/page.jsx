@@ -231,6 +231,9 @@ const PortifolioPage =()=> {
                     "type"      :"submit",
                     "variant"   :"contained",
                 }}
+                TextareaAutosizeConfig = {{
+                    "maxRows"   :5,
+                }}
             />
         </Element>
 
@@ -238,10 +241,5 @@ const PortifolioPage =()=> {
     )
     
 }
-/*
-<Element id={t.listAppBar[1]} >
-
-</Element>
-*/
 
 export default PortifolioPage;
