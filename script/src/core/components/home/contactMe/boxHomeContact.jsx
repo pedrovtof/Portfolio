@@ -44,23 +44,29 @@ export const BoxHomeContact = (valuesInput) =>{
         let severity = ''
         let category = ''
 
-        if (event_id === 1) {
-            severity = 'success'
-            category = 'success'
-        }
-        if (event_id === 2) {
-            severity = 'error'
-            category = 'error'
-        }
-        if (event_id === 3) {
-            severity = 'warning'
-            category = 'warning'
+        const eventSpan = {
+            1: {
+                severity: 'success',
+                category: 'success'
+            },
+            2: {
+                severity: 'error',
+                category: 'error'
+            },
+            3: {
+                severity: 'warning',
+                category: 'warning'
+            },
+            4: {
+                severity: 'info',
+                category: 'info'
+            }
         }
 
         set_Alert({
-            state: true,
-            severity,
-            category
+            state   : true,
+            severity: eventSpan[event_id].severity,
+            category: eventSpan[event_id].category
         })
 
     }
@@ -69,7 +75,7 @@ export const BoxHomeContact = (valuesInput) =>{
     const handleSendEmail =(e)=>{
         const _dest         = "pedrovotf@gmail.com"
         const _name         = form.name
-        const _subject      = form.subject
+        const _subject      = valuesInput.BoxContentText.contact.form.subject.replace('<...>','') + form.subject
         const _message      = encodeURIComponent(form.message)
         const mailtoLink    = `mailto:${_dest}?subject=${encodeURIComponent(_subject)}&body=${encodeURIComponent('From:'+_name + '\n' + _message)}`
 
@@ -105,7 +111,7 @@ export const BoxHomeContact = (valuesInput) =>{
             return 
         }
 
-        if(message.length < 3 || subject.length < 3){
+        if(message.length < 4 || subject.length < 4 || name.length < 2){
             setLoading(false)
 
             handleAlert(3)
