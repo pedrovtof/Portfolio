@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
      <RootLayout
-      title="Home"
+      title="Portfolio"
     >
       <PortifolioPage />
      </RootLayout>

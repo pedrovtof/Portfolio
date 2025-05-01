@@ -22,10 +22,9 @@ Principais bibliotecas:
 - React-router
 - Next
 - React-scroll
-- React-material-ui-carousel
+
 
 Principais auxiliares:
-- eslint
 - Visual Studio Code
 - Npm
 - Github
@@ -36,19 +35,14 @@ Versionamento =>
 "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
-    "@mui/icons-material": "^6.4.5",
-    "@mui/material": "^6.4.5",
-    "next": "15.1.6",
+    "@mui/icons-material": "^6.4.11",
+    "@mui/material": "^6.4.11",
+    "next": "15.3.1",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "react-dom": "^19.1.0",
     "react-scroll": "^1.9.3"
 }
 ```
----
-
-## Arquitetura
-
-![Arquitetura](./script/public/images/dir_arch.png)
 
 ---
 
@@ -56,8 +50,8 @@ Versionamento =>
 
 É necessário fazer download e instalação do [Node JS](https://nodejs.org/en/download) para execução do projeto.
 
-Após isso, baixar o arquivo do projeto, acessar, iniciar o node com 
-`npm init -y`
+Após isso, baixar o arquivo do projeto, acesse a pasta script e execute 
+`npm ci`
 
 Isso baixara as dependencias, com tudo instalado rode o comando
 `npm run dev` 
