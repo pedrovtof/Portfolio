@@ -272,6 +272,7 @@ export const BoxHomeContact = (valuesInput) =>{
                                     focused     = {valuesInput.TextFieldConfig.focused}
                                     className   ={valuesInput.BoxClasses.Class_TextArea}
                                     onChange    ={(e)=>{handleChangeForm(e,'message')}}
+                                    minRows     ={valuesInput.TextareaAutosizeConfig.maxRows}
                                 />
 
                                 <NoSsr>
