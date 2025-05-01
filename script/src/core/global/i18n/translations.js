@@ -64,7 +64,7 @@ export const translations  = {
             ]
         },
         "testimonial":{
-            "title":"Testimonials",
+            "title":"Recomendação",
             "next":"Próximo",
             "prev":"Anterior",
             "list":[
@@ -258,7 +258,7 @@ export const translations  = {
             ]
         },
         "testimonial":{
-            "title":"Testimonials",
+            "title":"Recomendación",
             "next":"Próximo",
             "prev":"Anterior",
             "list":[
