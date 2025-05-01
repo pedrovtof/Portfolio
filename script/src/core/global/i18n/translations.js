@@ -40,27 +40,18 @@ export const translations  = {
             "ButtonDemoText":"Demo",
             "list":[
                 {
-                    "name":"projeto 1",
-                    "description":"descrição do projeto 1",
-                    "description_preview":"",
-                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
+                    "name":"Em construção...",
+                    "description":"Em construção...",
+                    "description_preview":"working on it...",
+                    "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
                     "linkCode":"/?",
                     "linkDemo":"/?",
-                    "technologies":[]
-                },
-                {
-                    "name":"projeto 2",
-                    "description":"descrição do projeto 2",
-                    "description_preview":"",
-                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-                    "linkCode":"/?",
-                    "linkDemo":"/?",
-                    "technologies":[]
+                    "technologies":['/?']
                 }
             ]
         },
         "brands":{
-            "title":"Experiencias",
+            "title":"Experiências",
             "list":[
                 {
                     "label":"O2B",
@@ -82,14 +73,7 @@ export const translations  = {
                     "function":"",
                     "workedIn":"",
                     "message":"",
-                    "img":""
-                },
-                {
-                    "name":"",
-                    "function":"",
-                    "workedIn":"",
-                    "message":"",
-                    "img":""
+                    "img":"/?"
                 }
             ]
         },
@@ -152,22 +136,13 @@ export const translations  = {
             "ButtonDemoText":"Demo",
             "list":[
                 {
-                    "name":"project 1",
-                    "description":"description of project 1",
-                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-                    "description_preview":"",
+                    "name":"Working on it......",
+                    "description":"Working on it......",
+                    "description_preview":"working on it...",
+                    "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
                     "linkCode":"/?",
                     "linkDemo":"/?",
-                    "technologies":[]
-                },
-                {
-                    "name":"project 2",
-                    "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electrthe release of Letraset sheets containing Lorem IpsuageMaker including versions of Lorem Ipsum",
-                    "description_preview":"Lorem Ipsum is simply dummy text containing Lorem IpsuageMaker including versions of Lorem Ipsum.",
-                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-                    "linkCode":"/?",
-                    "linkDemo":"/?",
-                    "technologies":["https://images.unsplash.com/photo-1481277542470-605612bd2d61","https://images.unsplash.com/photo-1481277542470-605612bd2d61"]
+                    "technologies":['/?']
                 }
             ]
         },
@@ -190,24 +165,10 @@ export const translations  = {
             "prev":"Back",
             "list":[
                 {
-                    "name":"Teste",
-                    "function":"Teste JR",
-                    "workedIn":"Brand name",
-                    "message":"I highly recommend [Name] for any position that ls. I'm confident that [he/she/they] will be a valuable asset to any team.",
-                    "img":"https://images.unsplash.com/photo-1481277542470-605612bd2d61"
-                },
-                {
-                    "name":"Teste 2",
-                    "function":"Teste PL",
-                    "workedIn":"Brand name 2",
-                    "message":"I highly recommend [Name] for any position that requires dedication, teamwork, and problem-solving skills/they] will be a valuable asset to any team.",
-                    "img":"/?"
-                },
-                {
-                    "name":"Teste 3",
-                    "function":"Teste SR",
-                    "workedIn":"Brand name 3",
-                    "message":"I hfor any position that requires dedication, teamwork, and problem-solving skills. I'm confident that [he/she/they] will be a valuable asset to any team.",
+                    "name":"",
+                    "function":"",
+                    "workedIn":"",
+                    "message":"",
                     "img":"/?"
                 }
             ]
@@ -271,22 +232,13 @@ export const translations  = {
             "ButtonDemoText":"Demostración",
             "list":[
                 {
-                    "name":"projeto 1",
-                    "description":"descricion do projeto 1",
-                    "description_preview":"",
-                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-                    "linkCode":"/?",
-                    "linkDemo":"/?",
-                    "technologies":[]
-                },
-                {
-                    "name":"projeto 2",
-                    "description":"descricion do projeto 2",
-                    "description_preview":"",
-                    "preview":"https://images.unsplash.com/photo-1481277542470-605612bd2d61",
-                    "linkCode":"/?",
-                    "linkDemo":"/?",
-                    "technologies":[]
+                    "name": "En construcción...",
+                    "description": "En construcción...",
+                    "description_preview": "trabajando en ello...",
+                    "preview": "https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+                    "linkCode": "/?",
+                    "linkDemo": "/?",
+                    "technologies": ["/?"]
                 }
             ]
         },
@@ -313,14 +265,7 @@ export const translations  = {
                     "function":"",
                     "workedIn":"",
                     "message":"",
-                    "img":""
-                },
-                {
-                    "name":"",
-                    "function":"",
-                    "workedIn":"",
-                    "message":"",
-                    "img":""
+                    "img":"/?"
                 }
             ]
         },
