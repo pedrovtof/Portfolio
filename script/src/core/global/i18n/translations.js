@@ -5,7 +5,7 @@ export const translations  = {
             "Tecnologias",
             "Projetos",
             "Experiencia",
-            "Recomendações",
+            //"Recomendações",
             "Contato"
         ],
         "themes":[
@@ -102,7 +102,7 @@ export const translations  = {
             "Technologies",
             "Projects",
             "Brands",
-            "Recommendations",
+            //"Recommendations",
             "Contact Me"
         ],
         "themes":[
@@ -199,7 +199,7 @@ export const translations  = {
         "Tecnologías",
         "Proyectos",
         "Experiencia",
-        "Recomendaciones",
+        //"Recomendaciones",
         "Contacto"
         ],
         "themes": [
