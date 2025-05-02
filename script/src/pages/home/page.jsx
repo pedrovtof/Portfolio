@@ -156,7 +156,7 @@ const PortifolioPage =()=> {
                 }}
             />
         </Element>
-        
+        {/* NOT USED YET
         <Element id={t.listAppBar[4]} >
             <BoxTestimonial
                 BoxContentText      = {{
@@ -192,7 +192,7 @@ const PortifolioPage =()=> {
                 }}
             />
         </Element>
-        
+        */}
         <Element id={t.listAppBar[5]} >
             <BoxHomeContact 
                 BoxContentText      = {{
