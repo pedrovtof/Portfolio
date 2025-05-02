@@ -193,7 +193,7 @@ const PortifolioPage =()=> {
             />
         </Element>
         */}
-        <Element id={t.listAppBar[5]} >
+        <Element id={t.listAppBar[4]} > {/*5 changed to 4*/}
             <BoxHomeContact 
                 BoxContentText      = {{
                     "contact":t.contact,
