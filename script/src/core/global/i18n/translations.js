@@ -42,7 +42,7 @@ export const translations  = {
                 {
                     "name":"Em construção...",
                     "description":"Em construção...",
-                    "description_preview":"working on it...",
+                    "description_preview":"Em construção...",
                     "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
                     "linkCode":"/?",
                     "linkDemo":"/?",
@@ -139,7 +139,7 @@ export const translations  = {
                 {
                     "name":"Working on it......",
                     "description":"Working on it......",
-                    "description_preview":"working on it...",
+                    "description_preview":"Working on it...",
                     "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
                     "linkCode":"/?",
                     "linkDemo":"/?",
@@ -166,10 +166,10 @@ export const translations  = {
             "prev":"Back",
             "list":[
                 {
-                    "name": "¡Ups! todavía no existe",
-                    "function": "todavía no existe :(",
-                    "workedIn": "todavía no existe :(",
-                    "message": "todavía no existe :(",
+                    "name": "Sorry not yet!",
+                    "function": "Sorry not yet! :(",
+                    "workedIn": "Sorry not yet! :(",
+                    "message": "Sorry not yet! :(",
                     "img": "/?"
                   }                                  
             ]
