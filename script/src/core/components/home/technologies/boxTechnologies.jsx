@@ -9,11 +9,11 @@ import Grid         from '@mui/material/Grid2'
 export const BoxHomeTechnologies = (valuesInput) => {
 
     const imageList = [
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/js.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/postgre.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/python.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/react.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/sql-server.png?raw=true'
+        '/images/tech/js.png',
+        '/images/tech/postgre.png',
+        '/images/tech/python.png',
+        '/images/tech/react.png',
+        '/images/tech/sql-server.png'
     ] 
 
     return(

@@ -37,6 +37,10 @@
 
 @media (max-width: 850px) {
 
+    .home-testimonial-box-container>h2{
+        font-size: 3rem;
+    }
+
     .home-testimonial-box-grid {
         flex-direction: column;
     }

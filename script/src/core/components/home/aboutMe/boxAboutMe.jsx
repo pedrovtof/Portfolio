@@ -9,12 +9,14 @@ import Grid                 from '@mui/material/Grid2'
 
 export const BoxHomeAboutMe = (valuesInput) =>{
 
+    
+
     const imageList = [
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/github.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/facebook.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/instagram.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/linkedin.png?raw=true',
-        'https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/social/twitter.png?raw=true'
+        '/images/social/discord.png',
+        '/images/social/facebook.png',
+        '/images/social/instagram.png',
+        '/images/social/linkedin.png',
+        '/images/social/twitter.png'
     ]
 
 
@@ -111,7 +113,7 @@ export const BoxHomeAboutMe = (valuesInput) =>{
                             }  
 
                         </Grid>
-
+                          
                     </Box>
 
                 </Box>
