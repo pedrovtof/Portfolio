@@ -11,7 +11,6 @@ Tem como objetivo mostrar os principais projetos e suas tecnologias.
 
 As principais tecnologias envolvidas na construção:
 - JavaScript
-- Html
 - Css
 
 Principais frameworks:
