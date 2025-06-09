@@ -55,11 +55,11 @@ export const translations  = {
             "list":[
                 {
                     "label":"O2B",
-                    "logo":"https://media.licdn.com/dms/image/v2/D4E0BAQF613RqzX90lQ/company-logo_200_200/company-logo_200_200/0/1682695714858/o2b_logo?e=1747872000&v=beta&t=FtZOPuX9zbm9zgeqHuyeo-E-spChIqTt6rkd8wNE_8M"
+                    "logo":"/images/brands/02b-logo.png"
                 },
                 {
                     "label":"Dotz",
-                    "logo":"https://media.licdn.com/dms/image/v2/D4D0BAQHyBtuAOZHgwg/company-logo_200_200/company-logo_200_200/0/1733234669665/dotz_logo?e=1747872000&v=beta&t=PLd-62ih3s-kEY6k7AZOegf3KM9NcKYfkCxMK4hsl_E"
+                    "logo":"/images/brands/dotz-logo.png"
                 }
             ]
         },
