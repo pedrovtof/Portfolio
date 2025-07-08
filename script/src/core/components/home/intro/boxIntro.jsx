@@ -8,6 +8,8 @@ import {
 
 export const BoxHomeIntro = (valuesInput) => {
 
+    const selfie = '/images/selfies/pvf_selfie_desk.jpg'
+
     return(
         <React.Fragment>
             <Container 
@@ -71,8 +73,8 @@ export const BoxHomeIntro = (valuesInput) => {
                         className={ valuesInput.BoxClasses.Class_Box}
                     >
                         <img 
-                            src         ="https://images.unsplash.com/photo-1481277542470-605612bd2d61" 
-                            alt         ="" 
+                            src         ={selfie}
+                            alt         ="Pedro Fonseca Selfie - "
                             className   ={ valuesInput.BoxClasses.Class_Box_img}
                         />
                     </Box>

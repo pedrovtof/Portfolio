@@ -15,6 +15,8 @@ import {
 
 export const BoxHomeContact = (valuesInput) =>{
 
+    const selfie = '/images/selfies/pvf_selfie_gibli.jpg'
+
     const [loading, setLoading] = React.useState(false)
     const [_alert, set_Alert]   = React.useState({
         state:      false,
@@ -309,7 +311,8 @@ export const BoxHomeContact = (valuesInput) =>{
 
                         {
                             <img
-                                src         ={valuesInput.BoxContentText.contact.image}
+                                src         ={selfie}
+                                alt         ="Pedro Fonseca Selfie - "
                                 className   ={valuesInput.BoxClasses.Class_Box_img} 
                             />
                         }
