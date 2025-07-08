@@ -19,7 +19,7 @@ export const BoxHomeAboutMe = (valuesInput) =>{
         '/images/social/twitter.png'
     ]
 
-    const selfie = '/images/selfies/pvf_selfie_beach.jpg'
+    const selfie = '/images/selfies/pvf_selfie_adventure.jpg'
 
 
     return(
