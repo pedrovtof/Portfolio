@@ -12,44 +12,6 @@ import { BoxTestimonial }       from '../../core/components/home/testimonial/box
 import { BoxHomeContact }       from '../../core/components/home/contactMe/boxHomeContact.jsx'
 
 
-/* NOT USED YET
-<Element id={t.listAppBar[4]} >
-    <BoxTestimonial
-        BoxContentText      = {{
-            "testimonial":t.testimonial,
-        }}
-        BoxClasses          = {{
-            "Class_Box_Container"               :  "home-testimonial-box-container",
-            "Class_Box_Typography"              :"home-testimonial-box-typography",
-            "Class_Box_MobileStepper_Typography":"home-testimonial-box-mobileStepper-typography",
-            "Class_Box_Grid"                    :"home-testimonial-box-grid",
-            "Class_Box_Grid_second"             :"home-testimonial-box-grid-second",
-            "Class_Box_Grid_second_img"         :"home-testimonial-box-grid-second-img",
-            "Class_Box_Grid_second_txt"         :"home-testimonial-box-grid-second-text",
-            "Class_Box_Paper"                   :"home-testimonial-box-paper",
-            "Class_Box_img"                     :"home-testimonial-box-img",
-            "Class_Box_Button"                  :"home-testimonial-box-button",
-            "Class_Box_MobileStepper"           :"home-testimonial-box-button-mobileStepper",
-        }}
-        TypographyConfig    = {{
-            "variantH2"     :"h2",
-            "variantH5"     :"h5",
-            "variantBody1"  :"body1",
-        }}
-        PaperConfig         = {{
-            "elevation":0,
-        }}
-        MobileStepperConfig = {{
-            "variant"   :"dots",
-            "position"  :"static",
-        }}
-        ButtonConfig        = {{
-            "size":"small"
-        }}
-    />
-</Element>
-*/
-
 const PortifolioPage =()=> {
 
     const { locale }    = useRouter()
@@ -194,7 +156,44 @@ const PortifolioPage =()=> {
                 }}
             />
         </Element>
+
         <Element id={t.listAppBar[4]} >
+            <BoxTestimonial
+                BoxContentText      = {{
+                    "testimonial":t.testimonial,
+                }}
+                BoxClasses          = {{
+                    "Class_Box_Container"               :  "home-testimonial-box-container",
+                    "Class_Box_Typography"              :"home-testimonial-box-typography",
+                    "Class_Box_MobileStepper_Typography":"home-testimonial-box-mobileStepper-typography",
+                    "Class_Box_Grid"                    :"home-testimonial-box-grid",
+                    "Class_Box_Grid_second"             :"home-testimonial-box-grid-second",
+                    "Class_Box_Grid_second_img"         :"home-testimonial-box-grid-second-img",
+                    "Class_Box_Grid_second_txt"         :"home-testimonial-box-grid-second-text",
+                    "Class_Box_Paper"                   :"home-testimonial-box-paper",
+                    "Class_Box_img"                     :"home-testimonial-box-img",
+                    "Class_Box_Button"                  :"home-testimonial-box-button",
+                    "Class_Box_MobileStepper"           :"home-testimonial-box-button-mobileStepper",
+                }}
+                TypographyConfig    = {{
+                    "variantH2"     :"h2",
+                    "variantH5"     :"h5",
+                    "variantBody1"  :"body1",
+                }}
+                PaperConfig         = {{
+                    "elevation":0,
+                }}
+                MobileStepperConfig = {{
+                    "variant"   :"dots",
+                    "position"  :"static",
+                }}
+                ButtonConfig        = {{
+                    "size":"small"
+                }}
+            />
+        </Element>
+
+        <Element id={t.listAppBar[5]} >
             <BoxHomeContact 
                 BoxContentText      = {{
                     "contact":t.contact,

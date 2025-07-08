@@ -111,7 +111,8 @@
 
     .home-intro-box-img,
     .home-about-me-box-img{
-        width: 100%;
+        width: 50%;
+        margin: auto;
         margin-bottom: 2vh;
     }
 }
@@ -139,6 +140,12 @@
         flex-direction: row;
     }
     
+    .home-intro-box-img,
+    .home-about-me-box-img{
+        width: 65%;
+        margin: auto;
+        margin-bottom: 2vh;
+    }
 }
 
 
@@ -171,6 +178,13 @@
     .home-intro-box-grid{
         display: flex;
         flex-direction: row;
+    }
+
+    .home-intro-box-img,
+    .home-about-me-box-img{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2vh;
     }
     
 }
@@ -205,6 +219,13 @@
     .home-intro-box-grid{
         display: flex;
         flex-direction: row;
+    }
+
+    .home-intro-box-img,
+    .home-about-me-box-img{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2vh;
     }
     
 }
