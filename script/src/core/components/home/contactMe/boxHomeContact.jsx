@@ -15,7 +15,7 @@ import {
 
 export const BoxHomeContact = (valuesInput) =>{
 
-    const selfie = '/images/selfies/pvf_selfie_gibli.jpg'
+    const selfie = '/images/selfies/pvf_selfie_gcp_without_victor.jpg'
 
     const [loading, setLoading] = React.useState(false)
     const [_alert, set_Alert]   = React.useState({
