@@ -10,10 +10,12 @@ export const BoxHomeTechnologies = (valuesInput) => {
 
     const imageList = [
         '/images/tech/js.png',
-        '/images/tech/postgre.png',
         '/images/tech/python.png',
         '/images/tech/react.png',
-        '/images/tech/sql-server.png'
+        '/images/tech/next-js.png',
+        '/images/tech/sql-server.png',
+        '/images/tech/postgre.png',
+        '/images/tech/mysql.png'
     ] 
 
     return(
@@ -41,7 +43,7 @@ export const BoxHomeTechnologies = (valuesInput) => {
                     <NoSsr>
                         {
                             imageList.map((item,index)=>{
-                                const name_item = item.replace('https://github.com/pedrovtof/Portfolio/blob/master/script/public/images/tech/','').replace('?raw=true','')
+                                const name_item = item.replace('/images/tech/','')
                                 
                                 return(
                                     <Grid
