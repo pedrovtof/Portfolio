@@ -92,7 +92,7 @@ export const BoxHomeProjects = (valuesInput) =>{
                                                             <img
                                                                 key         ={index}
                                                                 src         ={item}
-                                                                alt         ='preview'
+                                                                alt         ={item.replace('/images/tech/','')}
                                                                 className   ={valuesInput.BoxClasses.Class_Box_img_hover_tech}
                                                             >
                                                             </img>
@@ -214,7 +214,7 @@ export const BoxHomeProjects = (valuesInput) =>{
                                                         flexBasis: '100%',
                                                         maxWidth: '100%',
                                                     }
-                                                }} 
+                                                }}
                                             size        ={valuesInput.GridConfig.Grid_columns}
                                             key         ={index}
                                             className   ={valuesInput.BoxClasses.Class_Box_Grid_second}
@@ -234,6 +234,16 @@ export const BoxHomeProjects = (valuesInput) =>{
                                             >
                                                 {
                                                     valuesInput.BoxContentText.projects.list[index].name
+                                                }
+                                            </Typography>
+
+                                            <Typography
+                                                className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                                variant     ={valuesInput.TypographyConfig.variantBody1}
+                                                sx          ={{ color: (theme) => theme.palette.text.fifth }}
+                                            >
+                                                {
+                                                    valuesInput.BoxContentText.projects.list[index].status
                                                 }
                                             </Typography>
 

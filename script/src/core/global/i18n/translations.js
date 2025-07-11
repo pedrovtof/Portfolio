@@ -40,13 +40,21 @@ export const translations  = {
             "ButtonDemoText":"Demo",
             "list":[
                 {
-                    "name":"Em construção...",
-                    "description":"Em construção...",
-                    "description_preview":"Em construção...",
+                    "name":"Controle de orcamento",
+                    "description":"Plataforma web PaaS, a plataforma deverá permitir registros de metas, demonstrativo da evolução ao longo do período, armazenar gastos do mês com relação às categorias como Mercado, Jogos, Cuidados pessoais entre outros com intenção de identificar padrões de gastos.",
+                    "description_preview":"Serviço de controle de orçamento pessoal.",
+                    "status":"Situação: Em Construção",
                     "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
-                    "linkCode":"/?",
+                    "linkCode":"https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
                     "linkDemo":"/?",
-                    "technologies":['/?']
+                    "technologies":[
+                        '/images/tech/js.png',
+                        '/images/tech/python.png',
+                        '/images/tech/postgre.png',
+                        '/images/tech/java.png',
+                        '/images/tech/kong-api-gateway.png',
+                        '/images/tech/docker.png'
+                    ]
                 }
             ]
         },
