@@ -40,13 +40,21 @@ export const translations  = {
             "ButtonDemoText":"Demo",
             "list":[
                 {
-                    "name":"Em construção...",
-                    "description":"Em construção...",
-                    "description_preview":"Em construção...",
+                    "name":"Controle de orcamento",
+                    "description":"Plataforma web PaaS, a plataforma deverá permitir registros de metas, demonstrativo da evolução ao longo do período, armazenar gastos do mês com relação às categorias como Mercado, Jogos, Cuidados pessoais entre outros com intenção de identificar padrões de gastos.",
+                    "description_preview":"Serviço de controle de orçamento pessoal.",
+                    "status":"Situação: Em Construção",
                     "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
-                    "linkCode":"/?",
+                    "linkCode":"https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
                     "linkDemo":"/?",
-                    "technologies":['/?']
+                    "technologies":[
+                        '/images/tech/js.png',
+                        '/images/tech/python.png',
+                        '/images/tech/postgre.png',
+                        '/images/tech/java.png',
+                        '/images/tech/kong-api-gateway.png',
+                        '/images/tech/docker.png'
+                    ]
                 }
             ]
         },
@@ -136,13 +144,21 @@ export const translations  = {
             "ButtonDemoText":"Demo",
             "list":[
                 {
-                    "name":"Working on it......",
-                    "description":"Working on it......",
-                    "description_preview":"Working on it...",
-                    "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
-                    "linkCode":"/?",
-                    "linkDemo":"/?",
-                    "technologies":['/?']
+                    "name": "Budget Control",
+                    "description": "Web PaaS platform. The platform should allow goal tracking, display progress over time, and store monthly expenses across categories such as Groceries, Games, Personal Care, and others, aiming to identify spending patterns.",
+                    "description_preview": "Personal budget management service.",
+                    "status": "Status: Under Construction",
+                    "preview": "https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+                    "linkCode": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
+                    "linkDemo": "/?",
+                    "technologies": [
+                        "/images/tech/js.png",
+                        "/images/tech/python.png",
+                        "/images/tech/postgre.png",
+                        "/images/tech/java.png",
+                        "/images/tech/kong-api-gateway.png",
+                        "/images/tech/docker.png"
+                    ]
                 }
             ]
         },
@@ -232,13 +248,21 @@ export const translations  = {
             "ButtonDemoText":"Demostración",
             "list":[
                 {
-                    "name": "En construcción...",
-                    "description": "En construcción...",
-                    "description_preview": "trabajando en ello...",
+                    "name": "Control de presupuesto",
+                    "description": "Plataforma web PaaS, la plataforma debe permitir el registro de metas, mostrar la evolución a lo largo del período, almacenar los gastos mensuales relacionados con categorías como Mercado, Juegos, Cuidado personal, entre otros, con el objetivo de identificar patrones de gasto.",
+                    "description_preview": "Servicio de control de presupuesto personal.",
+                    "status": "Estado: En construcción",
                     "preview": "https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
-                    "linkCode": "/?",
+                    "linkCode": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
                     "linkDemo": "/?",
-                    "technologies": ["/?"]
+                    "technologies": [
+                        "/images/tech/js.png",
+                        "/images/tech/python.png",
+                        "/images/tech/postgre.png",
+                        "/images/tech/java.png",
+                        "/images/tech/kong-api-gateway.png",
+                        "/images/tech/docker.png"
+                    ]
                 }
             ]
         },

@@ -1,5 +1,11 @@
 # PT-BR
 
+Esse projeto assim como os mencionados utilizam-se de ferramentas como KongGateway, Docker entre outros sem quaisquer afiliações exceto os mencionados na lista abaixo.
+
+Lista:
+
+* Nenhuma exceção até momento.
+
 ## Introdução
 
 O codigo anexo a esse repositorio consiste no portifolio do Desenvolvedor Pedro Fonseca,
@@ -10,25 +16,28 @@ Tem como objetivo mostrar os principais projetos e suas tecnologias.
 ## Tecnologias
 
 As principais tecnologias envolvidas na construção:
-- JavaScript
-- Css
+
+* JavaScript
+* Css
 
 Principais frameworks:
-- Node.js
-- Next.js
+
+* Node.js
+* Next.js
 
 Principais bibliotecas:
-- React
-- Material Desing
-- React-router
-- Next
-- React-scroll
 
+* React
+* Material Desing
+* React-router
+* Next
+* React-scroll
 
 Principais auxiliares:
-- Visual Studio Code
-- Npm
-- Github
+
+* Visual Studio Code
+* Npm
+* Github
 
 ### Versionamento =>
 
@@ -51,19 +60,20 @@ Principais auxiliares:
 
 É necessário fazer download e instalação do [Node JS](https://nodejs.org/en/download) para execução do projeto.
 
-Após isso, baixar o arquivo do projeto, acesse a pasta script e execute 
+Após isso, baixar o arquivo do projeto, acesse a pasta script e execute
 `npm ci`
 
 Isso baixara as dependencias, com tudo instalado rode o comando
-`npm run dev` 
+`npm run dev`
 dentro da pasta do repositorio, irá subir algumas informações, caso apareça como
+
 ```bash
 Next.js 15.1.6
    - Local:        http://localhost:3000
 ```
-Seguida de nenhuma mensagem de erro, significa que o codigo subiu corretamente, 
-basta colocar o link no seu navegador e acessar a aplicação
 
+Seguida de nenhuma mensagem de erro, significa que o codigo subiu corretamente,
+basta colocar o link no seu navegador e acessar a aplicação
 
 ## Documentação oficial
 
@@ -81,7 +91,6 @@ basta colocar o link no seu navegador e acessar a aplicação
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
-
 ```bash
 $ npx create-next-app@latest portifolio
 Need to install the following packages:
@@ -97,39 +106,46 @@ Ok to proceed? (y) y
 √ Would you like to customize the import alias (`@/*` by default)? ... No 
 ```
 
-
 # EN
 
 ## Introduction
 
+All this project and any other that may be mentioned, can use tools such as KongGateway, Docker and similar, without any affiliation, unless otherwise specified.
+
+This project has an official partnership with:
+
+* None
+
 The code attached to this repository is the portfolio of Developer Pedro Fonseca.
 Its goal is to showcase his main projects and the technologies used to build them.
-
 
 ## Technologies
 
 Main technologies used in development:
-- JavaScript
-- CSS
+
+* JavaScript
+* CSS
 
 Main frameworks:
-- Node.js
-- Next.js
+
+* Node.js
+* Next.js
 
 Key libraries:
-- React
-- Material Design
-- React Router
-- Next
-- React Scroll
+
+* React
+* Material Design
+* React Router
+* Next
+* React Scroll
 
 Development tools:
-- Visual Studio Code
-- npm
-- GitHub
 
-### Versioning:
+* Visual Studio Code
+* npm
+* GitHub
 
+### Versioning
 
 ```json
 "dependencies": {
@@ -156,7 +172,7 @@ This will install the required dependencies.
 
 Then, inside the project folder, run:
 
-`npm run dev` 
+`npm run dev`
 
 If everything is working correctly, you’ll see something like:
 
@@ -164,9 +180,9 @@ If everything is working correctly, you’ll see something like:
 Next.js 15.1.6
    - Local:        http://localhost:3000
 ```
+
 If no error message appears, it means the project is running.
 Open the provided URL in your browser to access the application.
-
 
 ## Official documentation
 
@@ -183,3 +199,18 @@ Open the provided URL in your browser to access the application.
 [NPM](https://docs.npmjs.com/)
 
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+```bash
+$ npx create-next-app@latest portifolio
+Need to install the following packages:
+create-next-app@15.1.6
+Ok to proceed? (y) y
+
+√ Would you like to use TypeScript? ... No  
+√ Would you like to use ESLint? ... No 
+√ Would you like to use Tailwind CSS? ... No 
+√ Would you like your code inside a `src/` directory? ... No
+√ Would you like to use App Router? (recommended) ... No 
+√ Would you like to use Turbopack for `next dev`? ... No 
+√ Would you like to customize the import alias (`@/*` by default)? ... No 
+```

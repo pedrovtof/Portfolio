@@ -55,7 +55,7 @@ a{
 }
 
 .home-projects-box-grid-second>h3{
-    text-align: justify;
+    text-align: start;
 }
 
 .home-projects-box-grid-second{
@@ -70,13 +70,15 @@ a{
     display: flex;
     justify-content: space-around;
     flex-wrap: nowrap;
-    margin-bottom: 1vh;
+    margin: 2vh 0;
 }
 
 .home-projects-box-grid-hover-tech-second{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 1vh;
+    margin-top: 1vh;
+    flex-wrap: wrap;
 }
 
 .home-projects-box-button-container-hover>button{
@@ -94,7 +96,9 @@ a{
 }
 
 #size_hover_box_typography_title{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    display: block;
+    margin: 0.4rem 0;
 }
 
 .home-projects-box-container-hover{
@@ -131,7 +135,7 @@ a{
 
     .home-projects-box-img-hover-tech{
         max-height: 150px;
-        max-width: 80px;
+        max-width: 50px;
     }
 
 }
@@ -151,7 +155,7 @@ a{
     
     .home-projects-box-img-hover-tech{
         max-height: 100px;
-        max-width: 70px;
+        max-width: 50px;
     }
 
     .home-projects-box-grid-hover-second{
@@ -175,7 +179,7 @@ a{
 
     .home-projects-box-img-hover-tech{
         max-height: 110px;
-        max-width: 90px;
+        max-width: 65px;
     }
 
     .home-projects-box-grid-hover-second{
@@ -199,7 +203,7 @@ a{
 
     .home-projects-box-img-hover-tech{
         max-height: 110px;
-        max-width: 90px;
+        max-width: 75px;
     }
 
     .home-projects-box-grid-hover-second{
