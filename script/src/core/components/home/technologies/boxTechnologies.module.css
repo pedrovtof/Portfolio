@@ -20,6 +20,7 @@
 
 .home-technologies-box-grid-second{
     text-align: center;
+    margin:0.3rem
 }
 
 /* 
@@ -65,7 +66,7 @@
 
     
     .home-technologies-box-img{
-        width: 40%;
+        width: 30%;
     }
 
     .home-technologies-box-grid-title{
@@ -92,7 +93,7 @@
     }
     
     .home-technologies-box-img{
-        width: 40%;
+        width: 35%;
     }
 
     .home-technologies-box-grid-title{
@@ -120,7 +121,7 @@
 
     
     .home-technologies-box-img{
-        width: 35%;
+        width: 40%;
     }
     
 
