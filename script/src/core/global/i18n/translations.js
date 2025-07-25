@@ -77,10 +77,10 @@ export const translations  = {
             "prev":"Anterior",
             "list":[
                 {
-                    "name": "Ops! ainda não existe",
-                    "function": "ainda não existe :(",
-                    "workedIn": "ainda não existe :(",
-                    "message": "ainda não existe :(",
+                    "name": "Victor Machado",
+                    "function": "Analista de Dados Pleno",
+                    "workedIn": "Dotz",
+                    "message": "O Pedro é um trabalhador exemplar e de confiança",
                     "img": "/?"
                   }                  
             ]
