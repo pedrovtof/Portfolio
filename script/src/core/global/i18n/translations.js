@@ -78,9 +78,9 @@ export const translations  = {
             "list":[
                 {
                     "name": "Victor Machado",
-                    "function": "Analista de Dados Pleno",
+                    "function": "Analista de Dados",
                     "workedIn": "Dotz",
-                    "message": "O Pedro é um trabalhador exemplar e de confiança",
+                    "message": "Tive o privilégio de trabalhar na mesma equipe que o Pedro em um pequeno trecho da minha jornada profissional, e foi um ganho absurdo de conhecimento. Mesmo com pouco tempo de carreira, ele demonstrou uma determinação e uma curva de aprendizado fora do comum, que o destacaram e o impulsionaram de forma admirável./nPedro é um profissional cuidadoso, prestativo e comprometido, que entende a importância de um processo bem estruturado, capaz de gerar resultados concretos./nTenho absoluta certeza de que, independentemente do desafio apresentado, ele não apenas irá cumprir com excelência, como também excederá as expectativas.",
                     "img": "/?"
                   }                  
             ]
@@ -181,10 +181,10 @@ export const translations  = {
             "prev":"Back",
             "list":[
                 {
-                    "name": "Sorry not yet!",
-                    "function": "Sorry not yet! :(",
-                    "workedIn": "Sorry not yet! :(",
-                    "message": "Sorry not yet! :(",
+                    "name": "Victor Machado",
+                    "function": "Data Analyst",
+                    "workedIn": "Dotz",
+                    "message": "I had the privilege of working on the same team as Pedro during a brief part of my professional journey, and it was an incredible learning experience. Despite having a short career at the time, he showed exceptional determination and an outstanding learning curve that made him stand out and progress remarkably.n/Pedro is a careful, helpful, and committed professional who understands the importance of a well-structured process capable of delivering concrete results./nI am absolutely confident that, regardless of the challenge, he will not only perform with excellence but also exceed expectations.",
                     "img": "/?"
                   }                                  
             ]
@@ -285,10 +285,10 @@ export const translations  = {
             "prev":"Anterior",
             "list":[
                 {
-                    "name": "¡Ups! todavía no existe",
-                    "function": "todavía no existe :(",
-                    "workedIn": "todavía no existe :(",
-                    "message": "todavía no existe :(",
+                    "name": "Victor Machado",
+                    "function": "Analista de Datos",
+                    "workedIn": "Dotz",
+                    "message": "Tuve el privilegio de trabajar en el mismo equipo que Pedro durante un breve tramo de mi trayectoria profesional, y fue una experiencia de aprendizaje increíble. A pesar de estar al inicio de su carrera, se destacó como Analista de Datos gracias a su gran determinación y a una curva de aprendizaje excepcional, que impulsaron su crecimiento de manera admirable./nPedro es un Analista de Datos cuidadoso, colaborador y comprometido, que entiende la importancia de un proceso bien estructurado, capaz de generar resultados concretos./nEstoy absolutamente seguro de que, independientemente del desafío que se le presente, no solo cumplirá con excelencia, sino que superará las expectativas.",
                     "img": "/?"
                   }
             ]
