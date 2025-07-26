@@ -65,12 +65,21 @@ export const BoxTestimonial =(valuesInput) =>{
                                 ${valuesInput.BoxClasses.Class_Box_Grid_second_img}
                             `}
                         >
-
-                            <img 
-                                src         ={steps[activeStep].img} 
-                                alt         ={steps[activeStep].img}
-                                className   ={valuesInput.BoxClasses.Class_Box_img}
-                            />
+                            {
+                                steps[activeStep].img=="/?"?
+                                <img 
+                                    src         ='/images/selfies/null_user_photo.png' 
+                                    alt         ='None'
+                                    className   ={valuesInput.BoxClasses.Class_Box_img}
+                                />
+                                :
+                                <img 
+                                    src         ={steps[activeStep].img} 
+                                    alt         ={steps[activeStep].img}
+                                    className   ={valuesInput.BoxClasses.Class_Box_img}
+                                />
+                            }
+                            
 
                         </Box>
 
