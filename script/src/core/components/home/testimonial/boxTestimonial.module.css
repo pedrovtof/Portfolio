@@ -28,6 +28,10 @@
     display: flex;
 }
 
+.home-testimonial-box-grid-second-img{
+    align-self: center;
+}
+
 /* 
 =============================================================================
     HOME BOX TESTIMONIAL

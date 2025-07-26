@@ -163,7 +163,7 @@ const PortifolioPage =()=> {
                     "testimonial":t.testimonial,
                 }}
                 BoxClasses          = {{
-                    "Class_Box_Container"               :  "home-testimonial-box-container",
+                    "Class_Box_Container"               :"home-testimonial-box-container",
                     "Class_Box_Typography"              :"home-testimonial-box-typography",
                     "Class_Box_MobileStepper_Typography":"home-testimonial-box-mobileStepper-typography",
                     "Class_Box_Grid"                    :"home-testimonial-box-grid",
