@@ -184,7 +184,7 @@ export const translations  = {
                     "name": "Victor Machado",
                     "function": "Data Analyst",
                     "workedIn": "Dotz",
-                    "message": "I had the privilege of working on the same team as Pedro during a brief part of my professional journey, and it was an incredible learning experience. Despite having a short career at the time, he showed exceptional determination and an outstanding learning curve that made him stand out and progress remarkably.n/Pedro is a careful, helpful, and committed professional who understands the importance of a well-structured process capable of delivering concrete results.\nI am absolutely confident that, regardless of the challenge, he will not only perform with excellence but also exceed expectations.",
+                    "message": `I had the privilege of working on the same team as Pedro during a brief part of my professional journey, and it was an incredible learning experience. Despite having a short career at the time, he showed exceptional determination and an outstanding learning curve that made him stand out and progress remarkably.\nPedro is a careful, helpful, and committed professional who understands the importance of a well-structured process capable of delivering concrete results.\nI am absolutely confident that, regardless of the challenge, he will not only perform with excellence but also exceed expectations.`,
                     "img": "/?"
                   }                                  
             ]
