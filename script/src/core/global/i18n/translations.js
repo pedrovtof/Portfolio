@@ -34,7 +34,7 @@ export const translations  = {
             "title":"Tecnologias"
         },
         "projects":{ 
-            "title":"Projects",
+            "title":"Projetos",
             "hoverTitle":"Tecnologias",
             "ButtonCodeText":"Codigo",
             "ButtonDemoText":"Demo",
@@ -44,9 +44,9 @@ export const translations  = {
                     "description":"Plataforma web PaaS, a plataforma deverá permitir registros de metas, demonstrativo da evolução ao longo do período, armazenar gastos do mês com relação às categorias como Mercado, Jogos, Cuidados pessoais entre outros com intenção de identificar padrões de gastos.",
                     "description_preview":"Serviço de controle de orçamento pessoal.",
                     "status":"Situação: Em Construção",
-                    "preview":"https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+                    "preview":"/images/projects/budget_control.png",
                     "linkCode":"https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
-                    "linkDemo":"/?",
+                    "linkDemo":"https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
                     "technologies":[
                         '/images/tech/js.png',
                         '/images/tech/python.png',
@@ -54,6 +54,20 @@ export const translations  = {
                         '/images/tech/java.png',
                         '/images/tech/kong-api-gateway.png',
                         '/images/tech/docker.png'
+                    ]
+                },
+                {
+                    "name":"Portfolio",
+                    "description":"Portfolio pessoal desenvolvido em JavaScript com React e Next.",
+                    "description_preview":"Portfolio pessoal.",
+                    "status":"Situação: Finalizado",
+                    "preview":"/images/projects/portfolio.png",
+                    "linkCode":"https://github.com/pedrovtof/Portfolio",
+                    "linkDemo":"https://portfolio-two-blush-90.vercel.app/",
+                    "technologies":[
+                        '/images/tech/js.png',
+                        '/images/tech/react.png',
+                        '/images/tech/next-js.png',
                     ]
                 }
             ]
@@ -148,9 +162,9 @@ export const translations  = {
                     "description": "Web PaaS platform. The platform should allow goal tracking, display progress over time, and store monthly expenses across categories such as Groceries, Games, Personal Care, and others, aiming to identify spending patterns.",
                     "description_preview": "Personal budget management service.",
                     "status": "Status: Under Construction",
-                    "preview": "https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+                    "preview": "/images/projects/budget_control.png",
                     "linkCode": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
-                    "linkDemo": "/?",
+                    "linkDemo": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
                     "technologies": [
                         "/images/tech/js.png",
                         "/images/tech/python.png",
@@ -158,6 +172,20 @@ export const translations  = {
                         "/images/tech/java.png",
                         "/images/tech/kong-api-gateway.png",
                         "/images/tech/docker.png"
+                    ]
+                },
+                {
+                    "name": "Portfolio",
+                    "description": "Personal portfolio developed in JavaScript with React and Next.",
+                    "description_preview": "Personal portfolio.",
+                    "status": "Status: Completed",
+                    "preview":"/images/projects/portfolio.png",
+                    "linkCode":"https://github.com/pedrovtof/Portfolio",
+                    "linkDemo":"https://portfolio-two-blush-90.vercel.app/",
+                    "technologies":[
+                        '/images/tech/js.png',
+                        '/images/tech/react.png',
+                        '/images/tech/next-js.png',
                     ]
                 }
             ]
@@ -242,7 +270,7 @@ export const translations  = {
             "title":"Tecnologías"
         },
         "projects":{
-            "title":"Projects",
+            "title":"Proyectos",
             "hoverTitle":"Tecnologías",
             "ButtonCodeText":"Código",
             "ButtonDemoText":"Demostración",
@@ -252,9 +280,9 @@ export const translations  = {
                     "description": "Plataforma web PaaS, la plataforma debe permitir el registro de metas, mostrar la evolución a lo largo del período, almacenar los gastos mensuales relacionados con categorías como Mercado, Juegos, Cuidado personal, entre otros, con el objetivo de identificar patrones de gasto.",
                     "description_preview": "Servicio de control de presupuesto personal.",
                     "status": "Estado: En construcción",
-                    "preview": "https://media2.giphy.com/media/XzqEFZ06NSFgXaut2g/giphy.gif?cid=6c09b952lof4210j6inpt5slnkcrk1pf4wzufcr3eg6u9fgd&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g",
+                    "preview": "/images/projects/budget_control.png",
                     "linkCode": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
-                    "linkDemo": "/?",
+                    "linkDemo": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
                     "technologies": [
                         "/images/tech/js.png",
                         "/images/tech/python.png",
@@ -262,6 +290,20 @@ export const translations  = {
                         "/images/tech/java.png",
                         "/images/tech/kong-api-gateway.png",
                         "/images/tech/docker.png"
+                    ]
+                },
+                {
+                    "name": "Portafolio",
+                    "description": "Portafolio personal desarrollado en JavaScript con React y Next.",
+                    "description_preview": "Portafolio personal.",
+                    "status": "Estado: Finalizado",
+                    "preview":"/images/projects/portfolio.png",
+                    "linkCode":"https://github.com/pedrovtof/Portfolio",
+                    "linkDemo":"https://portfolio-two-blush-90.vercel.app/",
+                    "technologies":[
+                        '/images/tech/js.png',
+                        '/images/tech/react.png',
+                        '/images/tech/next-js.png',
                     ]
                 }
             ]

@@ -199,23 +199,15 @@ export const BoxHomeProjects = (valuesInput) =>{
                     }
                 </Typography>
 
-                <Grid
+                <Box
                     container
-                    columns     ={valuesInput.GridConfig.Grid_size}
                     className   ={valuesInput.BoxClasses.Class_Box_Grid}
                 >
                     <NoSsr>
                         {
                             valuesInput.BoxContentText.projects.list.map((item,index)=>{
                                 return(
-                                        <Grid
-                                            sx          ={{
-                                                    '@media (max-width:850px)': {
-                                                        flexBasis: '100%',
-                                                        maxWidth: '100%',
-                                                    }
-                                                }}
-                                            size        ={valuesInput.GridConfig.Grid_columns}
+                                        <Box
                                             key         ={index}
                                             className   ={valuesInput.BoxClasses.Class_Box_Grid_second}
                                         >
@@ -227,43 +219,45 @@ export const BoxHomeProjects = (valuesInput) =>{
                                                 onClick     ={()=>{handleOpenBackDrop(index)}}
                                             />
 
-                                            <Typography
-                                                className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
-                                                variant     ={valuesInput.TypographyConfig.variantH3}
-                                                sx          ={{ color: (theme) => theme.palette.text.secondary }}
-                                            >
-                                                {
-                                                    valuesInput.BoxContentText.projects.list[index].name
-                                                }
-                                            </Typography>
+                                            <Box>
+                                                <Typography
+                                                    className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                                    variant     ={valuesInput.TypographyConfig.variantH3}
+                                                    sx          ={{ color: (theme) => theme.palette.text.secondary }}
+                                                >
+                                                    {
+                                                        valuesInput.BoxContentText.projects.list[index].name
+                                                    }
+                                                </Typography>
 
-                                            <Typography
-                                                className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
-                                                variant     ={valuesInput.TypographyConfig.variantBody1}
-                                                sx          ={{ color: (theme) => theme.palette.text.fifth }}
-                                            >
-                                                {
-                                                    valuesInput.BoxContentText.projects.list[index].status
-                                                }
-                                            </Typography>
+                                                <Typography
+                                                    className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                                    variant     ={valuesInput.TypographyConfig.variantBody1}
+                                                    sx          ={{ color: (theme) => theme.palette.text.fifth }}
+                                                >
+                                                    {
+                                                        valuesInput.BoxContentText.projects.list[index].status
+                                                    }
+                                                </Typography>
 
-                                            <Typography
-                                                className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
-                                                variant     ={valuesInput.TypographyConfig.variantBody1}
-                                                sx          ={{ color: (theme) => theme.palette.text.fifth }}
-                                            >
-                                                {
-                                                    valuesInput.BoxContentText.projects.list[index].description_preview
-                                                }
-                                            </Typography>
+                                                <Typography
+                                                    className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                                    variant     ={valuesInput.TypographyConfig.variantBody1}
+                                                    sx          ={{ color: (theme) => theme.palette.text.fifth }}
+                                                >
+                                                    {
+                                                        valuesInput.BoxContentText.projects.list[index].description_preview
+                                                    }
+                                                </Typography>
+                                            </Box>
 
-                                        </Grid>
+                                        </Box>
                                 )
                             })
                         }
                     </NoSsr>
 
-                </Grid>
+                </Box>
 
                 <Backdrop
                     sx      ={(theme) => ({ color: theme.palette.secondary.contrastText, zIndex: theme.zIndex.drawer + 1 })}
