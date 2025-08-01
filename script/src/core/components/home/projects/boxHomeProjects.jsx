@@ -23,6 +23,10 @@ export const BoxHomeProjects = (valuesInput) =>{
         setopenBackDrop(true)
     }
 
+    const handlerRedirect=(url)=>{
+        window.open(url,'_blank')
+    }
+
     const PreviewProject = () => {
 
         return(
@@ -114,49 +118,36 @@ export const BoxHomeProjects = (valuesInput) =>{
                                     <Button
                                         sx          ={{ background: (theme) => theme.palette.button.primary }}
                                         className   ={valuesInput.BoxClasses.Class_Box_Button_hover}
+                                        onClick     ={()=>handlerRedirect(valuesInput.BoxContentText.projects.list[previewProjectState].linkCode)}
                                     >
-
-                                        <a
-                                            href    ={valuesInput.BoxContentText.projects.list[previewProjectState].linkCode}
-                                            target  ='_blank'
+                                        <Typography
+                                            variant     ={valuesInput.TypographyConfig.variantBody1}
+                                            className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                            sx          ={{ 
+                                                color: (theme) => theme.palette.primary.contrastText
+                                            }}
                                         >
-
-                                            <Typography
-                                                variant     ={valuesInput.TypographyConfig.variantBody1}
-                                                className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
-                                                sx          ={{ 
-                                                    color: (theme) => theme.palette.primary.contrastText
-                                                }}
-                                            >
-                                                {
-                                                    valuesInput.BoxContentText.projects.ButtonCodeText
-                                                }
-                                            </Typography>
-
-                                        </a>
-
+                                            {
+                                                valuesInput.BoxContentText.projects.ButtonCodeText
+                                            }
+                                        </Typography>
                                     </Button>
 
                                     <Button
                                         sx          ={{ background: (theme) => theme.palette.button.primary }}
                                         className   ={valuesInput.BoxClasses.Class_Box_Button_hover}
+                                        onClick     ={()=>handlerRedirect(valuesInput.BoxContentText.projects.list[previewProjectState].linkDemo)}
                                     >
-                                        <a
-                                            href    ={valuesInput.BoxContentText.projects.list[previewProjectState].linkDemo}
-                                            target  ='_blank'
+                                    
+                                        <Typography
+                                            variant     ={valuesInput.TypographyConfig.variantBody1}
+                                            className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
+                                            sx          ={{ color: (theme) => theme.palette.primary.contrastText }}
                                         >
-
-                                            <Typography
-                                                variant     ={valuesInput.TypographyConfig.variantBody1}
-                                                className   ={valuesInput.BoxClasses.Class_Box_Typography_hover}
-                                                sx          ={{ color: (theme) => theme.palette.primary.contrastText }}
-                                            >
-                                                {
-                                                    valuesInput.BoxContentText.projects.ButtonDemoText
-                                                }
-                                            </Typography>
-
-                                        </a>
+                                            {
+                                                valuesInput.BoxContentText.projects.ButtonDemoText
+                                            }
+                                        </Typography>
 
                                     </Button>
 
