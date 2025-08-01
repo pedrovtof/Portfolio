@@ -12,6 +12,13 @@
     position: fixed;
 }
 
+.home-header-appbar-typography{
+    cursor: pointer;
+}
+
+.home-header-appbar-typography:hover{
+    color:#0084fa94;
+}
 
 
 /* 
