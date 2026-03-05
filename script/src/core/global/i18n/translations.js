@@ -44,14 +44,14 @@ export const translations  = {
                     "description":"Plataforma web PaaS, a plataforma deverá permitir registros de metas, demonstrativo da evolução ao longo do período, armazenar gastos do mês com relação às categorias como Mercado, Jogos, Cuidados pessoais entre outros com intenção de identificar padrões de gastos.",
                     "description_preview":"Serviço de controle de orçamento pessoal.",
                     "status":"Situação: Em Construção",
-                    "preview":"/images/projects/budget_control.png",
-                    "linkCode":"https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
-                    "linkDemo":"https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
+                    "preview":"/images/projects/easy_fin.png",
+                    "linkCode":"https://github.com/pedrovtof/Nievo-easy-fin",
+                    "linkDemo":"https://github.com/pedrovtof/Nievo-easy-fin",
                     "technologies":[
                         '/images/tech/js.png',
                         '/images/tech/python.png',
                         '/images/tech/postgre.png',
-                        '/images/tech/java.png',
+                        '/images/tech/csharp.png',
                         '/images/tech/kong-api-gateway.png',
                         '/images/tech/docker.png'
                     ]
@@ -68,6 +68,20 @@ export const translations  = {
                         '/images/tech/js.png',
                         '/images/tech/react.png',
                         '/images/tech/next-js.png',
+                    ]
+                },
+                {
+                    "name":"Golden Equation",
+                    "description":"Vibe Code com lovable, uma calculadora de Bhaskara",
+                    "description_preview":"Projeto para calcular Bhaskara",
+                    "status":"Situação: Finalizado",
+                    "preview":"/images/projects/lovable_math_bask.png",
+                    "linkCode":"https://github.com/pedrovtof/golden-aqua-solver",
+                    "linkDemo":"https://golden-aqua-solver.lovable.app/",
+                    "technologies":[
+                        '/images/tech/js.png',
+                        '/images/tech/react.png',
+                        '/images/tech/lovable_logo_icon.png',
                     ]
                 }
             ]
@@ -162,14 +176,14 @@ export const translations  = {
                     "description": "Web PaaS platform. The platform should allow goal tracking, display progress over time, and store monthly expenses across categories such as Groceries, Games, Personal Care, and others, aiming to identify spending patterns.",
                     "description_preview": "Personal budget management service.",
                     "status": "Status: Under Construction",
-                    "preview": "/images/projects/budget_control.png",
-                    "linkCode": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
-                    "linkDemo": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
+                    "preview": "/images/projects/easy_fin.png",
+                    "linkCode": "https://github.com/pedrovtof/Nievo-easy-fin",
+                    "linkDemo": "https://github.com/pedrovtof/Nievo-easy-fin",
                     "technologies": [
                         "/images/tech/js.png",
                         "/images/tech/python.png",
                         "/images/tech/postgre.png",
-                        "/images/tech/java.png",
+                        "/images/tech/csharp.png",
                         "/images/tech/kong-api-gateway.png",
                         "/images/tech/docker.png"
                     ]
@@ -186,6 +200,20 @@ export const translations  = {
                         '/images/tech/js.png',
                         '/images/tech/react.png',
                         '/images/tech/next-js.png',
+                    ]
+                },
+                {
+                    "name": "Golden Equation",
+                    "description": "Vibe coding project built with Lovable — a Bhaskara quadratic equation calculator.",
+                    "description_preview": "Project to calculate quadratic equations using Bhaskara's formula.",
+                    "status": "Status: Finished",
+                    "preview": "/images/projects/lovable_math_bask.png",
+                    "linkCode": "https://github.com/pedrovtof/golden-aqua-solver",
+                    "linkDemo": "https://golden-aqua-solver.lovable.app/",
+                    "technologies": [
+                        "/images/tech/js.png",
+                        "/images/tech/react.png",
+                        "/images/tech/lovable_logo_icon.png"
                     ]
                 }
             ]
@@ -280,14 +308,14 @@ export const translations  = {
                     "description": "Plataforma web PaaS, la plataforma debe permitir el registro de metas, mostrar la evolución a lo largo del período, almacenar los gastos mensuales relacionados con categorías como Mercado, Juegos, Cuidado personal, entre otros, con el objetivo de identificar patrones de gasto.",
                     "description_preview": "Servicio de control de presupuesto personal.",
                     "status": "Estado: En construcción",
-                    "preview": "/images/projects/budget_control.png",
-                    "linkCode": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
-                    "linkDemo": "https://github.com/pedrovtof/Controle-de-orcamento/tree/main",
+                    "preview": "/images/projects/easy_fin.png",
+                    "linkCode": "https://github.com/pedrovtof/Nievo-easy-fin",
+                    "linkDemo": "https://github.com/pedrovtof/Nievo-easy-fin",
                     "technologies": [
                         "/images/tech/js.png",
                         "/images/tech/python.png",
                         "/images/tech/postgre.png",
-                        "/images/tech/java.png",
+                        "/images/tech/csharp.png",
                         "/images/tech/kong-api-gateway.png",
                         "/images/tech/docker.png"
                     ]
@@ -304,6 +332,20 @@ export const translations  = {
                         '/images/tech/js.png',
                         '/images/tech/react.png',
                         '/images/tech/next-js.png',
+                    ]
+                },
+                {
+                    "name": "Golden Equation",
+                    "description": "Proyecto de Vibe Coding con Lovable: una calculadora de la fórmula de Bhaskara.",
+                    "description_preview": "Proyecto para calcular ecuaciones cuadráticas usando la fórmula de Bhaskara.",
+                    "status": "Estado: Finalizado",
+                    "preview": "/images/projects/lovable_math_bask.png",
+                    "linkCode": "https://github.com/pedrovtof/golden-aqua-solver",
+                    "linkDemo": "https://golden-aqua-solver.lovable.app/",
+                    "technologies": [
+                        "/images/tech/js.png",
+                        "/images/tech/react.png",
+                        "/images/tech/lovable_logo_icon.png"
                     ]
                 }
             ]
